@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - pared
+  - trampilla
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: black backG
+    uniqueID: 4151940095
+    locked: 0
+  - name: Background
+    uniqueID: 1484729683
+    locked: 0
+  - name: Tutorial
+    uniqueID: 1807154453
+    locked: 0
+  - name: Player
+    uniqueID: 3477443885
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: cesped
+    uniqueID: 2537885917
+    locked: 0
