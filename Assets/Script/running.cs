@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class running : MonoBehaviour
 {
     public float parallaxSpeed = 0.2f;
@@ -12,7 +13,7 @@ public class running : MonoBehaviour
 
     void Start()
     {
-        
+        GetComponent<AudioSource>().PlayDelayed(4f); // Activa la música después de 4 seg...
     }
 
     // Update is called once per frame
