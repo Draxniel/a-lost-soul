@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Player : Entity
 {
     private bool canJump;
+    private int coins;
 
     public Player(int health, int strength, int defense): base(health, strength, defense)
     {
@@ -21,6 +22,7 @@ public class Player : Entity
         stats.Add(Stat.Strength, 1);
         stats.Add(Stat.Defense, 1);
         healthBar.fillAmount = 1;
+        coins = 0;
     }
 
     // Update is called once per frame
@@ -94,6 +96,25 @@ public class Player : Entity
     public override void Attack(Entity entity)
     {
         //Especificar según funciones de UNITY
+    }
+
+    public int getCoins()
+    {
+        return this.coins;
+    }
+
+    public void takeCoins(int coins)
+    {
+        this.coins += coins;
+    }
+
+    public void substractCoins(int coins)
+    {
+        if (coins <= this.coins)
+        {
+            this.coins -= coins;
+            return;
+        }
     }
 
 }
