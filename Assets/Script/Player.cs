@@ -108,4 +108,13 @@ public class Player : Entity
         this.coins += coins;
     }
 
+    public void substractCoins(int coins)
+    {
+        if (coins <= this.coins)
+        {
+            this.coins -= coins;
+            return;
+        }
+    }
+
 }
