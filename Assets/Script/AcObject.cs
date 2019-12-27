@@ -41,12 +41,10 @@ public class AcObject : MonoBehaviour
             {
                 if (g.activeInHierarchy)
                 {
-                    print("MANDÉ UN FALSE");
                     return false;
                 }
             }
         }
-        print("MANDÉ UN TRUE");
         return true;
     }
 
