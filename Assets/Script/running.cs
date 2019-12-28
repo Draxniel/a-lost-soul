@@ -72,7 +72,7 @@ public class running : MonoBehaviour
 
     public void play()
     {
-    SceneManager.LoadScene("prólogo", LoadSceneMode.Single);
+    SceneManager.LoadScene("prólogoPt2", LoadSceneMode.Single);
     }
 
     public void QuitGame()
