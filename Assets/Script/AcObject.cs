@@ -6,7 +6,7 @@ public class AcObject : MonoBehaviour
 {
     public Cell toAct;
     public bool lever, active;
-    public GameObject[] objects;
+    public GameObject[] objects;    //Una referencia a los demás objetos en el nivel
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class AcObject : MonoBehaviour
     {
         if (!active)
         {
-            if (lever)
+            if (lever)  //Validación para que se invierta el sprite de la palanca y no desaparezca
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
                 active = true;
@@ -33,7 +33,7 @@ public class AcObject : MonoBehaviour
         ActivateCell();
     }
 
-    public bool AllObjectsActivated()
+    public bool AllObjectsActivated()   //Valida que todos lo demás objetos en el nivel (en caso de haberlos) están desactivados
     {
         if (objects != null)
         {
@@ -48,7 +48,7 @@ public class AcObject : MonoBehaviour
         return true;
     }
 
-    public void ActivateCell()
+    public void ActivateCell()  //Activa la celda que contiene el coleccionable
     {
         if ((toAct != null) && AllObjectsActivated())
         {

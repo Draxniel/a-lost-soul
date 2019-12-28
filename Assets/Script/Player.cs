@@ -27,9 +27,9 @@ public class Player : Entity
     void Update()
     {
         Move();
-        transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, 0));
+        transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, 0)); //Para que el player no se caiga, siempre se quede en vertical el sprite
         healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / 5;
-        manager.setStats(stats);
+        manager.setStats(stats);    //Se actualizan los datos del DataManager
         manager.setCoins(coins);
     }
 
