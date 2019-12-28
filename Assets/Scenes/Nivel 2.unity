@@ -10014,7 +10014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -241.24417, y: -14.495735, z: -10}
+  m_LocalPosition: {x: -241.4162, y: -14.495735, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -22849,6 +22849,8 @@ GameObject:
   - component: {fileID: 1204738322}
   - component: {fileID: 1204738324}
   - component: {fileID: 1204738323}
+  - component: {fileID: 1204738326}
+  - component: {fileID: 1204738325}
   m_Layer: 0
   m_Name: Portal-PNG-Download-Image_0
   m_TagString: Untagged
@@ -22872,8 +22874,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 371.87994, y: 202.3}
-  m_SizeDelta: {x: 56.24, y: 41.52}
+  m_AnchoredPosition: {x: 365.3, y: 193.4}
+  m_SizeDelta: {x: 61.97, y: 54.21}
   m_Pivot: {x: 0.50000006, y: 0.5000001}
 --- !u!95 &1204738323
 Animator:
@@ -22942,6 +22944,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1204738325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204738321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300020, guid: a3bfe1fa28b8c9242b341c6bde37ea89, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1204738326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204738321}
+  m_CullTransparentMesh: 0
 --- !u!1 &1213996180
 GameObject:
   m_ObjectHideFlags: 0
