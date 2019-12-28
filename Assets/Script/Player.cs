@@ -6,23 +6,21 @@ using UnityEngine.UI;
 public class Player : Entity
 {
     private bool canJump;
-    private int coins;
+    public int coins;
+    public DataManager manager;
 
-    public Player(int health, int strength, int defense): base(health, strength, defense)
+    public Player(int health, int strength, int defense) : base(health, strength, defense)
     {
-        canJump = true;   
+        canJump = true;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         canJump = true;
-        stats = new Dictionary<Stat, int>();
-        stats.Add(Stat.Health, 5);
-        stats.Add(Stat.Strength, 1);
-        stats.Add(Stat.Defense, 1);
         healthBar.fillAmount = 1;
-        coins = 0;
+        stats = manager.getStats();
+        coins = manager.getCoins();
     }
 
     // Update is called once per frame
@@ -31,6 +29,8 @@ public class Player : Entity
         Move();
         transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, 0));
         healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / 5;
+        manager.setStats(stats);
+        manager.setCoins(coins);
     }
 
 
@@ -56,7 +56,7 @@ public class Player : Entity
 
     public override void Move()
     {
-       
+
         if (Input.GetKey("left") || Input.GetKey("a"))
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(-46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
@@ -83,7 +83,7 @@ public class Player : Entity
         }
 
 
-        if(!(Input.GetKey("a") || Input.GetKey("left"))  && !(Input.GetKey("d") || Input.GetKey("right")))
+        if (!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")))
         {
             if (Time.timeScale == 1f)
             {
@@ -92,7 +92,7 @@ public class Player : Entity
         }
 
     }
-    
+
     public override void Attack(Entity entity)
     {
         //Especificar según funciones de UNITY
