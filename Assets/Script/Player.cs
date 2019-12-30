@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Player : Entity
 {
     private bool canJump;
-    public int coins;
+    public int coins, skin;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
     
@@ -24,6 +24,7 @@ public class Player : Entity
         healthBar.fillAmount = 1;
         stats = manager.getStats();
         coins = manager.getCoins();
+        skin = manager.getSkinNumber();
     }
 
     // Update is called once per frame
@@ -34,6 +35,19 @@ public class Player : Entity
         healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / 5;
         manager.setStats(stats);    //Se actualizan los datos del DataManager
         manager.setCoins(coins);
+        manager.setSkinNumber(skin);
+        switch (skin){
+            case 1:
+                GetComponent<Animator>().SetBool("hero-1", true);
+                GetComponent<Animator>().SetBool("hero-2", false);
+                break;
+            case 2:
+                GetComponent<Animator>().SetBool("hero-1", false);
+                GetComponent<Animator>().SetBool("hero-2", true);
+                break;
+            case 3:
+                break;
+        }
     }
 
 
