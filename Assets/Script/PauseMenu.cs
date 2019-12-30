@@ -28,11 +28,13 @@ public class PauseMenu : MonoBehaviour
         }
     }
      public void resume() {
+        Camera.main.GetComponent<AudioSource>().UnPause();
         pausaUI.SetActive(false);
         Time.timeScale = 1f;
         gamePaused = false;
     }
     void pause() {
+        Camera.main.GetComponent<AudioSource>().Pause();
         Time.timeScale = 0f;
         pausaUI.SetActive(true);   
         gamePaused = true;
