@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class prev : MonoBehaviour
+public class showOptions : MonoBehaviour
 {
     public GameObject player1, player2;
     private void OnMouseDown()
