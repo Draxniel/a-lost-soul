@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 1cc8793d73bdf704fb3752714c8b01c1
+guid: 6cc0f96fa2f4b0b4595008a47c275048
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hero-idle-1_0
+    21300000: hero-jump-2_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -46,8 +46,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1.5
-  spriteBorder: {x: 11, y: 0, z: 34, w: 14}
+  spritePixelsToUnits: 1.7
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -96,21 +96,21 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hero-idle-1_0
+      name: hero-jump-2_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 39
         y: 0
-        width: 82
-        height: 45
+        width: 39
+        height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e23d426a5b49df74fb3e3b3bf02cf4d9
+      spriteID: 39be8d5338e03da48a4f423751dcb55f
       vertices: []
       indices: 
       edges: []
@@ -118,7 +118,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b3916cfef94e0314fbb09b2b696b1f6c
+    spriteID: 06cb90c79dbf82e44aa47b7f96d654cd
     vertices: []
     indices: 
     edges: []

@@ -27,6 +27,7 @@ public class DataManager : MonoBehaviour
         {
             stats = manager.getStats();
             coins = manager.getCoins();
+            skin = manager.getSkinNumber();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
                 stats[Stat.Health] = 5;
