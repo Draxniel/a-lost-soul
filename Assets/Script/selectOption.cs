@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class confirmskin : MonoBehaviour
+public class selectOption : MonoBehaviour
 {
     public DataManager manager;
     public GameObject player1;

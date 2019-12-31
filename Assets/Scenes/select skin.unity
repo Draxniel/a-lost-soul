@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 342288125}
   - component: {fileID: 342288124}
-  - component: {fileID: 342288126}
   m_Layer: 0
   m_Name: fondo
   m_TagString: Untagged
@@ -192,20 +191,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &342288126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342288123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64086aac06ccb304eb07609bd892ccca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  player1: {fileID: 0}
 --- !u!1 &520015482
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,8 +929,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964434986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 1.3, z: 0}
-  m_LocalScale: {x: 0.1050441, y: 0.092475876, z: 1}
+  m_LocalPosition: {x: -0.486, y: 0.536, z: 0}
+  m_LocalScale: {x: 0.11938957, y: 0.14215466, z: 1}
   m_Children: []
   m_Father: {fileID: 587453471}
   m_RootOrder: 1
