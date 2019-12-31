@@ -693,6 +693,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1216935205}
   - {fileID: 1102054500}
   - {fileID: 1602576462}
   - {fileID: 2040899958}
@@ -799,7 +800,7 @@ Transform:
   m_LocalScale: {x: 0.085, y: 0.085, z: 0.085}
   m_Children: []
   m_Father: {fileID: 859907722}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1102054501
 SpriteRenderer:
@@ -880,6 +881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6aa6b76cb37f34c8fad1a9e403bbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skin: 0
+  manager: {fileID: 1216935204}
   parallaxSpeed: 0.01
   backGround: {fileID: 728456712}
   floorPic: {fileID: 207585579}
@@ -1051,6 +1054,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105538328}
   m_CullTransparentMesh: 0
+--- !u!1 &1216935203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216935205}
+  - component: {fileID: 1216935204}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1216935204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216935203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c42b007c99c3843b14608ea1b6c4f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: 0
+--- !u!4 &1216935205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216935203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 859907722}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350540754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1200,7 @@ Transform:
   m_LocalScale: {x: 2.7599783, y: 2.7599783, z: 2.7599783}
   m_Children: []
   m_Father: {fileID: 859907722}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1602576463
 SpriteRenderer:
@@ -1249,7 +1296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 859907722}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1740361402
 Animator:
@@ -1348,7 +1395,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 859907722}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1991570657
 Animator:
@@ -1679,6 +1726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6aa6b76cb37f34c8fad1a9e403bbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skin: 0
+  manager: {fileID: 0}
   parallaxSpeed: 0.2
   backGround: {fileID: 728456712}
   floorPic: {fileID: 207585579}
@@ -1808,7 +1857,7 @@ Transform:
   m_LocalScale: {x: 2.8048797, y: 2.8048797, z: 2.8048797}
   m_Children: []
   m_Father: {fileID: 859907722}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2040899959
 Animator:
