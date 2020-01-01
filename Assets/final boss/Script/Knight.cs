@@ -5,17 +5,30 @@ using UnityEngine;
 public class Knight : MonoBehaviour
 
 {
-
+    public int skin;
+    public DataManager manager;
     public float pass;
     // Start is called before the first frame update
     void Start()
     {
-
+        skin = manager.getSkinNumber();
     }
 
     // Update is called once per frame
     void Update()
     {
+        skin = manager.getSkinNumber();
+        switch (skin)
+        {
+            case 1:
+                GetComponent<Animator>().SetBool("Hero2", false);
+                break;
+            case 2:
+                GetComponent<Animator>().SetBool("Hero2", true);
+                break;
+            case 3:
+                break;
+        }
         pass += Time.deltaTime;
         if (gameObject.transform.position.x < 120f)
         {
