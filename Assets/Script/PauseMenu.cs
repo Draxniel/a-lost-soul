@@ -39,7 +39,8 @@ public class PauseMenu : MonoBehaviour
         pausaUI.SetActive(true);   
         gamePaused = true;
     }
-    public void QuitGame() {
+    public void QuitGame()
+    {
         Debug.Log("Quitting game...");
         Application.Quit();
     }
