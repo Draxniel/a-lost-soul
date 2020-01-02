@@ -31,11 +31,9 @@ public class GameoverM : MonoBehaviour
     {
         SceneManager.LoadScene(nivel);
     }
-    public void salirmenu()
+    public void QuitGame()
     {
+        Debug.Log("Quitting game...");
         Application.Quit();
     }
-
-
-
 }
