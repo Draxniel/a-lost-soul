@@ -7813,7 +7813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stat: 2
   price: 1
-  value: 0
+  value: 1
 --- !u!1 &418998105
 GameObject:
   m_ObjectHideFlags: 0
@@ -28991,7 +28991,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1490852105}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1210358430}
+        m_MethodName: purchase
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1490852107}
+          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1490852105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29041,7 +29052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stat: 0
   price: 1
-  value: 0
+  value: 1
 --- !u!1 &1492683358
 GameObject:
   m_ObjectHideFlags: 0
@@ -35446,7 +35457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stat: 1
   price: 1
-  value: 0
+  value: 1
 --- !u!1 &1806582970
 GameObject:
   m_ObjectHideFlags: 0

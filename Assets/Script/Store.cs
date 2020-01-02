@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class store : MonoBehaviour
+public class Store : MonoBehaviour
 {
     public GameObject tiendaUI, vendedor;
     public TransactionManager manager;
@@ -37,7 +37,8 @@ public class store : MonoBehaviour
     {
         if (manager.validateCoins(item))
         {
-            player.coins = 1;
+            player.takeBoost(item);
+            player.substractCoins(item.getPrice());
         }
         
     }
