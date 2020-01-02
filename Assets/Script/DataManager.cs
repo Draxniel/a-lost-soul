@@ -7,7 +7,8 @@ public class DataManager : MonoBehaviour
 
     public static DataManager manager;
     private Dictionary<Stat, int> stats;
-    private int coins;
+    private int coins; 
+    public int skin;
 
     private void Awake()
     {
@@ -20,11 +21,13 @@ public class DataManager : MonoBehaviour
             stats.Add(Stat.Defense, 1);
             coins = 0;
             manager = this; //Entonces se asigna este objeto a la variable estática para mantenerse en la ejecución de todo el juego
+            skin = 1;
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
             stats = manager.getStats();
             coins = manager.getCoins();
+            skin = manager.getSkinNumber();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
                 stats[Stat.Health] = 5;
@@ -58,5 +61,15 @@ public class DataManager : MonoBehaviour
     public void setCoins(int coin)
     {
         coins = coin;
+    }
+
+    public int getSkinNumber()
+    {
+        return skin;
+    }
+
+    public void setSkinNumber(int skin)
+    {
+        this.skin = skin;
     }
 }
