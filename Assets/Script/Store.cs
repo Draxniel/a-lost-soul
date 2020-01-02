@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tiendita : MonoBehaviour
+public class Store : MonoBehaviour
 {
     public GameObject tiendaUI;
+    public TransactionManager manager;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -13,5 +14,14 @@ public class tiendita : MonoBehaviour
             tiendaUI.SetActive(true);
             gameObject.SetActive(false);
         }
+    }
+
+    public Item purchase(Item item)
+    {
+        if (manager.validateCoins(item))
+        {
+            return item;
+        }
+        return null;
     }
 }
