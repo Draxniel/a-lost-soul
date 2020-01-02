@@ -7,18 +7,33 @@ using UnityEngine.SceneManagement;
 
 public class running : MonoBehaviour
 {
+    public int skin;
+    public DataManager manager;
     public float parallaxSpeed = 0.2f;
     public RawImage backGround;
     public RawImage floorPic;
 
     void Start()
     {
+        skin = manager.getSkinNumber();
         GetComponent<AudioSource>().PlayDelayed(4f); // Activa la música después de 4 seg...
     }
 
     // Update is called once per frame
     void Update()
     {
+        skin = manager.getSkinNumber();
+        switch (skin)
+        {
+            case 1:
+                GetComponent<Animator>().SetBool("Hero2", false);
+                break;
+            case 2:
+                GetComponent<Animator>().SetBool("Hero2", true);
+                break;
+            case 3:
+                break;
+        }
         float finalSpeed = parallaxSpeed * Time.deltaTime;
         if (gameObject.transform.position.x < 0f)
         {
