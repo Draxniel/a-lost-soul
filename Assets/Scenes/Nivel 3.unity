@@ -7686,6 +7686,7 @@ GameObject:
   - component: {fileID: 416836993}
   - component: {fileID: 416836992}
   - component: {fileID: 416836991}
+  - component: {fileID: 416836994}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -7751,7 +7752,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 416836992}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1210358430}
+        m_MethodName: purchase
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 416836994}
+          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &416836992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7787,6 +7799,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416836989}
   m_CullTransparentMesh: 0
+--- !u!114 &416836994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416836989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7ef05afa1cc9a4e8279457e486b205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stat: 2
+  price: 1
+  value: 0
 --- !u!1 &418998105
 GameObject:
   m_ObjectHideFlags: 0
@@ -11723,6 +11750,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &618676904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 618676906}
+  - component: {fileID: 618676905}
+  m_Layer: 0
+  m_Name: transactionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &618676905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618676904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09aa57129d7a614d8140847b0203a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2093698003}
+--- !u!4 &618676906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618676904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -127.20001, y: 757.3, z: 0}
+  m_LocalScale: {x: 28.318804, y: 21.466248, z: 1.0322}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 53
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &634803267
 GameObject:
   m_ObjectHideFlags: 0
@@ -24070,6 +24141,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiendaUI: {fileID: 1384802984}
   vendedor: {fileID: 1613569319}
+  manager: {fileID: 618676905}
+  items:
+  - {fileID: 416836994}
+  - {fileID: 1806018166}
+  - {fileID: 1490852107}
+  - {fileID: 0}
+  player: {fileID: 2093698003}
 --- !u!114 &1210358431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24143,7 +24221,7 @@ RectTransform:
   m_Children:
   - {fileID: 1384802987}
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26499,7 +26577,7 @@ Transform:
   - {fileID: 801334456}
   - {fileID: 475223632}
   m_Father: {fileID: 0}
-  m_RootOrder: 55
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346845764
 GameObject:
@@ -28847,6 +28925,7 @@ GameObject:
   - component: {fileID: 1490852106}
   - component: {fileID: 1490852105}
   - component: {fileID: 1490852104}
+  - component: {fileID: 1490852107}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -28948,6 +29027,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490852102}
   m_CullTransparentMesh: 0
+--- !u!114 &1490852107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490852102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7ef05afa1cc9a4e8279457e486b205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stat: 0
+  price: 1
+  value: 0
 --- !u!1 &1492683358
 GameObject:
   m_ObjectHideFlags: 0
@@ -31509,7 +31603,7 @@ Transform:
   m_LocalScale: {x: 112.87617, y: 105.53401, z: 0.64054}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1613569324
 Animator:
@@ -35225,6 +35319,7 @@ GameObject:
   - component: {fileID: 1806018165}
   - component: {fileID: 1806018164}
   - component: {fileID: 1806018163}
+  - component: {fileID: 1806018166}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -35290,7 +35385,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1806018164}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1210358430}
+        m_MethodName: purchase
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1806018166}
+          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1806018164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35326,6 +35432,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806018161}
   m_CullTransparentMesh: 0
+--- !u!114 &1806018166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806018161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7ef05afa1cc9a4e8279457e486b205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stat: 1
+  price: 1
+  value: 0
 --- !u!1 &1806582970
 GameObject:
   m_ObjectHideFlags: 0
