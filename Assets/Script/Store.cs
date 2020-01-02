@@ -40,6 +40,10 @@ public class Store : MonoBehaviour
             player.takeBoost(item);
             player.substractCoins(item.getPrice());
         }
+        else
+        {
+            //Codigo para mostrar mensaje de "Monedas insuficientes"
+        }
         
     }
 }
