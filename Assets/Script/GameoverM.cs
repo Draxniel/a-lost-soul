@@ -9,6 +9,8 @@ public class GameoverM : MonoBehaviour
     public GameObject finDelJuego;
     public string nivel;
     public bool game;
+   
+    
 
     // Update is called once per frame
     void Start()
@@ -29,9 +31,9 @@ public class GameoverM : MonoBehaviour
     {
         SceneManager.LoadScene(nivel);
     }
-    public void salirmenu()
+    public void QuitGame()
     {
+        Debug.Log("Quitting game...");
         Application.Quit();
     }
-
 }
