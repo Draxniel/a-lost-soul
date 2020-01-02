@@ -10,9 +10,6 @@ public class Player : Entity
     public int coins, skin;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
-    
-    
-
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -32,7 +29,20 @@ public class Player : Entity
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (stats[Stat.Health] > 0)
+        {
+            Move();
+        }
+        if (Input.GetKey("z"))
+        {
+            GetComponent<Animator>().SetBool("attack", true);
+            GetComponent<Animator>().SetBool("running", false);
+            GetComponent<Animator>().SetBool("jumpping", false);
+        }
+        else if (!Input.GetKey("z"))
+        {
+            GetComponent<Animator>().SetBool("attack", false);
+        }
         transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, 0)); //Para que el player no se caiga, siempre se quede en vertical el sprite
         healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / 5;
         manager.setStats(stats);    //Se actualizan los datos del DataManager
@@ -78,6 +88,7 @@ public class Player : Entity
             canJump = true;
             GetComponent<Animator>().SetBool("jumpping", false);
         }
+
     }
 
 
@@ -105,9 +116,7 @@ public class Player : Entity
         if (Input.GetKey("right") || Input.GetKey("d"))
         {
             if (canJump && !GetComponent<AudioSource>().isPlaying && (Time.timeScale > 0f))
-
             {
-
                 GetComponent<AudioSource>().clip = walkSound; //Sonido al caminar...
                 GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  //  para que suene diferente cada vez que se ejecute. 
                 GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
@@ -140,9 +149,17 @@ public class Player : Entity
 
     public override void Attack(Entity entity)
     {
-        GetComponent<AudioSource>().clip = attackSound; // Sonido al atacar...
-        GetComponent<AudioSource>().Play();
-        //Especificar según funciones de UNITY
+        if (Input.GetKey("z"))
+        {
+            GetComponent<AudioSource>().clip = attackSound; // Sonido al atacar...
+            GetComponent<AudioSource>().Play();
+            GetComponent<Animator>().SetBool("attack", true);
+            GetComponent<Animator>().SetBool("running", false);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("attack", false);
+        }
     }
 
     public int getCoins()
@@ -164,6 +181,11 @@ public class Player : Entity
             this.coins -= coins;
             return;
         }
+    }
+
+    public void takeBoost(Item item)
+    {
+        stats[item.getStat()] += item.getValue();
     }
 
 }

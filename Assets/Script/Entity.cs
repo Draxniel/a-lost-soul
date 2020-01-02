@@ -36,7 +36,10 @@ public abstract class Entity : MonoBehaviour
                 return;
             }
             stats[Stat.Health] = 0;
-
+            GetComponent<Animator>().SetBool("death", true);
+            GetComponent<Animator>().SetBool("running", false);
+            GetComponent<Animator>().SetBool("jumpping", false);
+            GetComponent<Animator>().SetBool("attack", false);
         }
     }
 
