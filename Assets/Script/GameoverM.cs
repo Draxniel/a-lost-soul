@@ -24,10 +24,6 @@ public class GameoverM : MonoBehaviour
         if (player.GetStatValue(Stat.Health) == 0)
         {
             finDelJuego.SetActive(true);
-            player.GetComponent<Animator>().SetBool("dead", true);
-            player.GetComponent<Animator>().SetBool("running", false);
-            player.GetComponent<Animator>().SetBool("jumpping", false);
-            player.GetComponent<Animator>().SetBool("attack", false);
             //Time.timeScale = 0f;
         }
     }
