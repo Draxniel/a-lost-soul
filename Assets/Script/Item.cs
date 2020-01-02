@@ -6,28 +6,21 @@ public class Item : MonoBehaviour
 {
 
     public Stat stat;
-    private int price;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void setPrice (int price)
-    {
-        this.price = price;
-    }
+    public int price, value;
 
     public int getPrice()
     {
         return this.price;
+    }
+
+    public int getValue()
+    {
+        return value;
+    }
+
+    public Stat getStat()
+    {
+        return stat;
     }
 
 }
