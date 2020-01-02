@@ -48,10 +48,13 @@ public class Player : Entity
         manager.setStats(stats);    //Se actualizan los datos del DataManager
         manager.setCoins(coins);
         manager.setSkinNumber(skin);
-        if (!Input.anyKey)
+        if (((!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")))) && canJump)
         {
-            GetComponent<AudioSource>().Pause(); //Para pausar el sonido del personaje cuando no hay ninguna tecla presionada
+            GetComponent<AudioSource>().Pause();
         }
+
+        //Falta detectar que no esta tocando suelo para desactivar el sonido de las patas
+
         switch (skin){
             case 1:
                 GetComponent<Animator>().SetBool("hero-1", true);
@@ -63,7 +66,9 @@ public class Player : Entity
                 break;
             case 3:
                 break;
+                
         }
+
     }
 
 
@@ -142,6 +147,7 @@ public class Player : Entity
             if (Time.timeScale == 1f)
             {
                 GetComponent<Animator>().SetBool("running", false);
+                
             }
         }
 
