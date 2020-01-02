@@ -2,26 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Store : MonoBehaviour
+public class store : MonoBehaviour
 {
-    public GameObject tiendaUI;
+    public GameObject tiendaUI, vendedor;
     public TransactionManager manager;
+    public Item[] items;
+    public Player player;
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            tiendaUI.SetActive(true);
-            gameObject.SetActive(false);
-        }
+        tiendaUI.SetActive(false);
+        Time.timeScale = 1f;
+        
     }
-
-    public Item purchase(Item item)
+    // Update is called once per frame
+    void Update()
+    {
+        if (!vendedor.activeInHierarchy)
+            pause();
+    }
+    public void resume()
+    {
+        tiendaUI.SetActive(false);
+        Time.timeScale = 1f;
+        vendedor.SetActive(true);
+    }
+    void pause()
+    {
+        Time.timeScale = 0f;
+        tiendaUI.SetActive(true);
+    }
+    
+    public void purchase(Item item)
     {
         if (manager.validateCoins(item))
         {
-            return item;
+            player.coins = 1;
         }
-        return null;
+        
     }
 }
