@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Player : Entity
 {
     private bool canJump;
     public int coins, skin;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
+    
     
 
 
@@ -36,6 +38,10 @@ public class Player : Entity
         manager.setStats(stats);    //Se actualizan los datos del DataManager
         manager.setCoins(coins);
         manager.setSkinNumber(skin);
+        if (!Input.anyKey)
+        {
+            GetComponent<AudioSource>().Pause(); //Para pausar el sonido del personaje cuando no hay ninguna tecla presionada
+        }
         switch (skin){
             case 1:
                 GetComponent<Animator>().SetBool("hero-1", true);
@@ -55,8 +61,10 @@ public class Player : Entity
     {
         if (canJump)
         {
-            GetComponent<AudioSource>().clip = jumpSound; //Sonido al saltar
-            GetComponent<AudioSource>().Play();           // Lo puse aca por que en el If sonaba muchas veces...
+            GetComponent<AudioSource>().clip = jumpSound; 
+            GetComponent<AudioSource>().volume = Random.Range(0.8f,1f);  // Sonido al saltar, y para que suene diferente cada vez que se ejecute. 
+            GetComponent<AudioSource>().pitch = Random.Range(0.8f,1.1f); 
+            GetComponent<AudioSource>().Play();           
             canJump = false;
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 25000f));
             GetComponent<Animator>().SetBool("jumpping", true);
@@ -75,14 +83,17 @@ public class Player : Entity
 
     public override void Move()
     {
-
+        
         if (Input.GetKey("left") || Input.GetKey("a"))
         {
-            if (canJump && !GetComponent<AudioSource>().isPlaying)
+            if (canJump && !GetComponent<AudioSource>().isPlaying && (Time.timeScale > 0f))
             {
                 GetComponent<AudioSource>().clip = walkSound; //Sonido al caminar...
+                GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  //  para que suene diferente cada vez que se ejecute. 
+                GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
                 GetComponent<AudioSource>().Play();
             }
+           
             GetComponent<Rigidbody2D>().AddForce(new Vector2(-46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
             if (Time.timeScale == 1f)
@@ -93,12 +104,16 @@ public class Player : Entity
 
         if (Input.GetKey("right") || Input.GetKey("d"))
         {
-            if (canJump && !GetComponent<AudioSource>().isPlaying)
+            if (canJump && !GetComponent<AudioSource>().isPlaying && (Time.timeScale > 0f))
 
             {
+
                 GetComponent<AudioSource>().clip = walkSound; //Sonido al caminar...
+                GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  //  para que suene diferente cada vez que se ejecute. 
+                GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
                 GetComponent<AudioSource>().Play();
             }
+           
             GetComponent<Rigidbody2D>().AddForce(new Vector2(46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
             if (Time.timeScale == 1f)
