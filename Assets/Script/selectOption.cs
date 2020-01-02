@@ -15,7 +15,7 @@ public class selectOption : MonoBehaviour
                 manager.setSkinNumber(1);
             else
                 manager.setSkinNumber(2);
-            SceneManager.LoadScene("Nivel 1", LoadSceneMode.Single);
+            SceneManager.LoadScene("prólogoPt2", LoadSceneMode.Single);
         }
     }
 }
