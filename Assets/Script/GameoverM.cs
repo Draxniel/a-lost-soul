@@ -24,18 +24,20 @@ public class GameoverM : MonoBehaviour
         if (player.GetStatValue(Stat.Health) == 0)
         {
             finDelJuego.SetActive(true);
-            Time.timeScale = 0f;
+            player.GetComponent<Animator>().SetBool("dead", true);
+            player.GetComponent<Animator>().SetBool("running", false);
+            player.GetComponent<Animator>().SetBool("jumpping", false);
+            player.GetComponent<Animator>().SetBool("attack", false);
+            //Time.timeScale = 0f;
         }
     }
     public void Loadscena()
     {
         SceneManager.LoadScene(nivel);
     }
-    public void salirmenu()
+    public void QuitGame()
     {
+        Debug.Log("Quitting game...");
         Application.Quit();
     }
-
-
-
 }

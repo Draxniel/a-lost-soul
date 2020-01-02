@@ -36,7 +36,6 @@ public abstract class Entity : MonoBehaviour
                 return;
             }
             stats[Stat.Health] = 0;
-
         }
     }
 

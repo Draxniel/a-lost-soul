@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tiendita : MonoBehaviour
+public class StoreController : MonoBehaviour
 {
     public GameObject tiendaUI;
 
