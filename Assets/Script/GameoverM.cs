@@ -21,7 +21,11 @@ public class GameoverM : MonoBehaviour
     }
     void Update()
     {
-        if (player.GetStatValue(Stat.Health) == 0)
+        if (player.GetStatValue(Stat.Health) < 0)
+        {
+            player.setStatValue(Stat.Health, 0);
+        }
+            if (player.GetStatValue(Stat.Health) == 0)
         {
             finDelJuego.SetActive(true);
             player.GetComponent<Animator>().SetBool("dead", true);

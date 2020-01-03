@@ -1327,6 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skin: 0
+  difficulty: 0
 --- !u!4 &463114043
 Transform:
   m_ObjectHideFlags: 0
@@ -1454,7 +1455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skin: 0
-  manager: {fileID: 0}
+  manager: {fileID: 463114042}
 --- !u!1 &481449237
 GameObject:
   m_ObjectHideFlags: 0

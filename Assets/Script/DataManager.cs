@@ -9,11 +9,13 @@ public class DataManager : MonoBehaviour
     private Dictionary<Stat, int> stats;
     private int coins; 
     public int skin;
+    public int difficulty;
 
     private void Awake()
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
+            Debug.Log("crea el data");
             DontDestroyOnLoad(gameObject);
             stats = new Dictionary<Stat, int>();
             stats.Add(Stat.Health, 5);
@@ -22,12 +24,14 @@ public class DataManager : MonoBehaviour
             coins = 0;
             manager = this; //Entonces se asigna este objeto a la variable estática para mantenerse en la ejecución de todo el juego
             skin = 1;
+            difficulty = 1;
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
             stats = manager.getStats();
             coins = manager.getCoins();
             skin = manager.getSkinNumber();
+            difficulty = manager.getDifficulty();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
                 stats[Stat.Health] = 5;
@@ -71,5 +75,13 @@ public class DataManager : MonoBehaviour
     public void setSkinNumber(int skin)
     {
         this.skin = skin;
+    }
+
+    public int getDifficulty() {
+        return this.difficulty;
+    }
+    public void setDifficulty(int difficulty)
+    {
+        this.difficulty = difficulty;
     }
 }
