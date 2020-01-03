@@ -77,7 +77,7 @@ public class Player : Entity
     {
         if (GetStatValue(Stat.Health) > 0)
         {
-            if (damage <= GetStatValue(Stat.Health))
+            if ((damage * damageMultiplier) <= GetStatValue(Stat.Health))
             {
                 this.stats[Stat.Health] -= (damage*damageMultiplier);
                 return;
