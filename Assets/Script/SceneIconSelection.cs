@@ -15,7 +15,7 @@ public class SceneIconSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        skin = 2;
+        skin = manager.getSkinNumber();
         switch (skin)
         {
             case 1:

@@ -24,7 +24,7 @@ public class Demon : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("Attacking", true);
         else if ((pass > 22) && (pass < 24))
             gameObject.GetComponent<Animator>().SetBool("Attacking", false);
-        else if ((gameObject.transform.position.x < 350f))
+        else if ((gameObject.transform.position.x < 340f))
             gameObject.transform.position = new Vector3(gameObject.transform.position.x + 1.2f, gameObject.transform.position.y + 0.5f, gameObject.transform.position.z);
         else if ((pass > 26) && (pass < 32))
             transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);

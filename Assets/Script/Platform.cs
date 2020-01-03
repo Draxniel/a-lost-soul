@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
+    public DataManager manager;
     public float positionx,positiony;
     public bool direccion = true;
     public int x,sentido;//sentido 1:izquierda; 2:abajo; 3:derecha & 4:arriba
@@ -12,6 +13,7 @@ public class Platform : MonoBehaviour
     {
         positionx = transform.position.x;
         positiony = transform.position.y;
+        int velocity = manager.getDifficulty();
     }
 
     // Update is called once per frame

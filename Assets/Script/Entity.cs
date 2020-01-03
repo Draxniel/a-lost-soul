@@ -26,19 +26,10 @@ public abstract class Entity : MonoBehaviour
         return (this.stats[stat]);
     }
 
-    public void TakeDamage(int damage)
+    public void setStatValue(Stat stat, int value)
     {
-        if (GetStatValue(Stat.Health) > 0)
-        {
-            if(damage <= GetStatValue(Stat.Health))
-            {
-                this.stats[Stat.Health] -= damage;
-                return;
-            }
-            stats[Stat.Health] = 0;
-        }
+        this.stats[stat] = value;
     }
 
-   
-
+    public abstract void TakeDamage(int damage);
 }
