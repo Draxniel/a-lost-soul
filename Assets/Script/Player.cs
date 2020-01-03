@@ -10,6 +10,7 @@ public class Player : Entity
     public int coins, skin;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
+    public int damageMultiplier;
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -24,6 +25,7 @@ public class Player : Entity
         stats = manager.getStats();
         coins = manager.getCoins();
         skin = manager.getSkinNumber();
+        damageMultiplier = manager.getDifficulty();
     }
 
     // Update is called once per frame
@@ -48,11 +50,14 @@ public class Player : Entity
         manager.setStats(stats);    //Se actualizan los datos del DataManager
         manager.setCoins(coins);
         manager.setSkinNumber(skin);
-        if (!Input.anyKey)
+        if (((!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")))) && canJump)
         {
-            GetComponent<AudioSource>().Pause(); //Para pausar el sonido del personaje cuando no hay ninguna tecla presionada
+            GetComponent<AudioSource>().Pause();
         }
-        switch (skin){
+
+        //Falta detectar que no esta tocando suelo para desactivar el sonido de las patas
+
+        switch (skin) {
             case 1:
                 GetComponent<Animator>().SetBool("hero-1", true);
                 GetComponent<Animator>().SetBool("hero-2", false);
@@ -63,18 +68,31 @@ public class Player : Entity
                 break;
             case 3:
                 break;
+
         }
+
     }
 
-
+    public override void TakeDamage(int damage) 
+    {
+        if (GetStatValue(Stat.Health) > 0)
+        {
+            if ((damage * damageMultiplier) <= GetStatValue(Stat.Health))
+            {
+                this.stats[Stat.Health] -= (damage*damageMultiplier);
+                return;
+            }
+            stats[Stat.Health] = 0;
+        }
+    }
     public void Jump()
     {
         if (canJump)
         {
-            GetComponent<AudioSource>().clip = jumpSound; 
-            GetComponent<AudioSource>().volume = Random.Range(0.8f,1f);  // Sonido al saltar, y para que suene diferente cada vez que se ejecute. 
-            GetComponent<AudioSource>().pitch = Random.Range(0.8f,1.1f); 
-            GetComponent<AudioSource>().Play();           
+            GetComponent<AudioSource>().clip = jumpSound;
+            GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  // Sonido al saltar, y para que suene diferente cada vez que se ejecute. 
+            GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
+            GetComponent<AudioSource>().Play();
             canJump = false;
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 25000f));
             GetComponent<Animator>().SetBool("jumpping", true);
@@ -94,7 +112,7 @@ public class Player : Entity
 
     public override void Move()
     {
-        
+
         if (Input.GetKey("left") || Input.GetKey("a"))
         {
             if (canJump && !GetComponent<AudioSource>().isPlaying && (Time.timeScale > 0f))
@@ -104,7 +122,7 @@ public class Player : Entity
                 GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
                 GetComponent<AudioSource>().Play();
             }
-           
+
             GetComponent<Rigidbody2D>().AddForce(new Vector2(-46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
             if (Time.timeScale == 1f)
@@ -122,7 +140,7 @@ public class Player : Entity
                 GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
                 GetComponent<AudioSource>().Play();
             }
-           
+
             GetComponent<Rigidbody2D>().AddForce(new Vector2(46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
             if (Time.timeScale == 1f)
@@ -142,6 +160,7 @@ public class Player : Entity
             if (Time.timeScale == 1f)
             {
                 GetComponent<Animator>().SetBool("running", false);
+
             }
         }
 
@@ -170,7 +189,7 @@ public class Player : Entity
     public void takeCoins(int coins)
     {
         GetComponent<AudioSource>().clip = coinSound;  // Sonido al agarrar una moneda...
-        GetComponent<AudioSource>().Play();            
+        GetComponent<AudioSource>().Play();
         this.coins += coins;
     }
 

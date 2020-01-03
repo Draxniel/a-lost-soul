@@ -36,4 +36,16 @@ public class Enemy : Entity
         throw new System.NotImplementedException();
     }
 
+    public override void TakeDamage(int damage)
+    {
+        if (GetStatValue(Stat.Health) > 0)
+        {
+            if (damage <= GetStatValue(Stat.Health))
+            {
+                this.stats[Stat.Health] -= damage;
+                return;
+            }
+            stats[Stat.Health] = 0;
+        }
+    }
 }
