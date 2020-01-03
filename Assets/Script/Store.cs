@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Store : MonoBehaviour
 {
-    public GameObject tiendaUI, vendedor;
+    public GameObject tiendaUI, vendedor, Warming;
     public TransactionManager manager;
     public Item[] items;
     public Player player;
@@ -13,7 +13,6 @@ public class Store : MonoBehaviour
     {
         tiendaUI.SetActive(false);
         Time.timeScale = 1f;
-        
     }
     // Update is called once per frame
     void Update()
@@ -24,6 +23,7 @@ public class Store : MonoBehaviour
     public void resume()
     {
         tiendaUI.SetActive(false);
+        Warming.SetActive(false);
         Time.timeScale = 1f;
         vendedor.SetActive(true);
     }
@@ -42,7 +42,7 @@ public class Store : MonoBehaviour
         }
         else
         {
-            //Codigo para mostrar mensaje de "Monedas insuficientes"
+            Warming.SetActive(true);
         }
         
     }
