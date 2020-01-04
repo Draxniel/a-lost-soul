@@ -15,7 +15,6 @@ public class DataManager : MonoBehaviour
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
-            Debug.Log("crea el data");
             DontDestroyOnLoad(gameObject);
             stats = new Dictionary<Stat, int>();
             stats.Add(Stat.Health, 5);

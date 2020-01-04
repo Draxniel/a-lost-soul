@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class Player : Entity
 {
     private bool canJump;
+    private float attackTime;
     public int coins, skin;
     private int maxHealth;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
     public int damageMultiplier;
+    public GameObject attackObject;
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -28,6 +30,8 @@ public class Player : Entity
         skin = manager.getSkinNumber();
         maxHealth = manager.getMaxHealth();
         damageMultiplier = manager.getDifficulty();
+        attackTime = 5;
+        attackObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,21 +40,12 @@ public class Player : Entity
         if (stats[Stat.Health] > 0)
         {
             Move();
-        }
-        if (Input.GetKey("z"))
-        {
-            GetComponent<Animator>().SetBool("attack", true);
-            GetComponent<Animator>().SetBool("running", false);
-            GetComponent<Animator>().SetBool("jumpping", false);
-        }
-        else if (!Input.GetKey("z"))
-        {
-            GetComponent<Animator>().SetBool("attack", false);
+            Attack();
         }
 
-        transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, 0)); //Para que el player no se caiga, siempre se quede en vertical el sprite
+        attackObject.GetComponent<Transform>().position = this.GetComponent<Transform>().position; 
 
-        healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / maxHealth;
+        healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / maxHealth;   //Se llena la barra de vida
 
         manager.setStats(stats);    //Se actualizan los datos del DataManager
         manager.setCoins(coins);
@@ -64,7 +59,7 @@ public class Player : Entity
 
         //Falta detectar que no esta tocando suelo para desactivar el sonido de las patas
 
-        switch (skin) {
+        switch (skin) { //Seleccion de skin
             case 1:
                 GetComponent<Animator>().SetBool("hero-1", true);
                 GetComponent<Animator>().SetBool("hero-2", false);
@@ -173,18 +168,24 @@ public class Player : Entity
 
     }
 
-    public override void Attack(Entity entity)
+    public override void Attack()
     {
-        if (Input.GetKey("z"))
+        if (Input.GetKey("b") || (attackTime < 1.5f))   //Validación para hacer animacion de ataque
         {
-            GetComponent<AudioSource>().clip = attackSound; // Sonido al atacar...
-            GetComponent<AudioSource>().Play();
+            if (attackTime > 1.5f)
+            {
+                attackTime = 0;
+            }
             GetComponent<Animator>().SetBool("attack", true);
             GetComponent<Animator>().SetBool("running", false);
+            GetComponent<Animator>().SetBool("jumpping", false);
+            attackTime += Time.deltaTime;
+            attackObject.SetActive(true);
         }
         else
         {
             GetComponent<Animator>().SetBool("attack", false);
+            attackObject.SetActive(false);
         }
     }
 
@@ -205,7 +206,6 @@ public class Player : Entity
         if (coins <= this.coins)
         {
             this.coins -= coins;
-            return;
         }
     }
 
