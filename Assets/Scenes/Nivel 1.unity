@@ -9717,7 +9717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &833069847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23426,6 +23426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skin: 0
+  difficulty: 0
 --- !u!4 &1930938425
 Transform:
   m_ObjectHideFlags: 0
@@ -25307,6 +25308,7 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   coinSound: {fileID: 0}
   buySound: {fileID: 0}
+  damageMultiplier: 0
 --- !u!82 &2093698004
 AudioSource:
   m_ObjectHideFlags: 0
