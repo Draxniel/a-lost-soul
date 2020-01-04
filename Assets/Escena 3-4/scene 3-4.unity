@@ -548,6 +548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skin: 0
+  difficulty: 0
 --- !u!1 &362643405
 GameObject:
   m_ObjectHideFlags: 0

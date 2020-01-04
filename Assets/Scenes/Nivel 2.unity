@@ -738,7 +738,7 @@ GameObject:
   - component: {fileID: 57038507}
   - component: {fileID: 57038506}
   m_Layer: 0
-  m_Name: fisica 1 (62)
+  m_Name: puerta-final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -752,11 +752,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57038504}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1355.2999, y: -339.01, z: 0}
-  m_LocalScale: {x: 0.51898825, y: 0.12859572, z: 0.64054}
+  m_LocalPosition: {x: 2399.6973, y: -15.301849, z: 6.75}
+  m_LocalScale: {x: 0.5189885, y: 0.12859578, z: 0.64054}
   m_Children: []
-  m_Father: {fileID: 64983340}
-  m_RootOrder: 38
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &57038506
 MonoBehaviour:
@@ -1134,7 +1134,6 @@ Transform:
   - {fileID: 1230371159}
   - {fileID: 115118453}
   - {fileID: 1516651886}
-  - {fileID: 57038505}
   - {fileID: 1110673927}
   - {fileID: 845934443}
   m_Father: {fileID: 0}
@@ -2353,7 +2352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -3080,6 +3079,12 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: -1604568299
     m_ParentHash: 756556552
+  - m_Hash: -1592139280
+    m_ParentHash: 756556552
+  - m_Hash: 1684585544
+    m_ParentHash: 756556552
+  - m_Hash: 1130333774
+    m_ParentHash: 756556552
 --- !u!4 &148603692
 Transform:
   m_ObjectHideFlags: 0
@@ -3277,7 +3282,7 @@ RectTransform:
   m_Children:
   - {fileID: 1819299430}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3488,7 +3493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -3832,7 +3837,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &180757546
 GameObject:
@@ -4185,7 +4190,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &202440645
 Animator:
@@ -4618,7 +4623,6 @@ MonoBehaviour:
   - {fileID: 79315386}
   - {fileID: 168194812}
   - {fileID: 0}
-  player: {fileID: 2093698003}
 --- !u!114 &222577684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4692,7 +4696,7 @@ RectTransform:
   m_Children:
   - {fileID: 233399743}
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6523,7 +6527,7 @@ GameObject:
   - component: {fileID: 298758979}
   - component: {fileID: 298758977}
   m_Layer: 0
-  m_Name: Isla Flotante
+  m_Name: Isla Flotante-1(move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6629,7 +6633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -9452,7 +9456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -10216,7 +10220,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &463541342
 Animator:
@@ -10950,7 +10954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -241.43329, y: -14.495735, z: -10}
+  m_LocalPosition: {x: -241.44296, y: -14.495735, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11343,7 +11347,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &527880736
 MonoBehaviour:
@@ -12619,7 +12623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -12917,7 +12921,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &633434727
 Animator:
@@ -14139,7 +14143,7 @@ GameObject:
   - component: {fileID: 683166001}
   - component: {fileID: 683166000}
   m_Layer: 0
-  m_Name: tileset_0 (4)
+  m_Name: tileset_2 (move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14322,7 +14326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -14488,7 +14492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat: 0
-  price: 30
+  price: 27
   value: 6
 --- !u!114 &697925566
 MonoBehaviour:
@@ -14589,7 +14593,7 @@ GameObject:
   - component: {fileID: 700840061}
   - component: {fileID: 700840059}
   m_Layer: 0
-  m_Name: Isla Flotante
+  m_Name: Isla Flotante-4(move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14695,7 +14699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -15229,7 +15233,7 @@ Transform:
   m_Children:
   - {fileID: 1427795818}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &748696315
 GameObject:
@@ -15647,7 +15651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -17018,7 +17022,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &828897123
 Animator:
@@ -17303,7 +17307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -17387,7 +17391,7 @@ Transform:
   m_LocalScale: {x: 1.1559399, y: 0.04257, z: 0.64054}
   m_Children: []
   m_Father: {fileID: 64983340}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.072}
 --- !u!61 &845934444
 BoxCollider2D:
@@ -17794,7 +17798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -19089,7 +19093,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &932917767
 Animator:
@@ -21578,7 +21582,7 @@ GameObject:
   - component: {fileID: 1054949978}
   - component: {fileID: 1054949976}
   m_Layer: 0
-  m_Name: Isla Flotante
+  m_Name: Isla Flotante(move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21684,7 +21688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -21961,7 +21965,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1075061821
 Animator:
@@ -22628,7 +22632,7 @@ Transform:
   m_LocalScale: {x: 0.2836, y: 0.03608, z: 0.64054}
   m_Children: []
   m_Father: {fileID: 64983340}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1110673928
 BoxCollider2D:
@@ -22909,7 +22913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -25368,7 +25372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -26572,7 +26576,7 @@ GameObject:
   - component: {fileID: 1304085912}
   - component: {fileID: 1304085911}
   m_Layer: 0
-  m_Name: tileset_0 (5)
+  m_Name: tileset_3 (move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26630,7 +26634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -28292,7 +28296,7 @@ Transform:
   m_LocalScale: {x: 0.5344581, y: 8.708254, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380948153
 GameObject:
@@ -28577,7 +28581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -29632,7 +29636,7 @@ GameObject:
   - component: {fileID: 1476825624}
   - component: {fileID: 1476825623}
   m_Layer: 0
-  m_Name: tileset_0 (3)
+  m_Name: tileset_1 (move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29738,7 +29742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -32323,6 +32327,173 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1644234146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644234147}
+  - component: {fileID: 1644234152}
+  - component: {fileID: 1644234151}
+  - component: {fileID: 1644234150}
+  - component: {fileID: 1644234149}
+  - component: {fileID: 1644234148}
+  m_Layer: 0
+  m_Name: black-cover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1644234147
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644234146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2093697999}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1644234148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644234146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1644234149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644234146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 150
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 2
+  m_FallbackScreenDPI: 100
+  m_DefaultSpriteDPI: 100
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1644234150
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644234146}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 200
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 1
+--- !u!95 &1644234151
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644234146}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c170c7d638d803d4c99774681094efb6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1644234152
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644234146}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: cfed2427e8364844aa0e8d55a7a02550, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10, y: 5.84}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1656701864
 GameObject:
   m_ObjectHideFlags: 0
@@ -32336,7 +32507,7 @@ GameObject:
   - component: {fileID: 1656701868}
   - component: {fileID: 1656701867}
   m_Layer: 0
-  m_Name: tileset_0 (2)
+  m_Name: tileset_0 (move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32442,7 +32613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -32586,7 +32757,7 @@ Transform:
   m_LocalScale: {x: 6.6763897, y: 6.43221, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1664428926
 Animator:
@@ -34758,7 +34929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -35356,7 +35527,7 @@ GameObject:
   - component: {fileID: 1774474672}
   - component: {fileID: 1774474671}
   m_Layer: 0
-  m_Name: Isla Flotante (3)
+  m_Name: Isla Flotante-2 (move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35414,7 +35585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -36399,7 +36570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1819299428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36576,7 +36747,7 @@ GameObject:
   - component: {fileID: 1820456229}
   - component: {fileID: 1820456227}
   m_Layer: 0
-  m_Name: Isla Flotante
+  m_Name: Isla Flotante-3(move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36682,7 +36853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
@@ -38559,7 +38730,7 @@ Transform:
   m_LocalScale: {x: 28.318804, y: 21.466248, z: 1.0322}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1931334584
 GameObject:
@@ -40864,7 +41035,7 @@ Transform:
   m_Children:
   - {fileID: 443354632}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2075155369
 GameObject:
@@ -41571,6 +41742,7 @@ Transform:
   m_Children:
   - {fileID: 1901459093}
   - {fileID: 868066422}
+  - {fileID: 1644234147}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41781,7 +41953,7 @@ Transform:
   m_LocalScale: {x: 112.87617, y: 105.53401, z: 0.64054}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2094069495
 BoxCollider2D:
@@ -42816,7 +42988,7 @@ GameObject:
   - component: {fileID: 2143454670}
   - component: {fileID: 2143454672}
   m_Layer: 0
-  m_Name: Isla flotante (2)
+  m_Name: Isla flotante (move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42922,7 +43094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeb219740d2ab6459137f9e1061277a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 180615010}
   positionx: 0
   positiony: 0
   direccion: 1
