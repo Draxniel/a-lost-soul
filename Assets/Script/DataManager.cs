@@ -7,7 +7,7 @@ public class DataManager : MonoBehaviour
 
     public static DataManager manager;
     private Dictionary<Stat, int> stats;
-    private int coins; 
+    private int coins, maxHealth; 
     public int skin;
     public int difficulty;
 
@@ -15,10 +15,10 @@ public class DataManager : MonoBehaviour
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
-            Debug.Log("crea el data");
             DontDestroyOnLoad(gameObject);
             stats = new Dictionary<Stat, int>();
             stats.Add(Stat.Health, 5);
+            maxHealth = 5;
             stats.Add(Stat.Strength, 1);
             stats.Add(Stat.Defense, 1);
             coins = 0;
@@ -32,11 +32,13 @@ public class DataManager : MonoBehaviour
             coins = manager.getCoins();
             skin = manager.getSkinNumber();
             difficulty = manager.getDifficulty();
+            maxHealth = manager.getMaxHealth();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
                 stats[Stat.Health] = 5;
                 stats[Stat.Strength] = 1;
                 stats[Stat.Defense] = 1;
+                maxHealth = 5;
             }
         }
     }
@@ -83,5 +85,15 @@ public class DataManager : MonoBehaviour
     public void setDifficulty(int difficulty)
     {
         this.difficulty = difficulty;
+    }
+
+    public int getMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    public void setMaxHealth(int maxHealth)
+    {
+        this.maxHealth = maxHealth;
     }
 }
