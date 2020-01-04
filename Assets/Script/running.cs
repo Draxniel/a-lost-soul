@@ -45,7 +45,7 @@ public class running : MonoBehaviour
 
     public void play()
     {
-        SceneManager.LoadScene("prólogoPt2", LoadSceneMode.Single);
+        SceneManager.LoadScene("difficultyScene", LoadSceneMode.Single);
     }
 
     public void QuitGame()
