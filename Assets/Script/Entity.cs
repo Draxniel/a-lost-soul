@@ -19,7 +19,7 @@ public abstract class Entity : MonoBehaviour
 
     public abstract void Move();
 
-    public abstract void Attack(Entity entity);
+    public abstract void Attack();
 
     public int GetStatValue(Stat stat)
     {
