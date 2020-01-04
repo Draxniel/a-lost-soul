@@ -47,6 +47,9 @@ public class DataManager : MonoBehaviour
     {
         manager.setStats(stats);
         manager.setCoins(coins);
+        manager.setSkinNumber(skin);
+        manager.setMaxHealth(maxHealth);
+        manager.setDifficulty(difficulty);
     }
 
     public Dictionary<Stat, int> getStats()
