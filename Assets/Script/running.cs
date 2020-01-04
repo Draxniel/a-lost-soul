@@ -15,14 +15,14 @@ public class running : MonoBehaviour
 
     void Start()
     {
-        skin = manager.getSkinNumber();
+        //skin = manager.getSkinNumber();
         GetComponent<AudioSource>().PlayDelayed(4f); // Activa la música después de 4 seg...
     }
 
     // Update is called once per frame
     void Update()
     {
-        skin = manager.getSkinNumber();
+        //skin = manager.getSkinNumber();
         switch (skin)
         {
             case 1:

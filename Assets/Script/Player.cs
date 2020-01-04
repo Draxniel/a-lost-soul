@@ -8,6 +8,7 @@ public class Player : Entity
 {
     private bool canJump;
     public int coins, skin;
+    private int maxHealth;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
     public int damageMultiplier;
@@ -25,6 +26,7 @@ public class Player : Entity
         stats = manager.getStats();
         coins = manager.getCoins();
         skin = manager.getSkinNumber();
+        maxHealth = manager.getMaxHealth();
         damageMultiplier = manager.getDifficulty();
     }
 
@@ -45,11 +47,16 @@ public class Player : Entity
         {
             GetComponent<Animator>().SetBool("attack", false);
         }
+
         transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, 0)); //Para que el player no se caiga, siempre se quede en vertical el sprite
-        healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / 5;
+
+        healthBar.fillAmount = (float)this.GetStatValue(Stat.Health) / maxHealth;
+
         manager.setStats(stats);    //Se actualizan los datos del DataManager
         manager.setCoins(coins);
         manager.setSkinNumber(skin);
+        manager.setMaxHealth(maxHealth);
+
         if (((!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")))) && canJump)
         {
             GetComponent<AudioSource>().Pause();
@@ -79,12 +86,13 @@ public class Player : Entity
         {
             if ((damage * damageMultiplier) <= GetStatValue(Stat.Health))
             {
-                this.stats[Stat.Health] -= (damage*damageMultiplier);
+                this.stats[Stat.Health] -= (damage * damageMultiplier);
                 return;
             }
             stats[Stat.Health] = 0;
         }
     }
+
     public void Jump()
     {
         if (canJump)
@@ -108,7 +116,6 @@ public class Player : Entity
         }
 
     }
-
 
     public override void Move()
     {
@@ -205,6 +212,10 @@ public class Player : Entity
     public void takeBoost(Item item)
     {
         stats[item.getStat()] += item.getValue();
+        if (stats[Stat.Health] > maxHealth)
+        {
+            maxHealth = stats[Stat.Health];
+        }
     }
 
 }
