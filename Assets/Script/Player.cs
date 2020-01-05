@@ -170,9 +170,9 @@ public class Player : Entity
 
     public override void Attack()
     {
-        if (Input.GetKey("b") || (attackTime < 1.5f))   //Validación para hacer animacion de ataque
+        if (Input.GetKey("b") || (attackTime < 0.8f))   //Validación para hacer animacion de ataque
         {
-            if (attackTime > 1.5f)
+            if (attackTime > 0.8f)
             {
                 attackTime = 0;
             }
