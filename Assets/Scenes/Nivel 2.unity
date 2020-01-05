@@ -3058,6 +3058,14 @@ MonoBehaviour:
     m_VirtualCamera: {fileID: 1155951194}
     m_ActivateAfter: 0.7
     m_MinDuration: 0
+  - m_FullHash: -1604568299
+    m_VirtualCamera: {fileID: 279982517}
+    m_ActivateAfter: 0
+    m_MinDuration: 0
+  - m_FullHash: 554029014
+    m_VirtualCamera: {fileID: 1155951194}
+    m_ActivateAfter: 0.7
+    m_MinDuration: 0
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
@@ -10231,7 +10239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -286.14, y: 198.35}
+  m_AnchoredPosition: {x: -292, y: 193}
   m_SizeDelta: {x: -587.03, y: -410.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463210555
@@ -11011,7 +11019,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 140
+  orthographic size: 96.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11035,7 +11043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -164.00128, y: 28.603256, z: -10}
+  m_LocalPosition: {x: -241.10205, y: -14.495735, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -32682,7 +32690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 150
+  m_ScaleFactor: 200
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
