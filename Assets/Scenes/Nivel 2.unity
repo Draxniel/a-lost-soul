@@ -11011,7 +11011,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 96.9
+  orthographic size: 140
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11035,7 +11035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -241.24417, y: -14.495735, z: -10}
+  m_LocalPosition: {x: -164.00128, y: 28.603256, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15169,8 +15169,8 @@ Transform:
   m_Father: {fileID: 1051075378}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &743449651
-BoxCollider2D:
+--- !u!60 &743449651
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15182,7 +15182,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.5449562}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15192,9 +15192,33 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 65.333336, y: 47.57676}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 19.333334, y: -12.666667}
+      - {x: 26.666668, y: -4}
+      - {x: 26.114868, y: 5.3917236}
+      - {x: 29.76648, y: 10.666672}
+      - {x: 30.201492, y: 18.344597}
+      - {x: 30.08664, y: 21.998093}
+      - {x: -27.393646, y: 20.257965}
+      - {x: -30.030151, y: 17.70617}
+      - {x: -29.331436, y: 14.024422}
+      - {x: -28.461365, y: 8.608276}
+      - {x: -27.998108, y: 7.3333282}
+      - {x: -28, y: 5.3333335}
+      - {x: -28, y: -0.6666667}
+      - {x: -20.666668, y: -4.666667}
+      - {x: -11.333334, y: -17.333334}
+      - {x: -14, y: -19.333334}
+      - {x: -14, y: -21.333334}
+      - {x: -12.666667, y: -22.666668}
+      - {x: -8.666667, y: -22}
+      - {x: -6, y: -18.666668}
+      - {x: -2.6666667, y: -25.333334}
+      - {x: 1.3333334, y: -25.333334}
+      - {x: 9.333334, y: -18}
+      - {x: 11.333334, y: -20.666668}
+      - {x: 15.333334, y: -19.333334}
 --- !u!212 &743449652
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18723,8 +18747,8 @@ Transform:
   m_Father: {fileID: 1051075378}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &916835903
-BoxCollider2D:
+--- !u!60 &916835903
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18736,7 +18760,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.493578}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18746,9 +18770,34 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 65.333336, y: 47.679512}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 19.333334, y: -12.666667}
+      - {x: 25.736416, y: -4.000001}
+      - {x: 26.666668, y: -4}
+      - {x: 26.538174, y: 5.1982393}
+      - {x: 30.0088, y: 11.198241}
+      - {x: 30.0088, y: 19.614525}
+      - {x: 30.135098, y: 21.479427}
+      - {x: -25.858303, y: 20.283386}
+      - {x: -28.930256, y: 18.420689}
+      - {x: -29.211437, y: 14.690867}
+      - {x: -28.945652, y: 9.333335}
+      - {x: -28.542568, y: 7.067546}
+      - {x: -28, y: 5.3333335}
+      - {x: -28, y: -0.6666667}
+      - {x: -20.666668, y: -4.666667}
+      - {x: -11.333334, y: -17.333334}
+      - {x: -14, y: -19.333334}
+      - {x: -14, y: -21.333334}
+      - {x: -12.666667, y: -22.666668}
+      - {x: -8.666667, y: -22}
+      - {x: -6, y: -18.666668}
+      - {x: -2.6666667, y: -25.333334}
+      - {x: 1.3333334, y: -25.333334}
+      - {x: 9.333334, y: -18}
+      - {x: 11.333334, y: -20.666668}
+      - {x: 15.333334, y: -19.333334}
 --- !u!212 &916835904
 SpriteRenderer:
   m_ObjectHideFlags: 0
