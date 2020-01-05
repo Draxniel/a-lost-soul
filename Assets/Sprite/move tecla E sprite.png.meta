@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 219b8236b4ce7c549a2e7cd6cc24a20f
+guid: 5fa85fbbd15faf343bdd2134448b9c13
 TextureImporter:
   fileIDToRecycleName:
-    21300000: move tecla P sprite_0
-    21300002: move tecla P sprite_1
-    21300004: move tecla P sprite_3
+    21300000: move tecla E sprite_0
+    21300002: move tecla E sprite_1
+    21300004: move tecla E sprite_2
+    21300006: move tecla E sprite_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -98,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: move tecla P sprite_1
+      name: move tecla E sprite_1
       rect:
         serializedVersion: 2
-        x: 2125
-        y: 5883
-        width: 3239
-        height: 2824
+        x: 2228
+        y: 5856
+        width: 3083
+        height: 2850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,27 +113,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e266bdff18dbea94c90ab2837b09a0b1
+      spriteID: d4d982d3d4518724aaff10fa402cdf73
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: move tecla P sprite_3
+      name: move tecla E sprite_3
       rect:
         serializedVersion: 2
-        x: 1840
-        y: 2592
-        width: 3239
-        height: 2824
-      alignment: 9
-      pivot: {x: 0.46800146, y: 0.5275257}
+        x: 1969
+        y: 2566
+        width: 3083
+        height: 2850
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f17ea02e746c44fb8366a940523fde
+      spriteID: 25a31e279b35fcb4497a9e6175c44430
       vertices: []
       indices: 
       edges: []
@@ -140,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e53b8def9dd2e6949aa10d10959b295f
+    spriteID: c83f21165fda8574dbdbc64598273281
     vertices: []
     indices: 
     edges: []

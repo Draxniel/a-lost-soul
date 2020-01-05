@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 219b8236b4ce7c549a2e7cd6cc24a20f
+guid: 5a3af4bbf7cb1bb4484b83c2244030f8
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: move tecla P sprite_0
-    21300002: move tecla P sprite_1
-    21300004: move tecla P sprite_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,75 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: move tecla P sprite_1
-      rect:
-        serializedVersion: 2
-        x: 2125
-        y: 5883
-        width: 3239
-        height: 2824
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e266bdff18dbea94c90ab2837b09a0b1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: move tecla P sprite_3
-      rect:
-        serializedVersion: 2
-        x: 1840
-        y: 2592
-        width: 3239
-        height: 2824
-      alignment: 9
-      pivot: {x: 0.46800146, y: 0.5275257}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0f17ea02e746c44fb8366a940523fde
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e53b8def9dd2e6949aa10d10959b295f
+    spriteID: 5d0b475680577b54a9972c7663078c75
     vertices: []
     indices: 
     edges: []
