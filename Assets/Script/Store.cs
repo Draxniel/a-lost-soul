@@ -7,7 +7,6 @@ public class Store : MonoBehaviour
     public GameObject tiendaUI, vendedor, Warming;
     public TransactionManager manager;
     public Item[] items;
-    public Player player;
 
     void Start()
     {
@@ -35,10 +34,9 @@ public class Store : MonoBehaviour
     
     public void purchase(Item item)
     {
-        if (manager.validateCoins(item))
+        if (manager.ValidateCoins(item))
         {
-            player.takeBoost(item);
-            player.substractCoins(item.getPrice());
+            manager.BuyAndBoost(item);
         }
         else
         {

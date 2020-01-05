@@ -9,7 +9,6 @@ public class selectOption : MonoBehaviour
     public GameObject player1;
     private void OnMouseDown()
     {
-        
         if (Input.GetMouseButtonDown(0)) {
             if (player1.activeSelf)
                 manager.setSkinNumber(1);
