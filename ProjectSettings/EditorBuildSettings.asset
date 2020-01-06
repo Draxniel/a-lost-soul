@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/inicio.unity
     guid: 31b2956afbf1b724e8774b6ebc61710d
   - enabled: 1
+    path: Assets/Scenes/Menu secundario.unity
+    guid: a4623b78bfece8b4aa7b76d715db83f8
+  - enabled: 1
     path: Assets/Scenes/difficultyScene.unity
     guid: be8aa754c565d324196b7b7037111939
   - enabled: 1
