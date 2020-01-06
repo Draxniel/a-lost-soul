@@ -11065,7 +11065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -288.8431, y: -14.495735, z: -10}
+  m_LocalPosition: {x: -331.94086, y: -14.526817, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42053,7 +42053,7 @@ MonoBehaviour:
   manager: {fileID: 180615010}
   jumpSound: {fileID: 8300000, guid: 0cc744b6da927684788d344f725db738, type: 3}
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
   attackObject: {fileID: 868066421}
 --- !u!82 &2093698004
 AudioSource:
