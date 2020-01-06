@@ -5797,7 +5797,16 @@ MonoBehaviour:
   - {fileID: 1020107374}
   - {fileID: 522839107}
   - {fileID: 0}
-  sellerAudioArray: []
+  sellerAudioArray:
+  - {fileID: 8300000, guid: 34ddb5cc352905d4c90babf7c6e7c3af, type: 3}
+  - {fileID: 8300000, guid: c3f47d3ca610a94479b50eeed083a58b, type: 3}
+  - {fileID: 8300000, guid: 2e46e4a3210c03646a5220ffbbb6311c, type: 3}
+  - {fileID: 8300000, guid: 028d35a61ccf52b40936253026017ed9, type: 3}
+  - {fileID: 8300000, guid: a02e9b8c362f26d40ac141485c5414ba, type: 3}
+  - {fileID: 8300000, guid: 01f5089cd7eae504a9e133b64b12527b, type: 3}
+  - {fileID: 8300000, guid: 4d996fe003373ed458e44b078830e850, type: 3}
+  - {fileID: 8300000, guid: 52810bcda48c24b44ad030ab30fe8376, type: 3}
+  - {fileID: 8300000, guid: ff30f3cb202676b47954e2d88d68a903, type: 3}
   sellerSource: {fileID: 0}
 --- !u!114 &266824951
 MonoBehaviour:
@@ -11197,7 +11206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -83.648834, y: -38.50039, z: -10}
+  m_LocalPosition: {x: -108.04256, y: -38.54168, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
