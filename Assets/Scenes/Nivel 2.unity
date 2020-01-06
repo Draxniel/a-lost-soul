@@ -4635,7 +4635,18 @@ MonoBehaviour:
   - {fileID: 79315386}
   - {fileID: 168194812}
   - {fileID: 0}
-  sellerAudioArray: []
+  sellerAudioArray:
+  - {fileID: 8300000, guid: 1a937feaa3084e647a94d854087bc1a3, type: 3}
+  - {fileID: 8300000, guid: f58fa8f045d22af41a51d82b9f6473d9, type: 3}
+  - {fileID: 8300000, guid: 850a65ca7697d4a44bcb2fa0c7f3e05c, type: 3}
+  - {fileID: 8300000, guid: 77d7f7de3df788348a8e114d87d3aa3d, type: 3}
+  - {fileID: 8300000, guid: b25601d3ecd3a554c968f830242c00d7, type: 3}
+  - {fileID: 8300000, guid: 2f384c6061e25ba44b7e307e122bad3c, type: 3}
+  - {fileID: 8300000, guid: 66dfede9139d6624e96b26ff32e92659, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   sellerSource: {fileID: 0}
 --- !u!114 &222577684
 MonoBehaviour:
@@ -11049,7 +11060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -241.37146, y: -14.495735, z: -10}
+  m_LocalPosition: {x: -265.76526, y: -14.495735, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
