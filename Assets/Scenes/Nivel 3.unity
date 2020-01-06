@@ -4337,6 +4337,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &189245088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5807,6 +5809,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4d996fe003373ed458e44b078830e850, type: 3}
   - {fileID: 8300000, guid: 52810bcda48c24b44ad030ab30fe8376, type: 3}
   - {fileID: 8300000, guid: ff30f3cb202676b47954e2d88d68a903, type: 3}
+  powerUpSound: {fileID: 8300000, guid: b15b39262fcc6ad44a0c7d904ece2cd7, type: 3}
   sellerSource: {fileID: 0}
 --- !u!114 &266824951
 MonoBehaviour:
@@ -7680,6 +7683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &371363358
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9016,6 +9021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &432502217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11206,7 +11213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -108.04256, y: -38.54168, z: -10}
+  m_LocalPosition: {x: -131.12035, y: -38.58074, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11652,6 +11659,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &552982543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14024,6 +14033,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &665648815
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16700,6 +16711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &784148284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17210,6 +17223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &793857348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20678,6 +20693,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &935230296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21397,6 +21414,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1014602472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31410,6 +31429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1537036902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34929,6 +34950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1679540863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37400,6 +37423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
+  coinSource: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1803298005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42334,8 +42359,6 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 0cc744b6da927684788d344f725db738, type: 3}
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
   attackSound: {fileID: 0}
-  coinSound: {fileID: 0}
-  buySound: {fileID: 0}
   attackObject: {fileID: 1851596443}
 --- !u!82 &2093698004
 AudioSource:
