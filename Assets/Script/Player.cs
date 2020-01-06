@@ -51,10 +51,7 @@ public class Player : Entity
         manager.setSkinNumber(skin);
         manager.setMaxHealth(maxHealth);
 
-        if (((!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")))) || !canJump)
-        {
-            GetComponent<AudioSource>().Pause();
-        }
+       
 
         //Falta detectar que no esta tocando suelo para desactivar el sonido de las patas
 
@@ -165,6 +162,13 @@ public class Player : Entity
                 GetComponent<Animator>().SetBool("running", false);
 
             }
+        }
+
+        if (!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")) && canJump)
+        {
+            GetComponent<AudioSource>().Stop();
+            if (!canJump)
+                print("Hola");
         }
 
     }
