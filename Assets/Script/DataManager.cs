@@ -11,7 +11,7 @@ public class DataManager : MonoBehaviour
     public int skin;
     public int difficulty;
 
-    private void Awake()
+    private void Awake()    //Se ejecuta antes de Start()
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
