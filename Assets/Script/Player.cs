@@ -170,17 +170,20 @@ public class Player : Entity
 
     public override void Attack()
     {
-        if (Input.GetKey("b") || (attackTime < 0.8f))   //Validación para hacer animacion de ataque
+        if (Input.GetKeyDown("b") || (attackTime <= 0.8f))   //Validación para hacer animacion de ataque
         {
             if (attackTime > 0.8f)
             {
                 attackTime = 0;
             }
-            GetComponent<Animator>().SetBool("attack", true);
-            GetComponent<Animator>().SetBool("running", false);
-            GetComponent<Animator>().SetBool("jumpping", false);
-            attackTime += Time.deltaTime;
-            attackObject.SetActive(true);
+            else
+            {
+                GetComponent<Animator>().SetBool("attack", true);
+                GetComponent<Animator>().SetBool("running", false);
+                GetComponent<Animator>().SetBool("jumpping", false);
+                attackTime += Time.deltaTime;
+                attackObject.SetActive(true);
+            }
         }
         else
         {
