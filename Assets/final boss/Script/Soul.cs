@@ -18,6 +18,5 @@ public class Soul : MonoBehaviour
         pass += Time.deltaTime;
         if (pass >= 22f)
             gameObject.GetComponent<Renderer>().enabled = false;
-        Debug.Log(pass);
     }
 }
