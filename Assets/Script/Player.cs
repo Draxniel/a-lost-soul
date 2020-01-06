@@ -6,14 +6,13 @@ using UnityEngine.UI;
 
 public class Player : Entity
 {
-    private bool canJump;
+    private bool canJump, attacking, canAttack;
     private float attackTime;
-    public int coins, skin;
-    private int maxHealth;
+    private int coins, skin, maxHealth, damageMultiplier;
     public DataManager manager;
-    public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
-    public int damageMultiplier;
+    public AudioClip jumpSound, walkSound, attackSound;
     public GameObject attackObject;
+    
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -32,6 +31,7 @@ public class Player : Entity
         damageMultiplier = manager.getDifficulty();
         attackTime = 5;
         attackObject.SetActive(false);
+        attacking = false;
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class Player : Entity
         if (stats[Stat.Health] > 0)
         {
             Move();
-            Attack();
+            AttackAnim();
         }
 
         attackObject.GetComponent<Transform>().position = this.GetComponent<Transform>().position; 
@@ -52,10 +52,7 @@ public class Player : Entity
         manager.setSkinNumber(skin);
         manager.setMaxHealth(maxHealth);
 
-        if (((!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")))) && canJump)
-        {
-            GetComponent<AudioSource>().Pause();
-        }
+       
 
         //Falta detectar que no esta tocando suelo para desactivar el sonido de las patas
 
@@ -127,7 +124,8 @@ public class Player : Entity
 
             GetComponent<Rigidbody2D>().AddForce(new Vector2(-46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
-            if (Time.timeScale == 1f)
+
+            if ((Time.timeScale == 1f) && (!attacking))
             {
                 GetComponent<SpriteRenderer>().flipX = true;
             }
@@ -145,7 +143,8 @@ public class Player : Entity
 
             GetComponent<Rigidbody2D>().AddForce(new Vector2(46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
-            if (Time.timeScale == 1f)
+
+            if ((Time.timeScale == 1f) && (!attacking))
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
@@ -166,15 +165,30 @@ public class Player : Entity
             }
         }
 
+        if (!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")) && canJump)
+        {
+            GetComponent<AudioSource>().Pause();
+        }
+
     }
 
-    public override void Attack()
+    public override void Attack(Entity enemy)
+    {
+        if (canAttack)
+        {
+            enemy.TakeDamage(GetStatValue(Stat.Strength));
+            canAttack = false;
+        }
+    }
+
+    public void AttackAnim()
     {
         if (Input.GetKeyDown("b") || (attackTime <= 0.8f))   //Validación para hacer animacion de ataque
         {
             if (attackTime > 0.8f)
             {
                 attackTime = 0;
+                canAttack = true;
             }
             else
             {
@@ -183,12 +197,15 @@ public class Player : Entity
                 GetComponent<Animator>().SetBool("jumpping", false);
                 attackTime += Time.deltaTime;
                 attackObject.SetActive(true);
+                attacking = true;
             }
         }
         else
         {
             GetComponent<Animator>().SetBool("attack", false);
             attackObject.SetActive(false);
+            canAttack = false;
+            attacking = false;
         }
     }
 
@@ -199,8 +216,6 @@ public class Player : Entity
 
     public void takeCoins(int coins)
     {
-        GetComponent<AudioSource>().clip = coinSound;  // Sonido al agarrar una moneda...
-        GetComponent<AudioSource>().Play();
         this.coins += coins;
     }
 

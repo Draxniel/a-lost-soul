@@ -10,6 +10,6 @@ public class textoCoin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CoinNumber.text = (player.coins).ToString();
+        CoinNumber.text = (player.getCoins()).ToString();
     }
 }
