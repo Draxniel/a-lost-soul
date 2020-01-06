@@ -193,6 +193,9 @@ public class Player : Entity
             else
             {
                 GetComponent<Animator>().SetBool("attack", true);
+                GetComponent<AudioSource>().clip = attackSound;
+                if(!GetComponent<AudioSource>().isPlaying)
+                    GetComponent<AudioSource>().Play();
                 GetComponent<Animator>().SetBool("running", false);
                 GetComponent<Animator>().SetBool("jumpping", false);
                 attackTime += Time.deltaTime;
