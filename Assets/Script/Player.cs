@@ -166,9 +166,7 @@ public class Player : Entity
 
         if (!(Input.GetKey("a") || Input.GetKey("left")) && !(Input.GetKey("d") || Input.GetKey("right")) && canJump)
         {
-            GetComponent<AudioSource>().Stop();
-            if (!canJump)
-                print("Hola");
+            GetComponent<AudioSource>().Pause();
         }
 
     }
