@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Store : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class Store : MonoBehaviour
     public AudioClip[] sellerAudioArray;
     public AudioClip powerUpSound;
     public AudioSource sellerSource;
-           
+    public Player player;
+    public Text CoinNumber;
+
     bool playAudio = true;
 
     void Start()
@@ -23,7 +26,7 @@ public class Store : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        CoinNumber.text = (player.getCoins()).ToString();
         if (!vendedor.activeInHierarchy)
         {
             pause();
@@ -33,7 +36,6 @@ public class Store : MonoBehaviour
                 sellerSource.PlayOneShot(sellerSource.clip);
                 playAudio = false;
             }
-
         }
     }
     public void resume()
