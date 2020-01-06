@@ -41,6 +41,5 @@ public class Escena1 : MonoBehaviour
         pass += Time.deltaTime;
         if (pass >= 34)
             SceneManager.LoadScene("Nivel 2", LoadSceneMode.Single);
-        Debug.Log(pass);
     }
 }

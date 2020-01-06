@@ -3093,6 +3093,10 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: 1130333774
     m_ParentHash: 756556552
+  - m_Hash: -1023074735
+    m_ParentHash: 756556552
+  - m_Hash: 1426014820
+    m_ParentHash: 756556552
 --- !u!4 &148603692
 Transform:
   m_ObjectHideFlags: 0
@@ -4631,6 +4635,8 @@ MonoBehaviour:
   - {fileID: 79315386}
   - {fileID: 168194812}
   - {fileID: 0}
+  sellerAudioArray: []
+  sellerSource: {fileID: 0}
 --- !u!114 &222577684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11043,7 +11049,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -241.17123, y: -14.495735, z: -10}
+  m_LocalPosition: {x: -241.37146, y: -14.495735, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23526,7 +23532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124552316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 840.3, y: -190.8, z: 0}
+  m_LocalPosition: {x: 840.3, y: -195, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1183377429}
@@ -42000,7 +42006,7 @@ Rigidbody2D:
   m_GravityScale: 70
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &2093698003
@@ -42016,15 +42022,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1889519334}
-  coins: 0
-  skin: 0
   manager: {fileID: 180615010}
   jumpSound: {fileID: 8300000, guid: 0cc744b6da927684788d344f725db738, type: 3}
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
   attackSound: {fileID: 0}
   coinSound: {fileID: 0}
   buySound: {fileID: 0}
-  damageMultiplier: 0
   attackObject: {fileID: 868066421}
 --- !u!82 &2093698004
 AudioSource:
