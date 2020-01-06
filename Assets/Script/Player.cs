@@ -10,8 +10,9 @@ public class Player : Entity
     private float attackTime;
     private int coins, skin, maxHealth, damageMultiplier;
     public DataManager manager;
-    public AudioClip jumpSound, walkSound, attackSound, coinSound, buySound;
+    public AudioClip jumpSound, walkSound, attackSound;
     public GameObject attackObject;
+    
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -215,8 +216,6 @@ public class Player : Entity
 
     public void takeCoins(int coins)
     {
-        GetComponent<AudioSource>().clip = coinSound;  // Sonido al agarrar una moneda...
-        GetComponent<AudioSource>().Play();
         this.coins += coins;
     }
 

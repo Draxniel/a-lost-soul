@@ -8,6 +8,7 @@ public class Store : MonoBehaviour
     public TransactionManager manager;
     public Item[] items;
     public AudioClip[] sellerAudioArray;
+    public AudioClip powerUpSound;
     public AudioSource sellerSource;
            
     bool playAudio = true;
@@ -44,11 +45,7 @@ public class Store : MonoBehaviour
         playAudio = true;
     }
     void pause()
-    {
-        
-        //AudioClip prueba = sellerAudioArray[Random.Range(0, sellerAudioArray.Length)];
-        //print(prueba);
-        
+    {  
         Time.timeScale = 0f;
         tiendaUI.SetActive(true);
     }
@@ -58,6 +55,7 @@ public class Store : MonoBehaviour
         if (manager.ValidateCoins(item))
         {
             manager.BuyAndBoost(item);
+            sellerSource.PlayOneShot(powerUpSound);
         }
         else
         {
