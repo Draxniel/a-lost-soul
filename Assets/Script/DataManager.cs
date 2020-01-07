@@ -11,14 +11,14 @@ public class DataManager : MonoBehaviour
     public int skin;
     public int difficulty;
 
-    private void Awake()
+    private void Awake()    //Se ejecuta antes de Start()
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
             DontDestroyOnLoad(gameObject);
             stats = new Dictionary<Stat, int>();
-            stats.Add(Stat.Health, 5);
             maxHealth = 5;
+            stats.Add(Stat.Health, maxHealth);
             stats.Add(Stat.Strength, 1);
             stats.Add(Stat.Defense, 1);
             coins = 0;
@@ -35,10 +35,11 @@ public class DataManager : MonoBehaviour
             maxHealth = manager.getMaxHealth();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
-                stats[Stat.Health] = 5;
+                maxHealth = 5;
+                stats[Stat.Health] = maxHealth;
                 stats[Stat.Strength] = 1;
                 stats[Stat.Defense] = 1;
-                maxHealth = 5;
+                coins = 0;
             }
         }
     }
