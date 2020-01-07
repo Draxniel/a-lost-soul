@@ -33,7 +33,10 @@ public class Enemy : Entity
         health = GetStatValue(Stat.Health);
         if (GetStatValue(Stat.Health) == 0)
         {
+            attacking = false;
+            canAttack = false;
             timer += Time.deltaTime;
+            GetComponent<Animator>().SetBool("attack", false);
             GetComponent<Animator>().SetBool("dead", true); //BOOL PARA ANIMACION DE MUERTE
             if (timer >= 1) //Este tiempo se modifica según la duración de l animación de muerte
             {
