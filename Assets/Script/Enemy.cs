@@ -58,7 +58,7 @@ public class Enemy : Entity
         if (attackTime >= 1)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
-            if (player.GetStatValue(Stat.Health) > 0)
+            if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
             {
                 GetComponent<Animator>().SetBool("attack", true);
                 player.TakeDamage(GetStatValue(Stat.Strength));
