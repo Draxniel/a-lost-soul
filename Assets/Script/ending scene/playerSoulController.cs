@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerSoulController : MonoBehaviour
 {
@@ -30,5 +31,6 @@ public class playerSoulController : MonoBehaviour
         }
         else if (pass > 10)
             gameObject.GetComponent<Renderer>().enabled = false;
+        else if (pass > 73) SceneManager.LoadScene("Menu secundario", LoadSceneMode.Single);
     }
 }
