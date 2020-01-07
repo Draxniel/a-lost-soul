@@ -8179,7 +8179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -100.699585, y: -43.776287, z: -10}
+  m_LocalPosition: {x: -56.988846, y: -43.703777, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28298,6 +28298,10 @@ MonoBehaviour:
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
   attackObject: {fileID: 222718386}
+  life: {fileID: 0}
+  CoinNumber: {fileID: 0}
+  Stronger: {fileID: 0}
+  Defense: {fileID: 0}
 --- !u!95 &1801853225
 Animator:
   serializedVersion: 3
@@ -30938,7 +30942,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1807154453
   m_SortingLayer: -2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 94d48ddc1589b5c4c9deda86e0ce5a26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
