@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class playerSoulController : MonoBehaviour
 {
-    float pass;
+    public float pass;
+    public bool end;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +23,22 @@ public class playerSoulController : MonoBehaviour
             gameObject.GetComponent<Renderer>().enabled = true;
             gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1.2f, gameObject.transform.position.z);
         }
-        else if ((gameObject.transform.position.x > 135) && (pass > 8)) {
+        else if ((gameObject.transform.position.x > 135) && (pass > 8))
+        {
             gameObject.transform.position = new Vector3(gameObject.transform.position.x - 1.2f, gameObject.transform.position.y, gameObject.transform.position.z);
         }
         else if ((gameObject.transform.position.y > 94) && (pass > 8))
         {
             gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 1.2f, gameObject.transform.position.z);
         }
-        else if (pass > 10)
+        else if ((pass > 10) && (pass < 69))
+        {
             gameObject.GetComponent<Renderer>().enabled = false;
-        else if (pass > 73) SceneManager.LoadScene("Menu secundario", LoadSceneMode.Single);
+            end = true;
+        }
+        else if ((pass > 70) && (end))
+        {
+            SceneManager.LoadScene("Menu secundario", LoadSceneMode.Single);
+        }
     }
 }
