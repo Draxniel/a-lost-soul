@@ -42,6 +42,8 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
+  - logo: {fileID: 21300000, guid: 9b6e3a9e147d4eb46bcdf607862b3484, type: 3}
+    duration: 3.9
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -262,7 +264,7 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 2800000, guid: cb7811e812951b44ca7515292ed37ed1,
+  resolutionDialogBanner: {fileID: 2800000, guid: ea93d75b197b18549b9477201ea7a5ba,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: Standalone
