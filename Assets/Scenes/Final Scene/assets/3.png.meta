@@ -1,23 +1,17 @@
 fileFormatVersion: 2
-guid: 96caa8936dee88746b91a0b5be18778e
+guid: f1479d6534ab917479d3e2c83408ab71
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spr_Idle_strip_0
-    21300002: spr_Idle_strip_1
-    21300004: spr_Idle_strip_2
-    21300006: spr_Idle_strip_3
-    21300008: spr_Idle_strip_4
-    21300010: spr_Idle_strip_5
-    21300012: spr_Idle_strip_6
-    21300014: spr_Idle_strip_7
-    21300016: spr_Idle_strip_8
-    21300018: spr_Idle_strip_9
-    21300020: spr_Idle_strip_10
-    21300022: spr_Idle_strip_11
-    21300024: spr_Idle_strip_12
-    21300026: spr_Idle_strip_13
-    21300028: spr_Idle_strip_14
-    21300030: spr_Idle_strip_15
+    21300000: 3_0
+    21300002: 3_1
+    21300004: 3_2
+    21300006: 3_3
+    21300008: 3_4
+    21300010: 3_5
+    21300012: 3_6
+    21300014: 3_7
+    21300016: 3_8
+    21300018: 3_9
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -111,12 +105,152 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_Idle_strip_0
+      name: 3_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 19
-        width: 36
+        x: 63
+        y: 20
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab0f9ab06f92a2429fd397940fc8615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 20
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4a57a7151e2ca41b6faa858263272f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_2
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 20
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68e0736bd418714ca2945bda2e4604f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_3
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 20
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b228c6d49f05bc64fbbc49391ccb0300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_4
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 20
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7343758ebfa497a47a7a448dc820d678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_5
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 20
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dec7c35458e1740b3e0612a7520a3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_6
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 20
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a573c8ccdad4d94e97f5b2e80a8f932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_7
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 20
+        width: 34
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -125,19 +259,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a99915c29081754494ff2ea57ad8450
+      spriteID: 84fe7c0f434338d46bcf314486970f14
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Idle_strip_1
+      name: 3_8
       rect:
         serializedVersion: 2
-        x: 232
-        y: 19
-        width: 36
-        height: 37
+        x: 1423
+        y: 20
+        width: 35
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,19 +279,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30a466b2741d81847b78ea49cdece555
+      spriteID: 8067df84efdc15c4a94ffa8af8ef7976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Idle_strip_2
+      name: 3_9
       rect:
         serializedVersion: 2
-        x: 402
-        y: 19
-        width: 36
-        height: 37
+        x: 1593
+        y: 20
+        width: 35
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,267 +299,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d1077f84790a8040b9d8a122929ec19
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_3
-      rect:
-        serializedVersion: 2
-        x: 572
-        y: 19
-        width: 36
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15b349722d9478e4388ce7d9dc066ca2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_4
-      rect:
-        serializedVersion: 2
-        x: 742
-        y: 19
-        width: 36
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 741fbe39b0190354bad7e164cd3d8b80
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_5
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 19
-        width: 36
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d19221dedeae864b919b8fefa1664c2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_6
-      rect:
-        serializedVersion: 2
-        x: 1082
-        y: 19
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e44b46c2c08e00f409aed9b6458ef204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_7
-      rect:
-        serializedVersion: 2
-        x: 1252
-        y: 19
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46c4c4eecf00e4b479b377f2499691b0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_8
-      rect:
-        serializedVersion: 2
-        x: 1422
-        y: 19
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2b4d1366bae677469315b853792e369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_9
-      rect:
-        serializedVersion: 2
-        x: 1592
-        y: 19
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7980599ae2c08344c8f58da020e1d631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_10
-      rect:
-        serializedVersion: 2
-        x: 1762
-        y: 19
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e7dfdc07fb673347a8770b9a9c84ed0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_11
-      rect:
-        serializedVersion: 2
-        x: 1932
-        y: 19
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e566989afe6064b4b8a97316dbbda818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_12
-      rect:
-        serializedVersion: 2
-        x: 2102
-        y: 19
-        width: 36
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e293c2ffe7f22247a05c7b3d241be8b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_13
-      rect:
-        serializedVersion: 2
-        x: 2272
-        y: 19
-        width: 39
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff5d76d14644773439b7babb3ce62340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_14
-      rect:
-        serializedVersion: 2
-        x: 2442
-        y: 19
-        width: 36
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdd56a6b682a1cf408a087c8612b0cf4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_Idle_strip_15
-      rect:
-        serializedVersion: 2
-        x: 2612
-        y: 19
-        width: 36
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4620f7f6e17645342b8dc6e6502a9147
+      spriteID: eacb99ae47bdcd24e8a098e2153245ac
       vertices: []
       indices: 
       edges: []
@@ -433,7 +307,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 791f636a2ffe6114e966cc1a415102c9
+    spriteID: b09c38099cf9fd844a9f55038e45392c
     vertices: []
     indices: 
     edges: []
