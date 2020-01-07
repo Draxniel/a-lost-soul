@@ -12,7 +12,8 @@ public class Player : Entity
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound;
     public GameObject attackObject;
-    
+    public Text life, CoinNumber,Stronger,Defense;
+
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -69,7 +70,10 @@ public class Player : Entity
                 break;
 
         }
-
+        life.text = (GetStatValue(Stat.Health)).ToString();
+        CoinNumber.text = (getCoins()).ToString();
+        Defense.text = (GetStatValue(Stat.Defense)).ToString();
+        Stronger.text = (GetStatValue(Stat.Strength)).ToString();
     }
 
     public override void TakeDamage(int damage) 
