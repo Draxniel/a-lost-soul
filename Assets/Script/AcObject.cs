@@ -27,10 +27,7 @@ public class AcObject : MonoBehaviour
             else
             {
                 active = true;
-
-                GetComponent<AudioSource>().Play();
-                Invoke("vanishObject",0.3f);
-                //gameObject.SetActive(false);
+                gameObject.SetActive(false);
             }
         }
         ActivateCell();
@@ -59,8 +56,4 @@ public class AcObject : MonoBehaviour
         }
     }
 
-    public void vanishObject()
-    {
-        gameObject.SetActive(false);
-    }
 }

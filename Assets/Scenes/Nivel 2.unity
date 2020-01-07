@@ -11054,7 +11054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -284.79437, y: -14.495735, z: -10}
+  m_LocalPosition: {x: -241.32996, y: -14.495735, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42664,7 +42664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7be80f0c61ec04d847f5ddf3eec513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 1561549710}
+  healthBar: {fileID: 1176931827}
   manager: {fileID: 180615010}
   jumpSound: {fileID: 8300000, guid: 0cc744b6da927684788d344f725db738, type: 3}
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
