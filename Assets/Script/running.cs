@@ -20,7 +20,7 @@ public class running : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate() //Update
     {
         //skin = manager.getSkinNumber();
         switch (skin)
