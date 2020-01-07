@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Knight : MonoBehaviour
 
@@ -15,7 +16,7 @@ public class Knight : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         skin = manager.getSkinNumber();
         switch (skin)
@@ -36,7 +37,7 @@ public class Knight : MonoBehaviour
         }
         else
             gameObject.GetComponent<Animator>().SetBool("Running", true);
-        if (pass > 64) Application.Quit();
+        if (pass > 62) SceneManager.LoadScene("Ending scene", LoadSceneMode.Single);
 
 
 
