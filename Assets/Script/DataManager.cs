@@ -8,7 +8,7 @@ public class DataManager : MonoBehaviour
     public static DataManager manager;
     private Dictionary<Stat, int> stats;
     private int maxHealth;
-    private static int coins;
+    public int coins;
     public int skin;
     public int difficulty;
     public static int level;
@@ -28,7 +28,6 @@ public class DataManager : MonoBehaviour
             skin = 1;
             difficulty = 1;
             level = 1;
-            DataManager.saveGame();
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
@@ -38,7 +37,6 @@ public class DataManager : MonoBehaviour
             difficulty = manager.getDifficulty();
             maxHealth = manager.getMaxHealth();
             level = manager.getLevel();
-            manager.loadGame();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
                 if (level == 1){
@@ -53,8 +51,8 @@ public class DataManager : MonoBehaviour
                     maxHealth = Checkpoint.gameSave.maxHealth;
                     stats[Stat.Health] = maxHealth;
                     stats[Stat.Defense] = Checkpoint.gameSave.stats[Stat.Defense];
-                    stats[Stat.Strength] = Checkpoint.gameSave.stats[Stat.Strength];
-                    coins = Checkpoint.gameSave.getCoins();
+                    stats[Stat.Strength] = Checkpoint.gameSave.stats[Stat.Strength]; ;
+                    coins = Checkpoint.gameSave.coins;
                 }
             }
         }
@@ -126,7 +124,6 @@ public class DataManager : MonoBehaviour
     }
     public static void saveGame()
     {
-        manager.setCoins(coins);
         Checkpoint.saveData(manager);
     }
     public void loadGame()

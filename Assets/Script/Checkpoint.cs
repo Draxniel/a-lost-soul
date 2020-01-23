@@ -5,7 +5,6 @@ using UnityEngine;
 public static class Checkpoint
 {
     public static DataManager gameSave;
-
     public static void saveData(DataManager data)
     {
         gameSave = data;
