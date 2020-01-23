@@ -48,6 +48,7 @@ public class DataManager : MonoBehaviour
                 }
                 else
                 {
+                    manager.loadGame();
                     maxHealth = Checkpoint.gameSave.maxHealth;
                     stats[Stat.Health] = maxHealth;
                     stats[Stat.Defense] = Checkpoint.gameSave.stats[Stat.Defense];
