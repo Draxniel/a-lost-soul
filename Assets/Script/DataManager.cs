@@ -7,9 +7,11 @@ public class DataManager : MonoBehaviour
 
     public static DataManager manager;
     private Dictionary<Stat, int> stats;
-    private int coins, maxHealth; 
+    private int maxHealth;
+    private static int coins;
     public int skin;
     public int difficulty;
+    public static int level;
 
     private void Awake()    //Se ejecuta antes de Start()
     {
@@ -25,6 +27,8 @@ public class DataManager : MonoBehaviour
             manager = this; //Entonces se asigna este objeto a la variable estática para mantenerse en la ejecución de todo el juego
             skin = 1;
             difficulty = 1;
+            level = 1;
+            DataManager.saveGame();
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
@@ -33,13 +37,25 @@ public class DataManager : MonoBehaviour
             skin = manager.getSkinNumber();
             difficulty = manager.getDifficulty();
             maxHealth = manager.getMaxHealth();
+            level = manager.getLevel();
+            manager.loadGame();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
-                maxHealth = 5;
-                stats[Stat.Health] = maxHealth;
-                stats[Stat.Strength] = 1;
-                stats[Stat.Defense] = 1;
-                coins = 0;
+                if (level == 1){
+                    maxHealth = 5;
+                    stats[Stat.Health] = maxHealth;
+                    stats[Stat.Defense] = 1;
+                    stats[Stat.Strength] = 1;
+                    coins = 0;
+                }
+                else
+                {
+                    maxHealth = Checkpoint.gameSave.maxHealth;
+                    stats[Stat.Health] = maxHealth;
+                    stats[Stat.Defense] = Checkpoint.gameSave.stats[Stat.Defense];
+                    stats[Stat.Strength] = Checkpoint.gameSave.stats[Stat.Strength];
+                    coins = Checkpoint.gameSave.getCoins();
+                }
             }
         }
     }
@@ -47,10 +63,18 @@ public class DataManager : MonoBehaviour
     private void Update()   //Se actualizan los datos del atributo estático
     {
         manager.setStats(stats);
-        manager.setCoins(coins);
         manager.setSkinNumber(skin);
         manager.setMaxHealth(maxHealth);
         manager.setDifficulty(difficulty);
+    }
+
+    public static void setLevel()
+    {
+        level += 1;
+    }
+    public int getLevel()
+    {
+        return level;
     }
 
     public Dictionary<Stat, int> getStats()
@@ -99,5 +123,14 @@ public class DataManager : MonoBehaviour
     public void setMaxHealth(int maxHealth)
     {
         this.maxHealth = maxHealth;
+    }
+    public static void saveGame()
+    {
+        manager.setCoins(coins);
+        Checkpoint.saveData(manager);
+    }
+    public void loadGame()
+    {
+       manager = Checkpoint.loadData();
     }
 }
