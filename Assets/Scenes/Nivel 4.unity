@@ -1051,9 +1051,10 @@ GameObject:
   - component: {fileID: 84817395}
   - component: {fileID: 84817394}
   - component: {fileID: 84817393}
+  - component: {fileID: 84817398}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (13)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1180,7 +1181,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &84817397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1229,6 +1234,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &84817398
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84817391}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &95436398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,9 +1269,10 @@ GameObject:
   - component: {fileID: 95436402}
   - component: {fileID: 95436401}
   - component: {fileID: 95436400}
+  - component: {fileID: 95436405}
   m_Layer: 0
   m_Name: Minotauro (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1278,7 +1305,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &95436401
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1422,6 +1453,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &95436405
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95436398}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &100059977
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222718388}
   - component: {fileID: 222718387}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Attack
   m_TagString: attack
   m_Icon: {fileID: 0}
@@ -3261,9 +3313,10 @@ GameObject:
   - component: {fileID: 226376978}
   - component: {fileID: 226376977}
   - component: {fileID: 226376976}
+  - component: {fileID: 226376981}
   m_Layer: 0
   m_Name: Minotauro (6)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3296,7 +3349,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &226376977
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3440,6 +3497,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &226376981
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226376974}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &254471613
 GameObject:
   m_ObjectHideFlags: 0
@@ -3666,9 +3744,10 @@ GameObject:
   - component: {fileID: 258838641}
   - component: {fileID: 258838640}
   - component: {fileID: 258838639}
+  - component: {fileID: 258838644}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3795,7 +3874,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &258838643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3844,6 +3927,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &258838644
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258838637}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &260802866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5709,9 +5813,10 @@ GameObject:
   - component: {fileID: 387208002}
   - component: {fileID: 387208001}
   - component: {fileID: 387208000}
+  - component: {fileID: 387208005}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5838,7 +5943,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &387208004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5887,6 +5996,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &387208005
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387207998}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &390497150
 GameObject:
   m_ObjectHideFlags: 0
@@ -6194,7 +6324,7 @@ Transform:
   m_LocalScale: {x: 2.3081656, y: 28.476358, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405968017
 GameObject:
@@ -6210,9 +6340,10 @@ GameObject:
   - component: {fileID: 405968021}
   - component: {fileID: 405968020}
   - component: {fileID: 405968019}
+  - component: {fileID: 405968024}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6225,7 +6356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405968017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 812.9, y: -13, z: 0}
+  m_LocalPosition: {x: 812.8999, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -6339,7 +6470,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &405968023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6388,6 +6523,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &405968024
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405968017}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &428395114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,9 +6716,10 @@ GameObject:
   - component: {fileID: 443404009}
   - component: {fileID: 443404008}
   - component: {fileID: 443404007}
+  - component: {fileID: 443404012}
   m_Layer: 0
   m_Name: Minotauro (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6595,7 +6752,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &443404008
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6739,6 +6900,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &443404012
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443404005}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &449329860
 GameObject:
   m_ObjectHideFlags: 0
@@ -7468,9 +7650,10 @@ GameObject:
   - component: {fileID: 480115328}
   - component: {fileID: 480115327}
   - component: {fileID: 480115326}
+  - component: {fileID: 480115331}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (21)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7597,7 +7780,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &480115330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7646,6 +7833,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &480115331
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480115324}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &480354969
 GameObject:
   m_ObjectHideFlags: 0
@@ -7966,9 +8174,10 @@ GameObject:
   - component: {fileID: 502143024}
   - component: {fileID: 502143023}
   - component: {fileID: 502143022}
+  - component: {fileID: 502143027}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (16)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8095,7 +8304,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &502143026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8144,6 +8357,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &502143027
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502143020}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &506846315
 GameObject:
   m_ObjectHideFlags: 0
@@ -8293,7 +8527,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -8406,7 +8640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.04741, y: -43.64416, z: -10}
+  m_LocalPosition: {x: -57.442703, y: -43.644833, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8757,7 +8991,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &545581267
 GameObject:
@@ -9237,9 +9471,10 @@ GameObject:
   - component: {fileID: 562115603}
   - component: {fileID: 562115608}
   - component: {fileID: 562115607}
+  - component: {fileID: 562115609}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9319,7 +9554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562115602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.15, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 56.149902, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -9339,7 +9574,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &562115607
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9415,6 +9654,27 @@ PolygonCollider2D:
       - {x: 2.9170074, y: 1.0485363}
       - {x: 3.0158997, y: 3.8158665}
       - {x: -0.070243835, y: 6.9310226}
+--- !u!50 &562115609
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562115602}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &564562046
 GameObject:
   m_ObjectHideFlags: 0
@@ -9641,9 +9901,10 @@ GameObject:
   - component: {fileID: 567158605}
   - component: {fileID: 567158604}
   - component: {fileID: 567158603}
+  - component: {fileID: 567158608}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (17)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9770,7 +10031,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &567158607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9819,6 +10084,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &567158608
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567158601}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &572898144
 GameObject:
   m_ObjectHideFlags: 0
@@ -11178,9 +11464,10 @@ GameObject:
   - component: {fileID: 679223957}
   - component: {fileID: 679223956}
   - component: {fileID: 679223955}
+  - component: {fileID: 679223960}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (15)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11307,7 +11594,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &679223959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11356,6 +11647,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &679223960
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679223953}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &698421958
 GameObject:
   m_ObjectHideFlags: 0
@@ -11370,9 +11682,10 @@ GameObject:
   - component: {fileID: 698421962}
   - component: {fileID: 698421961}
   - component: {fileID: 698421960}
+  - component: {fileID: 698421965}
   m_Layer: 0
   m_Name: Minotauro (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11405,7 +11718,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &698421961
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11549,6 +11866,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &698421965
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698421958}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &698918717
 GameObject:
   m_ObjectHideFlags: 0
@@ -11563,9 +11901,10 @@ GameObject:
   - component: {fileID: 698918721}
   - component: {fileID: 698918720}
   - component: {fileID: 698918719}
+  - component: {fileID: 698918724}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (14)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11692,7 +12031,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &698918723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11741,6 +12084,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &698918724
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698918717}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &703390786
 GameObject:
   m_ObjectHideFlags: 0
@@ -11896,6 +12260,12 @@ Transform:
   - {fileID: 679223954}
   - {fileID: 502143021}
   - {fileID: 567158602}
+  - {fileID: 1988646213}
+  - {fileID: 1646331385}
+  - {fileID: 1953457870}
+  - {fileID: 1446136173}
+  - {fileID: 1327875875}
+  - {fileID: 1097398157}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11969,7 +12339,7 @@ Transform:
   m_LocalScale: {x: 2.88552, y: 4.652901, z: 2.88552}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &713543363
 GameObject:
@@ -12483,9 +12853,10 @@ GameObject:
   - component: {fileID: 792360142}
   - component: {fileID: 792360141}
   - component: {fileID: 792360140}
+  - component: {fileID: 792360145}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (7)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12612,7 +12983,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &792360144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12661,6 +13036,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &792360145
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792360138}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &799453288
 GameObject:
   m_ObjectHideFlags: 0
@@ -12781,9 +13177,10 @@ GameObject:
   - component: {fileID: 806225617}
   - component: {fileID: 806225616}
   - component: {fileID: 806225615}
+  - component: {fileID: 806225620}
   m_Layer: 0
   m_Name: Minotauro (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12816,7 +13213,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &806225616
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12960,6 +13361,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &806225620
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806225613}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &819991147
 GameObject:
   m_ObjectHideFlags: 0
@@ -13114,7 +13536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &833510609
 GameObject:
@@ -13633,9 +14055,10 @@ GameObject:
   - component: {fileID: 846878781}
   - component: {fileID: 846878780}
   - component: {fileID: 846878779}
+  - component: {fileID: 846878784}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (12)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13762,7 +14185,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &846878783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13811,6 +14238,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &846878784
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846878777}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &856417122
 GameObject:
   m_ObjectHideFlags: 0
@@ -13881,7 +14329,7 @@ Transform:
   m_LocalScale: {x: 2.88552, y: 4.652901, z: 2.88552}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &859464641
 GameObject:
@@ -14400,9 +14848,10 @@ GameObject:
   - component: {fileID: 934486787}
   - component: {fileID: 934486786}
   - component: {fileID: 934486785}
+  - component: {fileID: 934486790}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (6)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14529,7 +14978,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &934486789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14578,6 +15031,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &934486790
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934486783}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &945981359
 GameObject:
   m_ObjectHideFlags: 0
@@ -15397,9 +15871,10 @@ GameObject:
   - component: {fileID: 993418216}
   - component: {fileID: 993418215}
   - component: {fileID: 993418214}
+  - component: {fileID: 993418217}
   m_Layer: 0
   m_Name: Minotauro
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15499,7 +15974,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &993418215
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15576,6 +16055,27 @@ PolygonCollider2D:
       - {x: 24, y: -20.5}
       - {x: 27.717476, y: -15.291687}
       - {x: 26, y: 8.5}
+--- !u!50 &993418217
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993418210}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1016518367
 GameObject:
   m_ObjectHideFlags: 0
@@ -15802,9 +16302,10 @@ GameObject:
   - component: {fileID: 1028850216}
   - component: {fileID: 1028850215}
   - component: {fileID: 1028850214}
+  - component: {fileID: 1028850219}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (19)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15931,7 +16432,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1028850218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15980,6 +16485,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1028850219
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028850212}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1035054103
 GameObject:
   m_ObjectHideFlags: 0
@@ -16252,9 +16778,10 @@ GameObject:
   - component: {fileID: 1044766066}
   - component: {fileID: 1044766065}
   - component: {fileID: 1044766064}
+  - component: {fileID: 1044766069}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (22)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16381,7 +16908,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1044766068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16430,6 +16961,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1044766069
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044766062}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1045105308
 GameObject:
   m_ObjectHideFlags: 0
@@ -16985,9 +17537,10 @@ GameObject:
   - component: {fileID: 1093980270}
   - component: {fileID: 1093980269}
   - component: {fileID: 1093980268}
+  - component: {fileID: 1093980273}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (9)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17114,7 +17667,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1093980272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17163,6 +17720,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1093980273
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093980266}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1096051994
 GameObject:
   m_ObjectHideFlags: 0
@@ -17283,9 +17861,10 @@ GameObject:
   - component: {fileID: 1097398154}
   - component: {fileID: 1097398153}
   - component: {fileID: 1097398152}
+  - component: {fileID: 1097398158}
   m_Layer: 0
   m_Name: Ciclope (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17385,7 +17964,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1097398155
 Animator:
   serializedVersion: 3
@@ -17460,13 +18043,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097398151}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11279.9, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5620.95, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1097398158
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097398151}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1100478615
 GameObject:
   m_ObjectHideFlags: 0
@@ -17481,9 +18085,10 @@ GameObject:
   - component: {fileID: 1100478619}
   - component: {fileID: 1100478618}
   - component: {fileID: 1100478617}
+  - component: {fileID: 1100478622}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17496,7 +18101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100478615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 125.8, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 125.799805, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -17610,7 +18215,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1100478621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17659,6 +18268,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1100478622
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100478615}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1102501916
 GameObject:
   m_ObjectHideFlags: 0
@@ -17858,9 +18488,10 @@ GameObject:
   - component: {fileID: 1112381806}
   - component: {fileID: 1112381805}
   - component: {fileID: 1112381804}
+  - component: {fileID: 1112381809}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (10)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17873,7 +18504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112381802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1482.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 1482.0999, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -17987,7 +18618,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1112381808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18036,6 +18671,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1112381809
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112381802}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1122738828
 GameObject:
   m_ObjectHideFlags: 0
@@ -18156,9 +18812,10 @@ GameObject:
   - component: {fileID: 1132415798}
   - component: {fileID: 1132415797}
   - component: {fileID: 1132415796}
+  - component: {fileID: 1132415801}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (6)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18171,7 +18828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132415794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1342.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 1342.1001, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -18285,7 +18942,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1132415800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18334,6 +18995,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1132415801
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132415794}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1148764483
 GameObject:
   m_ObjectHideFlags: 0
@@ -18348,9 +19030,10 @@ GameObject:
   - component: {fileID: 1148764487}
   - component: {fileID: 1148764486}
   - component: {fileID: 1148764485}
+  - component: {fileID: 1148764490}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18477,7 +19160,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1148764489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18526,6 +19213,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1148764490
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148764483}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1151636099
 GameObject:
   m_ObjectHideFlags: 0
@@ -18540,9 +19248,10 @@ GameObject:
   - component: {fileID: 1151636103}
   - component: {fileID: 1151636102}
   - component: {fileID: 1151636101}
+  - component: {fileID: 1151636106}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (17)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18669,7 +19378,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1151636105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18718,6 +19431,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1151636106
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151636099}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1157873388
 GameObject:
   m_ObjectHideFlags: 0
@@ -18811,9 +19545,10 @@ GameObject:
   - component: {fileID: 1159077016}
   - component: {fileID: 1159077015}
   - component: {fileID: 1159077014}
+  - component: {fileID: 1159077019}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (15)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18940,7 +19675,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1159077018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18989,6 +19728,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1159077019
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159077012}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1161630282
 GameObject:
   m_ObjectHideFlags: 0
@@ -19083,9 +19843,10 @@ GameObject:
   - component: {fileID: 1168080177}
   - component: {fileID: 1168080176}
   - component: {fileID: 1168080175}
+  - component: {fileID: 1168080180}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (11)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19212,7 +19973,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1168080179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19261,6 +20026,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1168080180
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168080173}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1175226125
 GameObject:
   m_ObjectHideFlags: 0
@@ -20090,9 +20876,10 @@ GameObject:
   - component: {fileID: 1216282533}
   - component: {fileID: 1216282532}
   - component: {fileID: 1216282531}
+  - component: {fileID: 1216282536}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (8)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20219,7 +21006,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1216282535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20268,6 +21059,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1216282536
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216282529}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1224431885
 GameObject:
   m_ObjectHideFlags: 0
@@ -20600,9 +21412,10 @@ GameObject:
   - component: {fileID: 1281898166}
   - component: {fileID: 1281898165}
   - component: {fileID: 1281898164}
+  - component: {fileID: 1281898169}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (13)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20729,7 +21542,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1281898168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20778,6 +21595,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1281898169
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281898162}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1285199634
 GameObject:
   m_ObjectHideFlags: 0
@@ -21060,9 +21898,10 @@ GameObject:
   - component: {fileID: 1289442822}
   - component: {fileID: 1289442821}
   - component: {fileID: 1289442820}
+  - component: {fileID: 1289442825}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21075,7 +21914,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289442818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 160.3, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 160.2998, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -21189,7 +22028,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1289442824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21238,6 +22081,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1289442825
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289442818}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1290471619
 GameObject:
   m_ObjectHideFlags: 0
@@ -21800,9 +22664,10 @@ GameObject:
   - component: {fileID: 1327875872}
   - component: {fileID: 1327875871}
   - component: {fileID: 1327875870}
+  - component: {fileID: 1327875876}
   m_Layer: 0
   m_Name: Ciclope (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21902,7 +22767,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1327875873
 Animator:
   serializedVersion: 3
@@ -21977,13 +22846,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327875869}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11153.6, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5557.8, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1327875876
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327875869}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1336938635
 GameObject:
   m_ObjectHideFlags: 0
@@ -22104,9 +22994,10 @@ GameObject:
   - component: {fileID: 1357989252}
   - component: {fileID: 1357989256}
   - component: {fileID: 1357989255}
+  - component: {fileID: 1357989258}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22186,7 +23077,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357989251}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 629.4, y: -13, z: 0}
+  m_LocalPosition: {x: 629.3999, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -22281,7 +23172,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
+--- !u!50 &1357989258
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357989251}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1380479302
 GameObject:
   m_ObjectHideFlags: 0
@@ -22614,9 +23530,10 @@ GameObject:
   - component: {fileID: 1391009181}
   - component: {fileID: 1391009180}
   - component: {fileID: 1391009179}
+  - component: {fileID: 1391009184}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (8)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22629,7 +23546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391009177}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1410.9, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 1410.8999, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -22743,7 +23660,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1391009183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22792,6 +23713,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1391009184
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391009177}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1407647334
 GameObject:
   m_ObjectHideFlags: 0
@@ -23070,9 +24012,10 @@ GameObject:
   - component: {fileID: 1416523931}
   - component: {fileID: 1416523930}
   - component: {fileID: 1416523929}
+  - component: {fileID: 1416523934}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23085,7 +24028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416523927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 237.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 237.1001, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -23199,7 +24142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1416523933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23248,6 +24195,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1416523934
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416523927}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1417904256
 GameObject:
   m_ObjectHideFlags: 0
@@ -23675,9 +24643,10 @@ GameObject:
   - component: {fileID: 1446136170}
   - component: {fileID: 1446136169}
   - component: {fileID: 1446136168}
+  - component: {fileID: 1446136174}
   m_Layer: 0
   m_Name: Ciclope (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23777,7 +24746,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1446136171
 Animator:
   serializedVersion: 3
@@ -23852,13 +24825,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446136167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11026.4, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5494.2, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1446136174
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446136167}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1452516399
 GameObject:
   m_ObjectHideFlags: 0
@@ -25099,9 +26093,10 @@ GameObject:
   - component: {fileID: 1536035315}
   - component: {fileID: 1536035314}
   - component: {fileID: 1536035313}
+  - component: {fileID: 1536035318}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (16)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25228,7 +26223,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1536035317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25277,6 +26276,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1536035318
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536035311}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1537300839
 GameObject:
   m_ObjectHideFlags: 0
@@ -25582,9 +26602,10 @@ GameObject:
   - component: {fileID: 1575829564}
   - component: {fileID: 1575829563}
   - component: {fileID: 1575829562}
+  - component: {fileID: 1575829567}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (18)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25711,7 +26732,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1575829566
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25760,6 +26785,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1575829567
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575829560}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1584202077
 GameObject:
   m_ObjectHideFlags: 0
@@ -25853,9 +26899,10 @@ GameObject:
   - component: {fileID: 1587717232}
   - component: {fileID: 1587717231}
   - component: {fileID: 1587717230}
+  - component: {fileID: 1587717235}
   m_Layer: 0
   m_Name: Minotauro (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25888,7 +26935,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &1587717231
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26032,6 +27083,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1587717235
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587717228}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1632983339
 GameObject:
   m_ObjectHideFlags: 0
@@ -26343,9 +27415,10 @@ GameObject:
   - component: {fileID: 1646331382}
   - component: {fileID: 1646331381}
   - component: {fileID: 1646331380}
+  - component: {fileID: 1646331386}
   m_Layer: 0
   m_Name: Ciclope (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26445,7 +27518,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1646331383
 Animator:
   serializedVersion: 3
@@ -26520,13 +27597,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646331379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8634.8, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4298.4, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1646331386
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646331379}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1651543861
 GameObject:
   m_ObjectHideFlags: 0
@@ -26832,9 +27930,10 @@ GameObject:
   - component: {fileID: 1682687207}
   - component: {fileID: 1682687206}
   - component: {fileID: 1682687205}
+  - component: {fileID: 1682687210}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (7)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26961,7 +28060,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1682687209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27010,6 +28113,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1682687210
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682687203}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1687027294
 GameObject:
   m_ObjectHideFlags: 0
@@ -27858,9 +28982,10 @@ GameObject:
   - component: {fileID: 1740094371}
   - component: {fileID: 1740094370}
   - component: {fileID: 1740094369}
+  - component: {fileID: 1740094374}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (23)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27987,7 +29112,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1740094373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28036,6 +29165,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1740094374
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740094367}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1743504273
 GameObject:
   m_ObjectHideFlags: 0
@@ -28606,9 +29756,10 @@ GameObject:
   - component: {fileID: 1780803589}
   - component: {fileID: 1780803588}
   - component: {fileID: 1780803587}
+  - component: {fileID: 1780803592}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28621,7 +29772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780803585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 718.7, y: -13, z: 0}
+  m_LocalPosition: {x: 718.69995, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -28735,7 +29886,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1780803591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28784,6 +29939,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1780803592
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780803585}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1801853223
 GameObject:
   m_ObjectHideFlags: 0
@@ -29100,7 +30276,7 @@ Transform:
   m_LocalScale: {x: 2.88552, y: 4.652901, z: 2.88552}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1822204687
 MonoBehaviour:
@@ -29419,9 +30595,10 @@ GameObject:
   - component: {fileID: 1838861954}
   - component: {fileID: 1838861953}
   - component: {fileID: 1838861952}
+  - component: {fileID: 1838861957}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29434,7 +30611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838861950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 673.3, y: -13, z: 0}
+  m_LocalPosition: {x: 673.30005, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -29548,7 +30725,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1838861956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29597,6 +30778,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1838861957
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838861950}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1843081605
 GameObject:
   m_ObjectHideFlags: 0
@@ -29929,9 +31131,10 @@ GameObject:
   - component: {fileID: 1857118034}
   - component: {fileID: 1857118033}
   - component: {fileID: 1857118032}
+  - component: {fileID: 1857118037}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (20)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30058,7 +31261,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1857118036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30107,6 +31314,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1857118037
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857118030}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1893382797
 GameObject:
   m_ObjectHideFlags: 0
@@ -30405,9 +31633,10 @@ GameObject:
   - component: {fileID: 1910433499}
   - component: {fileID: 1910433498}
   - component: {fileID: 1910433497}
+  - component: {fileID: 1910433502}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (9)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30534,7 +31763,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1910433501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30583,6 +31816,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1910433502
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910433495}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1912593284
 GameObject:
   m_ObjectHideFlags: 0
@@ -30597,9 +31851,10 @@ GameObject:
   - component: {fileID: 1912593288}
   - component: {fileID: 1912593287}
   - component: {fileID: 1912593286}
+  - component: {fileID: 1912593291}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (14)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30726,7 +31981,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1912593290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30775,6 +32034,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1912593291
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912593284}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1918517837
 GameObject:
   m_ObjectHideFlags: 0
@@ -30895,9 +32175,10 @@ GameObject:
   - component: {fileID: 1953457867}
   - component: {fileID: 1953457866}
   - component: {fileID: 1953457865}
+  - component: {fileID: 1953457871}
   m_Layer: 0
   m_Name: Ciclope (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30997,7 +32278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1953457868
 Animator:
   serializedVersion: 3
@@ -31072,13 +32357,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953457864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9867.9, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4914.95, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1953457871
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953457864}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1954177038
 GameObject:
   m_ObjectHideFlags: 0
@@ -31483,9 +32789,10 @@ GameObject:
   - component: {fileID: 1988646216}
   - component: {fileID: 1988646215}
   - component: {fileID: 1988646214}
+  - component: {fileID: 1988646217}
   m_Layer: 0
   m_Name: Ciclope
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31564,12 +32871,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988646210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7342, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3652, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1988646214
 PolygonCollider2D:
@@ -31666,7 +32973,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
+--- !u!50 &1988646217
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988646210}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1991715226
 GameObject:
   m_ObjectHideFlags: 0
@@ -31999,9 +33331,10 @@ GameObject:
   - component: {fileID: 2048197498}
   - component: {fileID: 2048197497}
   - component: {fileID: 2048197496}
+  - component: {fileID: 2048197501}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (12)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32128,7 +33461,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2048197500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32177,6 +33514,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2048197501
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048197494}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2061145473
 GameObject:
   m_ObjectHideFlags: 0
@@ -32369,9 +33727,10 @@ GameObject:
   - component: {fileID: 2078639370}
   - component: {fileID: 2078639369}
   - component: {fileID: 2078639368}
+  - component: {fileID: 2078639373}
   m_Layer: 0
   m_Name: Cobra Sprite Sheet_0 (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32384,7 +33743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078639366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 198.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 198.1001, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -32498,7 +33857,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2078639372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32547,6 +33910,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2078639373
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078639366}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2090173372
 GameObject:
   m_ObjectHideFlags: 0
@@ -32825,9 +34209,10 @@ GameObject:
   - component: {fileID: 2105212443}
   - component: {fileID: 2105212442}
   - component: {fileID: 2105212441}
+  - component: {fileID: 2105212446}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (11)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32954,7 +34339,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2105212445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33003,6 +34392,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2105212446
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105212439}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2109733678
 GameObject:
   m_ObjectHideFlags: 0
@@ -33112,7 +34522,7 @@ RectTransform:
   m_Children:
   - {fileID: 1035973645}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -34019,9 +35429,10 @@ GameObject:
   - component: {fileID: 2141742885}
   - component: {fileID: 2141742884}
   - component: {fileID: 2141742883}
+  - component: {fileID: 2141742888}
   m_Layer: 0
   m_Name: Dwarf Sprite Sheet_0 (10)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34148,7 +35559,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2141742887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34197,3 +35612,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2141742888
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141742881}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
