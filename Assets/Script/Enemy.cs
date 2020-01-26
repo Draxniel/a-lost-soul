@@ -88,7 +88,7 @@ public class Enemy : Entity
             transform.position,
             player.transform.position - transform.position,
             visionRadius,
-            1 << LayerMask.NameToLayer("Default"));
+            1 << LayerMask.NameToLayer("Player"));
 
         Vector3 forward = transform.TransformDirection(player.transform.position - transform.position);
 
@@ -98,14 +98,13 @@ public class Enemy : Entity
         {
             if (hit.collider.tag == "Player")
             {
-                Debug.Log("Entre manao ahora si cambio");
                 target = player.transform.position;
             }
         }
 
         float distance = Vector3.Distance(target, transform.position);
         Vector3 dir = (target - transform.position).normalized;
-        dir.y = 0;
+        dir.y = 0;  //Colocamos Y en cero ya que no se deben mover en esa coordenada 
 
         if (target != initialPosition && distance < attackkRadius)
         {
@@ -113,11 +112,20 @@ public class Enemy : Entity
         }
         else
         {
+            if (dir.x > 0)  //Validacion para que la animacion vaya con respecto a la direccion
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
             //Animaciones de movimiento
         }
 
-        if (target == initialPosition && distance < 0.02f)
+        if (target == initialPosition && distance < 1f)  //Validacion para que al estar muy cerca de su posicion inicial rectorne a ella y no se quede en un bucle intentando llegar
         {
             transform.position = initialPosition;
         }
@@ -129,7 +137,7 @@ public class Enemy : Entity
     public override void Attack(Entity player)
     {
         attacking = true;
-        if (attackTime >= 1)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        if (attackTime >= 0.8f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
