@@ -49,11 +49,11 @@ public class DataManager : MonoBehaviour
                 else
                 {
                     manager.loadGame();
-                    maxHealth = Checkpoint.gameSave.maxHealth;
+                    maxHealth = manager.maxHealth;
                     stats[Stat.Health] = maxHealth;
-                    stats[Stat.Defense] = Checkpoint.gameSave.stats[Stat.Defense];
-                    stats[Stat.Strength] = Checkpoint.gameSave.stats[Stat.Strength]; ;
-                    coins = Checkpoint.gameSave.coins;
+                    stats[Stat.Defense] = manager.stats[Stat.Defense];
+                    stats[Stat.Strength] = manager.stats[Stat.Strength]; ;
+                    coins = manager.coins;
                 }
             }
         }
@@ -67,9 +67,13 @@ public class DataManager : MonoBehaviour
         manager.setDifficulty(difficulty);
     }
 
-    public static void setLevel()
+    public static void passLevel()
     {
         level += 1;
+    }
+    public void setLevel(int levelNumber)
+    {
+        level = levelNumber;
     }
     public int getLevel()
     {

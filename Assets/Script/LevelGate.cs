@@ -16,7 +16,8 @@ public class LevelGate : MonoBehaviour
     {
         SceneManager.LoadScene(escenas, LoadSceneMode.Single);
 
-        DataManager.setLevel();
+        DataManager.passLevel();
         DataManager.saveGame();
+        DataSave.saveCurrentGame();
     }
 }

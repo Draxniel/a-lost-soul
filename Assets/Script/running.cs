@@ -53,4 +53,12 @@ public class running : MonoBehaviour
         Debug.Log("Quitting game...");
         Application.Quit();
     }
+
+    public void loadGame()
+    {
+      /* PlayerData data = DataSave.loadCurrentGame();
+        string level = "Nivel " + data.level;
+        Debug.Log(level);
+        SceneManager.LoadScene(level, LoadSceneMode.Single);*/
+    }
 }
