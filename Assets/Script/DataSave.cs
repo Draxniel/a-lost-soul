@@ -15,7 +15,7 @@ public static class DataSave
         PlayerData data = new PlayerData();
         formatter.Serialize(stream, data);
         stream.Close();
-        
+        Debug.Log("GAME SAVED ON FILE");
     }
 
     public static PlayerData loadCurrentGame()
@@ -34,5 +34,11 @@ public static class DataSave
             Debug.LogError("FILE NOT FOUND in "+path);
             return null;
         }
+    }
+    public static void deleteCurrentData()
+    {
+        Debug.Log("DATA DELETED");
+        string path = Application.persistentDataPath + "/player.data";
+        File.Delete(path);
     }
 }

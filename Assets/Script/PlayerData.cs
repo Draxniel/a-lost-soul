@@ -13,11 +13,14 @@ public class PlayerData
 
     public PlayerData()
     {
-        level = Checkpoint.gameSave.getLevel();
-        skin = Checkpoint.gameSave.getSkinNumber();
-        coins = Checkpoint.gameSave.getCoins();
-        maxHealth = Checkpoint.gameSave.getMaxHealth();
-        difficulty = Checkpoint.gameSave.getDifficulty();
-        stats = Checkpoint.gameSave.getStats();
+        if (Checkpoint.gameSave != null)
+        {
+            level = Checkpoint.gameSave.getLevel();
+            skin = Checkpoint.gameSave.getSkinNumber();
+            coins = Checkpoint.gameSave.getCoins();
+            maxHealth = Checkpoint.gameSave.getMaxHealth();
+            difficulty = Checkpoint.gameSave.getDifficulty();
+            stats = Checkpoint.gameSave.getStats();
+        }
     }
 }

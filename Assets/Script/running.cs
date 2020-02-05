@@ -56,9 +56,13 @@ public class running : MonoBehaviour
 
     public void loadGame()
     {
-      /* PlayerData data = DataSave.loadCurrentGame();
-        string level = "Nivel " + data.level;
-        Debug.Log(level);
-        SceneManager.LoadScene(level, LoadSceneMode.Single);*/
+       PlayerData data = DataSave.loadCurrentGame();
+        if (data != null)
+        {
+            string level = "Nivel " + data.level;
+            Debug.Log(level);
+            SceneManager.LoadScene(level, LoadSceneMode.Single);
+        }
+        
     }
 }

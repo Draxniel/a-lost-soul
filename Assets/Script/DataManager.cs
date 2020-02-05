@@ -12,7 +12,7 @@ public class DataManager : MonoBehaviour
     public int skin;
     public int difficulty;
     public static int level;
-
+    private PlayerData data;
     private void Awake()    //Se ejecuta antes de Start()
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
@@ -57,6 +57,17 @@ public class DataManager : MonoBehaviour
                 }
             }
         }
+        data = DataSave.loadCurrentGame();
+        if ((data != null) && (data.level > 1))
+        {
+            maxHealth = data.maxHealth;
+            stats[Stat.Health] = maxHealth;
+            stats[Stat.Defense] = data.stats[Stat.Defense];
+            stats[Stat.Strength] = data.stats[Stat.Strength]; ;
+            coins = data.coins;
+            skin = data.skin;
+            level = data.level;
+        }
     }
 
     private void Update()   //Se actualizan los datos del atributo estático
@@ -67,7 +78,7 @@ public class DataManager : MonoBehaviour
         manager.setDifficulty(difficulty);
     }
 
-    public static void passLevel()
+    public void passLevel()
     {
         level += 1;
     }
@@ -129,7 +140,9 @@ public class DataManager : MonoBehaviour
     }
     public static void saveGame()
     {
+        manager.passLevel();
         Checkpoint.saveData(manager);
+        Debug.Log(manager.getLevel());
     }
     public void loadGame()
     {
