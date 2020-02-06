@@ -45,6 +45,7 @@ public class running : MonoBehaviour
 
     public void play()
     {
+        Checkpoint.isGameLoaded = false;
         SceneManager.LoadScene("difficultyScene", LoadSceneMode.Single);
     }
 
@@ -59,8 +60,8 @@ public class running : MonoBehaviour
        PlayerData data = DataSave.loadCurrentGame();
         if (data != null)
         {
+            Checkpoint.isGameLoaded = true;
             string level = "Nivel " + data.level;
-            Debug.Log(level);
             SceneManager.LoadScene(level, LoadSceneMode.Single);
         }
         

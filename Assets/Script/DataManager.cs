@@ -7,7 +7,7 @@ public class DataManager : MonoBehaviour
 
     public static DataManager manager;
     private Dictionary<Stat, int> stats;
-    private int maxHealth;
+    public int maxHealth;
     public int coins;
     public int skin;
     public int difficulty;
@@ -15,6 +15,7 @@ public class DataManager : MonoBehaviour
     private PlayerData data;
     private void Awake()    //Se ejecuta antes de Start()
     {
+        Debug.Log(level);
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
             DontDestroyOnLoad(gameObject);
@@ -28,6 +29,7 @@ public class DataManager : MonoBehaviour
             skin = 1;
             difficulty = 1;
             level = 1;
+            Debug.Log("inicia en null");
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
@@ -58,7 +60,7 @@ public class DataManager : MonoBehaviour
             }
         }
         data = DataSave.loadCurrentGame();
-        if ((data != null) && (data.level > 1))
+        if (Checkpoint.isGameLoaded)
         {
             maxHealth = data.maxHealth;
             stats[Stat.Health] = maxHealth;
@@ -67,15 +69,22 @@ public class DataManager : MonoBehaviour
             coins = data.coins;
             skin = data.skin;
             level = data.level;
+            Debug.Log("carga data");
         }
     }
 
     private void Update()   //Se actualizan los datos del atributo estático
     {
+        updateManager();
+    }
+
+    public void updateManager()
+    {
         manager.setStats(stats);
         manager.setSkinNumber(skin);
         manager.setMaxHealth(maxHealth);
         manager.setDifficulty(difficulty);
+        manager.setCoins(coins);
     }
 
     public void passLevel()
@@ -140,6 +149,7 @@ public class DataManager : MonoBehaviour
     }
     public static void saveGame()
     {
+        manager.updateManager();
         manager.passLevel();
         Checkpoint.saveData(manager);
         Debug.Log(manager.getLevel());
