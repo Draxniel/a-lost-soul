@@ -10366,7 +10366,7 @@ GameObject:
   - component: {fileID: 509981290}
   - component: {fileID: 509981291}
   - component: {fileID: 509981292}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11159,7 +11159,7 @@ GameObject:
   - component: {fileID: 527959531}
   - component: {fileID: 527959533}
   - component: {fileID: 527959532}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11232,7 +11232,7 @@ GameObject:
   - component: {fileID: 531754165}
   - component: {fileID: 531754164}
   - component: {fileID: 531754163}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: stronger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11789,7 +11789,7 @@ GameObject:
   - component: {fileID: 557975717}
   - component: {fileID: 557975719}
   - component: {fileID: 557975718}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18041,7 +18041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 868066422}
   - component: {fileID: 868066423}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attack
   m_TagString: attack
   m_Icon: {fileID: 0}
@@ -24120,7 +24120,7 @@ GameObject:
   - component: {fileID: 1176931826}
   - component: {fileID: 1176931828}
   - component: {fileID: 1176931827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24502,7 +24502,7 @@ GameObject:
   - component: {fileID: 1190409659}
   - component: {fileID: 1190409661}
   - component: {fileID: 1190409660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24958,7 +24958,7 @@ GameObject:
   - component: {fileID: 1204738323}
   - component: {fileID: 1204738326}
   - component: {fileID: 1204738325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Portal-PNG-Download-Image_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31030,7 +31030,7 @@ GameObject:
   - component: {fileID: 1561549708}
   - component: {fileID: 1561549709}
   - component: {fileID: 1561549710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31385,7 +31385,7 @@ GameObject:
   - component: {fileID: 1571744671}
   - component: {fileID: 1571744673}
   - component: {fileID: 1571744672}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37347,7 +37347,7 @@ GameObject:
   - component: {fileID: 1828713914}
   - component: {fileID: 1828713916}
   - component: {fileID: 1828713915}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38227,7 +38227,7 @@ GameObject:
   - component: {fileID: 1859335966}
   - component: {fileID: 1859335968}
   - component: {fileID: 1859335967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38683,7 +38683,7 @@ GameObject:
   - component: {fileID: 1901459096}
   - component: {fileID: 1901459095}
   - component: {fileID: 1901459094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39397,7 +39397,7 @@ GameObject:
   - component: {fileID: 1933548304}
   - component: {fileID: 1933548305}
   - component: {fileID: 1933548306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: life
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40091,7 +40091,7 @@ GameObject:
   - component: {fileID: 1961511624}
   - component: {fileID: 1961511625}
   - component: {fileID: 1961511626}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42598,7 +42598,7 @@ GameObject:
   - component: {fileID: 2093698003}
   - component: {fileID: 2093698001}
   - component: {fileID: 2093698004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
