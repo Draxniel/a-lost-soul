@@ -29,7 +29,6 @@ public class DataManager : MonoBehaviour
             skin = 1;
             difficulty = 1;
             level = 1;
-            Debug.Log("inicia en null");
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
@@ -69,7 +68,6 @@ public class DataManager : MonoBehaviour
             coins = data.coins;
             skin = data.skin;
             level = data.level;
-            Debug.Log("carga data");
         }
     }
 
