@@ -32,9 +32,9 @@ public class Enemy : Entity
         timer = 0;
         initialPosition = transform.position; //Posicion inicial igual a posicion actual
         //MEDIDAS PARA EL MINOTAURO
-        visionRadius = 100;
+        /*visionRadius = 150;
         attackkRadius = 60;
-        speed = 40;
+        speed = 40;*/
     }
 
     // Update is called once per frame
@@ -108,7 +108,7 @@ public class Enemy : Entity
 
         if (target != initialPosition && distance < attackkRadius)
         {
-            //Atacar
+            //Attack
         }
         else
         {
@@ -120,12 +120,11 @@ public class Enemy : Entity
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
-
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
             //Animaciones de movimiento
         }
 
-        if (target == initialPosition && distance < 1f)  //Validacion para que al estar muy cerca de su posicion inicial rectorne a ella y no se quede en un bucle intentando llegar
+        if (target == initialPosition && distance < 1f)  //Validacion para que al estar muy cerca de su posicion inicial retorne a ella y no se quede en un bucle intentando llegar
         {
             transform.position = initialPosition;
         }
