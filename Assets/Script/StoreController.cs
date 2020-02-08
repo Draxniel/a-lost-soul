@@ -8,8 +8,10 @@ public class StoreController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if ((Input.GetKeyDown(KeyCode.E)))
         {
+            Debug.Log("ESTA ENTRANDO");
+            PauseMenu.canPause = false;
             tiendaUI.SetActive(true);
             gameObject.SetActive(false);
         }

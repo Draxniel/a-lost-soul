@@ -18,7 +18,6 @@ public class Store : MonoBehaviour
 
     void Start()
     {
-        
         sellerSource = gameObject.AddComponent<AudioSource>();
         tiendaUI.SetActive(false);
         Time.timeScale = 1f;
@@ -36,6 +35,11 @@ public class Store : MonoBehaviour
                 sellerSource.PlayOneShot(sellerSource.clip);
                 playAudio = false;
             }
+        }
+        if ((Input.GetKeyDown(KeyCode.Escape)))
+        {
+            resume();
+            PauseMenu.canPause = true;
         }
     }
     public void resume()
