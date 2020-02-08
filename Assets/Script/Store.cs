@@ -13,6 +13,7 @@ public class Store : MonoBehaviour
     public AudioSource sellerSource;
     public Player player;
     public Text CoinNumber;
+    public static bool isOpen = false;
 
     bool playAudio = true;
 
@@ -36,19 +37,20 @@ public class Store : MonoBehaviour
                 playAudio = false;
             }
         }
-        if ((Input.GetKeyDown(KeyCode.Escape)))
+        if ((Input.GetKeyDown(KeyCode.Escape)) && (isOpen))
         {
             resume();
-            PauseMenu.canPause = true;
         }
     }
     public void resume()
     {
+        isOpen = false;
         tiendaUI.SetActive(false);
         Warming.SetActive(false);
         Time.timeScale = 1f;
         vendedor.SetActive(true);
         playAudio = true;
+        PauseMenu.canPause = true;
     }
     void pause()
     {  

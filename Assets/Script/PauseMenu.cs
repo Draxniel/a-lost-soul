@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pausaUI;
     public static bool gamePaused;
-    public static bool canPause = true;
+    public static bool canPause;
 
     void Start()
     {
@@ -25,6 +25,7 @@ public class PauseMenu : MonoBehaviour
                 resume();
             }
             else {
+                pausaUI.SetActive(true);
                 pause();
             }
         }
