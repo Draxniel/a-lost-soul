@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 13531894}
   - component: {fileID: 13531896}
   - component: {fileID: 13531895}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 14685526}
   - component: {fileID: 14685528}
   - component: {fileID: 14685527}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 22147056}
   - component: {fileID: 22147058}
   - component: {fileID: 22147057}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (15)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 29542156}
   - component: {fileID: 29542158}
   - component: {fileID: 29542157}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,164 +558,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &35956040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 35956041}
-  - component: {fileID: 35956042}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &35956041
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35956040}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 634, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &35956042
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35956040}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &46596542
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 46596543}
-  - component: {fileID: 46596544}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &46596543
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46596542}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2554, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1507870137}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &46596544
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46596542}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &53017113
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +569,7 @@ GameObject:
   - component: {fileID: 53017114}
   - component: {fileID: 53017116}
   - component: {fileID: 53017115}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (18)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -848,7 +690,7 @@ GameObject:
   - component: {fileID: 66456799}
   - component: {fileID: 66456800}
   - component: {fileID: 66456801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: life
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +767,7 @@ GameObject:
   - component: {fileID: 68373687}
   - component: {fileID: 68373689}
   - component: {fileID: 68373688}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (21)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1051,9 +893,10 @@ GameObject:
   - component: {fileID: 84817395}
   - component: {fileID: 84817394}
   - component: {fileID: 84817393}
-  m_Layer: 0
+  - component: {fileID: 84817398}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (13)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1180,7 +1023,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &84817397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1229,6 +1076,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &84817398
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84817391}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &95436398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,9 +1111,10 @@ GameObject:
   - component: {fileID: 95436402}
   - component: {fileID: 95436401}
   - component: {fileID: 95436400}
-  m_Layer: 0
+  - component: {fileID: 95436405}
+  m_Layer: 2
   m_Name: Minotauro (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1278,7 +1147,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &95436401
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1422,6 +1295,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &95436405
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95436398}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &100059977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1327,7 @@ GameObject:
   - component: {fileID: 100059978}
   - component: {fileID: 100059980}
   - component: {fileID: 100059979}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1539,7 +1433,7 @@ GameObject:
   - component: {fileID: 118233118}
   - component: {fileID: 118233120}
   - component: {fileID: 118233119}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1645,7 +1539,7 @@ GameObject:
   - component: {fileID: 121835254}
   - component: {fileID: 121835256}
   - component: {fileID: 121835255}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1751,7 +1645,7 @@ GameObject:
   - component: {fileID: 139523875}
   - component: {fileID: 139523877}
   - component: {fileID: 139523876}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1857,7 +1751,7 @@ GameObject:
   - component: {fileID: 145007689}
   - component: {fileID: 145007691}
   - component: {fileID: 145007690}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1963,7 +1857,7 @@ GameObject:
   - component: {fileID: 158692789}
   - component: {fileID: 158692791}
   - component: {fileID: 158692790}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2069,7 +1963,7 @@ GameObject:
   - component: {fileID: 169350708}
   - component: {fileID: 169350710}
   - component: {fileID: 169350709}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2175,7 +2069,7 @@ GameObject:
   - component: {fileID: 171794574}
   - component: {fileID: 171794576}
   - component: {fileID: 171794575}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2281,7 +2175,7 @@ GameObject:
   - component: {fileID: 174707492}
   - component: {fileID: 174707494}
   - component: {fileID: 174707493}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2387,7 +2281,7 @@ GameObject:
   - component: {fileID: 178895995}
   - component: {fileID: 178895997}
   - component: {fileID: 178895996}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2493,7 +2387,7 @@ GameObject:
   - component: {fileID: 187111014}
   - component: {fileID: 187111016}
   - component: {fileID: 187111015}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2599,7 +2493,7 @@ GameObject:
   - component: {fileID: 194237607}
   - component: {fileID: 194237609}
   - component: {fileID: 194237608}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2705,7 +2599,7 @@ GameObject:
   - component: {fileID: 194449345}
   - component: {fileID: 194449347}
   - component: {fileID: 194449346}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2811,7 +2705,7 @@ GameObject:
   - component: {fileID: 200075259}
   - component: {fileID: 200075261}
   - component: {fileID: 200075260}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2917,7 +2811,7 @@ GameObject:
   - component: {fileID: 205482968}
   - component: {fileID: 205482970}
   - component: {fileID: 205482969}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3023,7 +2917,7 @@ GameObject:
   - component: {fileID: 210495248}
   - component: {fileID: 210495250}
   - component: {fileID: 210495249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3095,7 +2989,7 @@ GameObject:
   - component: {fileID: 221924142}
   - component: {fileID: 221924144}
   - component: {fileID: 221924143}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3200,7 +3094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222718388}
   - component: {fileID: 222718387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attack
   m_TagString: attack
   m_Icon: {fileID: 0}
@@ -3261,9 +3155,10 @@ GameObject:
   - component: {fileID: 226376978}
   - component: {fileID: 226376977}
   - component: {fileID: 226376976}
-  m_Layer: 0
+  - component: {fileID: 226376981}
+  m_Layer: 2
   m_Name: Minotauro (6)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3296,7 +3191,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &226376977
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3440,6 +3339,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &226376981
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226376974}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &254471613
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,7 +3371,7 @@ GameObject:
   - component: {fileID: 254471614}
   - component: {fileID: 254471616}
   - component: {fileID: 254471615}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3557,7 +3477,7 @@ GameObject:
   - component: {fileID: 258110900}
   - component: {fileID: 258110902}
   - component: {fileID: 258110901}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3666,9 +3586,10 @@ GameObject:
   - component: {fileID: 258838641}
   - component: {fileID: 258838640}
   - component: {fileID: 258838639}
-  m_Layer: 0
+  - component: {fileID: 258838644}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3795,7 +3716,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &258838643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3844,6 +3769,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &258838644
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258838637}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &260802866
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,7 +3801,7 @@ GameObject:
   - component: {fileID: 260802867}
   - component: {fileID: 260802869}
   - component: {fileID: 260802868}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3961,7 +3907,7 @@ GameObject:
   - component: {fileID: 263249216}
   - component: {fileID: 263249218}
   - component: {fileID: 263249217}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4067,7 +4013,7 @@ GameObject:
   - component: {fileID: 283035078}
   - component: {fileID: 283035080}
   - component: {fileID: 283035079}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4173,7 +4119,7 @@ GameObject:
   - component: {fileID: 290285125}
   - component: {fileID: 290285127}
   - component: {fileID: 290285126}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4278,7 +4224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 293227850}
   - component: {fileID: 293227851}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4358,7 +4304,7 @@ GameObject:
   - component: {fileID: 301518248}
   - component: {fileID: 301518250}
   - component: {fileID: 301518249}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4589,7 +4535,7 @@ GameObject:
   - component: {fileID: 321068652}
   - component: {fileID: 321068654}
   - component: {fileID: 321068653}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (15)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4710,7 +4656,7 @@ GameObject:
   - component: {fileID: 321614628}
   - component: {fileID: 321614630}
   - component: {fileID: 321614629}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4805,164 +4751,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &338985556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 338985557}
-  - component: {fileID: 338985558}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &338985557
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338985556}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 639, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 394982098}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &338985558
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338985556}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &340068889
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 340068890}
-  - component: {fileID: 340068891}
-  m_Layer: 0
-  m_Name: level 4 enemigos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &340068890
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340068889}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1279, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287531613}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &340068891
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340068889}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &355081547
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,7 +4762,7 @@ GameObject:
   - component: {fileID: 355081548}
   - component: {fileID: 355081550}
   - component: {fileID: 355081549}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -5079,7 +4867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 355992786}
   - component: {fileID: 355992787}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5159,7 +4947,7 @@ GameObject:
   - component: {fileID: 356856593}
   - component: {fileID: 356856595}
   - component: {fileID: 356856594}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -5264,7 +5052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 359834470}
   - component: {fileID: 359834471}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5344,7 +5132,7 @@ GameObject:
   - component: {fileID: 380556280}
   - component: {fileID: 380556279}
   - component: {fileID: 380556278}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: stronger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5421,7 +5209,7 @@ GameObject:
   - component: {fileID: 383097768}
   - component: {fileID: 383097770}
   - component: {fileID: 383097769}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -5527,7 +5315,7 @@ GameObject:
   - component: {fileID: 385019853}
   - component: {fileID: 385019855}
   - component: {fileID: 385019854}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -5633,7 +5421,7 @@ GameObject:
   - component: {fileID: 385431706}
   - component: {fileID: 385431708}
   - component: {fileID: 385431707}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5709,9 +5497,10 @@ GameObject:
   - component: {fileID: 387208002}
   - component: {fileID: 387208001}
   - component: {fileID: 387208000}
-  m_Layer: 0
+  - component: {fileID: 387208005}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5838,7 +5627,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &387208004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5887,6 +5680,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &387208005
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387207998}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &390497150
 GameObject:
   m_ObjectHideFlags: 0
@@ -5898,7 +5712,7 @@ GameObject:
   - component: {fileID: 390497151}
   - component: {fileID: 390497153}
   - component: {fileID: 390497152}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -5993,89 +5807,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &394982097
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 394982098}
-  - component: {fileID: 394982099}
-  m_Layer: 0
-  m_Name: level 4 enemigos (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &394982098
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394982097}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3190, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 338985557}
-  - {fileID: 555642191}
-  - {fileID: 1200743767}
-  - {fileID: 889490161}
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &394982099
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394982097}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &405552797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,7 +5819,7 @@ GameObject:
   - component: {fileID: 405552800}
   - component: {fileID: 405552799}
   - component: {fileID: 405552798}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: fisica invisible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6194,7 +5925,7 @@ Transform:
   m_LocalScale: {x: 2.3081656, y: 28.476358, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405968017
 GameObject:
@@ -6210,9 +5941,10 @@ GameObject:
   - component: {fileID: 405968021}
   - component: {fileID: 405968020}
   - component: {fileID: 405968019}
-  m_Layer: 0
+  - component: {fileID: 405968024}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6225,7 +5957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405968017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 812.9, y: -13, z: 0}
+  m_LocalPosition: {x: 812.8999, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -6339,7 +6071,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &405968023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6388,6 +6124,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &405968024
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405968017}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &428395114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6398,7 +6155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 428395115}
   - component: {fileID: 428395116}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6477,7 +6234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 441141523}
   - component: {fileID: 441141524}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6560,9 +6317,10 @@ GameObject:
   - component: {fileID: 443404009}
   - component: {fileID: 443404008}
   - component: {fileID: 443404007}
-  m_Layer: 0
+  - component: {fileID: 443404012}
+  m_Layer: 2
   m_Name: Minotauro (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6595,7 +6353,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &443404008
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6739,6 +6501,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &443404012
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443404005}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &449329860
 GameObject:
   m_ObjectHideFlags: 0
@@ -6750,7 +6533,7 @@ GameObject:
   - component: {fileID: 449329861}
   - component: {fileID: 449329863}
   - component: {fileID: 449329862}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -6856,7 +6639,7 @@ GameObject:
   - component: {fileID: 457327877}
   - component: {fileID: 457327879}
   - component: {fileID: 457327878}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -6962,7 +6745,7 @@ GameObject:
   - component: {fileID: 460447434}
   - component: {fileID: 460447436}
   - component: {fileID: 460447435}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -7068,7 +6851,7 @@ GameObject:
   - component: {fileID: 462832662}
   - component: {fileID: 462832664}
   - component: {fileID: 462832663}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7174,7 +6957,7 @@ GameObject:
   - component: {fileID: 463654699}
   - component: {fileID: 463654701}
   - component: {fileID: 463654700}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -7280,7 +7063,7 @@ GameObject:
   - component: {fileID: 466473454}
   - component: {fileID: 466473456}
   - component: {fileID: 466473455}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -7385,7 +7168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468610655}
   - component: {fileID: 468610656}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7468,9 +7251,10 @@ GameObject:
   - component: {fileID: 480115328}
   - component: {fileID: 480115327}
   - component: {fileID: 480115326}
-  m_Layer: 0
+  - component: {fileID: 480115331}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (21)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7597,7 +7381,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &480115330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7646,6 +7434,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &480115331
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480115324}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &480354969
 GameObject:
   m_ObjectHideFlags: 0
@@ -7656,7 +7465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 480354970}
   - component: {fileID: 480354971}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7736,7 +7545,7 @@ GameObject:
   - component: {fileID: 481876538}
   - component: {fileID: 481876540}
   - component: {fileID: 481876539}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (16)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -7857,7 +7666,7 @@ GameObject:
   - component: {fileID: 489327387}
   - component: {fileID: 489327389}
   - component: {fileID: 489327388}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -7966,9 +7775,10 @@ GameObject:
   - component: {fileID: 502143024}
   - component: {fileID: 502143023}
   - component: {fileID: 502143022}
-  m_Layer: 0
+  - component: {fileID: 502143027}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (16)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8095,7 +7905,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &502143026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8144,6 +7958,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &502143027
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502143020}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &506846315
 GameObject:
   m_ObjectHideFlags: 0
@@ -8155,7 +7990,7 @@ GameObject:
   - component: {fileID: 506846316}
   - component: {fileID: 506846318}
   - component: {fileID: 506846317}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -8293,7 +8128,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -8406,7 +8241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -100.65515, y: -43.77621, z: -10}
+  m_LocalPosition: {x: -57.36888, y: -43.644695, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8519,7 +8354,7 @@ GameObject:
   - component: {fileID: 526896831}
   - component: {fileID: 526896833}
   - component: {fileID: 526896832}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -8624,7 +8459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530113995}
   - component: {fileID: 530113996}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8757,7 +8592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &545581267
 GameObject:
@@ -8770,7 +8605,7 @@ GameObject:
   - component: {fileID: 545581268}
   - component: {fileID: 545581270}
   - component: {fileID: 545581269}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -8865,164 +8700,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &554636737
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 554636738}
-  - component: {fileID: 554636739}
-  m_Layer: 0
-  m_Name: level 4 enemigos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &554636738
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554636737}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1273, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &554636739
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554636737}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &555642190
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 555642191}
-  - component: {fileID: 555642192}
-  m_Layer: 0
-  m_Name: level 4 enemigos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &555642191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555642190}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1279, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 394982098}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &555642192
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555642190}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &555992391
 GameObject:
   m_ObjectHideFlags: 0
@@ -9034,7 +8711,7 @@ GameObject:
   - component: {fileID: 555992392}
   - component: {fileID: 555992394}
   - component: {fileID: 555992393}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (17)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -9144,85 +8821,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &558555137
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 558555138}
-  - component: {fileID: 558555139}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &558555138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558555137}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1913, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &558555139
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558555137}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &562115602
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,9 +8835,10 @@ GameObject:
   - component: {fileID: 562115603}
   - component: {fileID: 562115608}
   - component: {fileID: 562115607}
-  m_Layer: 0
+  - component: {fileID: 562115609}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9319,7 +8918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562115602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.15, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 56.149902, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -9339,7 +8938,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &562115607
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9415,6 +9018,27 @@ PolygonCollider2D:
       - {x: 2.9170074, y: 1.0485363}
       - {x: 3.0158997, y: 3.8158665}
       - {x: -0.070243835, y: 6.9310226}
+--- !u!50 &562115609
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562115602}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &564562046
 GameObject:
   m_ObjectHideFlags: 0
@@ -9426,7 +9050,7 @@ GameObject:
   - component: {fileID: 564562047}
   - component: {fileID: 564562049}
   - component: {fileID: 564562048}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -9532,7 +9156,7 @@ GameObject:
   - component: {fileID: 567013001}
   - component: {fileID: 567013003}
   - component: {fileID: 567013002}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -9641,9 +9265,10 @@ GameObject:
   - component: {fileID: 567158605}
   - component: {fileID: 567158604}
   - component: {fileID: 567158603}
-  m_Layer: 0
+  - component: {fileID: 567158608}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (17)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9770,7 +9395,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &567158607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9819,6 +9448,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &567158608
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567158601}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &572898144
 GameObject:
   m_ObjectHideFlags: 0
@@ -9902,7 +9552,7 @@ GameObject:
   - component: {fileID: 579373114}
   - component: {fileID: 579373116}
   - component: {fileID: 579373115}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -10008,7 +9658,7 @@ GameObject:
   - component: {fileID: 605994541}
   - component: {fileID: 605994543}
   - component: {fileID: 605994542}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -10114,7 +9764,7 @@ GameObject:
   - component: {fileID: 606062053}
   - component: {fileID: 606062055}
   - component: {fileID: 606062054}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10186,7 +9836,7 @@ GameObject:
   - component: {fileID: 608167183}
   - component: {fileID: 608167185}
   - component: {fileID: 608167184}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10259,7 +9909,7 @@ GameObject:
   - component: {fileID: 616515161}
   - component: {fileID: 616515160}
   - component: {fileID: 616515159}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -10380,7 +10030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642992671}
   - component: {fileID: 642992672}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10460,7 +10110,7 @@ GameObject:
   - component: {fileID: 645379192}
   - component: {fileID: 645379194}
   - component: {fileID: 645379193}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -10566,7 +10216,7 @@ GameObject:
   - component: {fileID: 651394796}
   - component: {fileID: 651394798}
   - component: {fileID: 651394797}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -10671,7 +10321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653232364}
   - component: {fileID: 653232365}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10751,7 +10401,7 @@ GameObject:
   - component: {fileID: 656582021}
   - component: {fileID: 656582023}
   - component: {fileID: 656582022}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -10857,7 +10507,7 @@ GameObject:
   - component: {fileID: 673251772}
   - component: {fileID: 673251774}
   - component: {fileID: 673251773}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -10963,7 +10613,7 @@ GameObject:
   - component: {fileID: 677940243}
   - component: {fileID: 677940245}
   - component: {fileID: 677940244}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -11069,7 +10719,7 @@ GameObject:
   - component: {fileID: 678685079}
   - component: {fileID: 678685081}
   - component: {fileID: 678685080}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -11178,9 +10828,10 @@ GameObject:
   - component: {fileID: 679223957}
   - component: {fileID: 679223956}
   - component: {fileID: 679223955}
-  m_Layer: 0
+  - component: {fileID: 679223960}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (15)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11307,7 +10958,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &679223959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11356,6 +11011,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &679223960
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679223953}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &698421958
 GameObject:
   m_ObjectHideFlags: 0
@@ -11370,9 +11046,10 @@ GameObject:
   - component: {fileID: 698421962}
   - component: {fileID: 698421961}
   - component: {fileID: 698421960}
-  m_Layer: 0
+  - component: {fileID: 698421965}
+  m_Layer: 2
   m_Name: Minotauro (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11405,7 +11082,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &698421961
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11549,6 +11230,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &698421965
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698421958}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &698918717
 GameObject:
   m_ObjectHideFlags: 0
@@ -11563,9 +11265,10 @@ GameObject:
   - component: {fileID: 698918721}
   - component: {fileID: 698918720}
   - component: {fileID: 698918719}
-  m_Layer: 0
+  - component: {fileID: 698918724}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (14)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11692,7 +11395,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &698918723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11741,85 +11448,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &703390786
-GameObject:
+--- !u!50 &698918724
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 703390787}
-  - component: {fileID: 703390788}
-  m_Layer: 0
-  m_Name: level 4 enemigos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &703390787
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703390786}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1279, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1731642725}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &703390788
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703390786}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_GameObject: {fileID: 698918717}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &710041038
 GameObject:
   m_ObjectHideFlags: 0
@@ -11829,7 +11478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710041039}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: "Ej\xE9cito 1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11896,8 +11545,14 @@ Transform:
   - {fileID: 679223954}
   - {fileID: 502143021}
   - {fileID: 567158602}
+  - {fileID: 1988646213}
+  - {fileID: 1646331385}
+  - {fileID: 1953457870}
+  - {fileID: 1446136173}
+  - {fileID: 1327875875}
+  - {fileID: 1097398157}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &711181237
 GameObject:
@@ -11910,7 +11565,7 @@ GameObject:
   - component: {fileID: 711181240}
   - component: {fileID: 711181239}
   - component: {fileID: 711181238}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LoopDrums (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11969,7 +11624,7 @@ Transform:
   m_LocalScale: {x: 2.88552, y: 4.652901, z: 2.88552}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &713543363
 GameObject:
@@ -11982,7 +11637,7 @@ GameObject:
   - component: {fileID: 713543364}
   - component: {fileID: 713543366}
   - component: {fileID: 713543365}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -12088,7 +11743,7 @@ GameObject:
   - component: {fileID: 763242840}
   - component: {fileID: 763242842}
   - component: {fileID: 763242841}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -12268,7 +11923,7 @@ GameObject:
   - component: {fileID: 772133872}
   - component: {fileID: 772133874}
   - component: {fileID: 772133873}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -12374,7 +12029,7 @@ GameObject:
   - component: {fileID: 773629919}
   - component: {fileID: 773629921}
   - component: {fileID: 773629920}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -12483,9 +12138,10 @@ GameObject:
   - component: {fileID: 792360142}
   - component: {fileID: 792360141}
   - component: {fileID: 792360140}
-  m_Layer: 0
+  - component: {fileID: 792360145}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (7)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12612,7 +12268,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &792360144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12661,6 +12321,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &792360145
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792360138}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &799453288
 GameObject:
   m_ObjectHideFlags: 0
@@ -12672,7 +12353,7 @@ GameObject:
   - component: {fileID: 799453289}
   - component: {fileID: 799453291}
   - component: {fileID: 799453290}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -12781,9 +12462,10 @@ GameObject:
   - component: {fileID: 806225617}
   - component: {fileID: 806225616}
   - component: {fileID: 806225615}
-  m_Layer: 0
+  - component: {fileID: 806225620}
+  m_Layer: 2
   m_Name: Minotauro (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12816,7 +12498,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &806225616
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12960,6 +12646,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &806225620
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806225613}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &819991147
 GameObject:
   m_ObjectHideFlags: 0
@@ -13021,7 +12728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819991147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.9521027, y: -1.2217484, z: 351.5625}
+  m_LocalPosition: {x: -40.952103, y: -1.2217484, z: 351.5625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1190942201}
@@ -13056,7 +12763,7 @@ GameObject:
   - component: {fileID: 832339865}
   - component: {fileID: 832339864}
   - component: {fileID: 832339863}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: invisible-soul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13114,7 +12821,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &833510609
 GameObject:
@@ -13127,7 +12834,7 @@ GameObject:
   - component: {fileID: 833510610}
   - component: {fileID: 833510612}
   - component: {fileID: 833510611}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -13234,7 +12941,7 @@ GameObject:
   - component: {fileID: 833892716}
   - component: {fileID: 833892715}
   - component: {fileID: 833892714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13333,7 +13040,7 @@ GameObject:
   - component: {fileID: 838051745}
   - component: {fileID: 838051747}
   - component: {fileID: 838051746}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -13439,7 +13146,7 @@ GameObject:
   - component: {fileID: 838323603}
   - component: {fileID: 838323605}
   - component: {fileID: 838323604}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -13595,7 +13302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838368059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.9521027, y: -1.2217484, z: 351.5625}
+  m_LocalPosition: {x: -40.952103, y: -1.2217484, z: 351.5625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1635036019}
@@ -13633,9 +13340,10 @@ GameObject:
   - component: {fileID: 846878781}
   - component: {fileID: 846878780}
   - component: {fileID: 846878779}
-  m_Layer: 0
+  - component: {fileID: 846878784}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (12)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13762,7 +13470,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &846878783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13811,6 +13523,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &846878784
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846878777}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &856417122
 GameObject:
   m_ObjectHideFlags: 0
@@ -13822,7 +13555,7 @@ GameObject:
   - component: {fileID: 856417125}
   - component: {fileID: 856417124}
   - component: {fileID: 856417123}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LoopDrums (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13881,7 +13614,7 @@ Transform:
   m_LocalScale: {x: 2.88552, y: 4.652901, z: 2.88552}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &859464641
 GameObject:
@@ -13894,7 +13627,7 @@ GameObject:
   - component: {fileID: 859464642}
   - component: {fileID: 859464644}
   - component: {fileID: 859464643}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -14000,7 +13733,7 @@ GameObject:
   - component: {fileID: 882820728}
   - component: {fileID: 882820730}
   - component: {fileID: 882820729}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -14106,7 +13839,7 @@ GameObject:
   - component: {fileID: 884431633}
   - component: {fileID: 884431635}
   - component: {fileID: 884431634}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -14201,85 +13934,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &889490160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 889490161}
-  - component: {fileID: 889490162}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &889490161
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889490160}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2554, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 394982098}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &889490162
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889490160}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &910295702
 GameObject:
   m_ObjectHideFlags: 0
@@ -14291,7 +13945,7 @@ GameObject:
   - component: {fileID: 910295703}
   - component: {fileID: 910295705}
   - component: {fileID: 910295704}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -14400,9 +14054,10 @@ GameObject:
   - component: {fileID: 934486787}
   - component: {fileID: 934486786}
   - component: {fileID: 934486785}
-  m_Layer: 0
+  - component: {fileID: 934486790}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (6)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14529,7 +14184,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &934486789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14578,85 +14237,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &945981359
-GameObject:
+--- !u!50 &934486790
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 945981360}
-  - component: {fileID: 945981361}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &945981360
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945981359}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2554, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287531613}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &945981361
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945981359}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_GameObject: {fileID: 934486783}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &947313015
 GameObject:
   m_ObjectHideFlags: 0
@@ -14668,7 +14269,7 @@ GameObject:
   - component: {fileID: 947313016}
   - component: {fileID: 947313018}
   - component: {fileID: 947313017}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (20)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -14789,7 +14390,7 @@ GameObject:
   - component: {fileID: 952932056}
   - component: {fileID: 952932058}
   - component: {fileID: 952932057}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -14895,7 +14496,7 @@ GameObject:
   - component: {fileID: 964645653}
   - component: {fileID: 964645655}
   - component: {fileID: 964645654}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -15001,7 +14602,7 @@ GameObject:
   - component: {fileID: 977565285}
   - component: {fileID: 977565287}
   - component: {fileID: 977565286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15073,7 +14674,7 @@ GameObject:
   - component: {fileID: 979122884}
   - component: {fileID: 979122886}
   - component: {fileID: 979122885}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -15179,7 +14780,7 @@ GameObject:
   - component: {fileID: 981594768}
   - component: {fileID: 981594767}
   - component: {fileID: 981594769}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: background Gris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15288,7 +14889,7 @@ GameObject:
   - component: {fileID: 982819954}
   - component: {fileID: 982819956}
   - component: {fileID: 982819955}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -15397,9 +14998,10 @@ GameObject:
   - component: {fileID: 993418216}
   - component: {fileID: 993418215}
   - component: {fileID: 993418214}
-  m_Layer: 0
+  - component: {fileID: 993418217}
+  m_Layer: 2
   m_Name: Minotauro
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15499,7 +15101,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &993418215
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15576,6 +15182,27 @@ PolygonCollider2D:
       - {x: 24, y: -20.5}
       - {x: 27.717476, y: -15.291687}
       - {x: 26, y: 8.5}
+--- !u!50 &993418217
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993418210}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1016518367
 GameObject:
   m_ObjectHideFlags: 0
@@ -15587,7 +15214,7 @@ GameObject:
   - component: {fileID: 1016518368}
   - component: {fileID: 1016518370}
   - component: {fileID: 1016518369}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -15693,7 +15320,7 @@ GameObject:
   - component: {fileID: 1024093493}
   - component: {fileID: 1024093495}
   - component: {fileID: 1024093494}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -15802,9 +15429,10 @@ GameObject:
   - component: {fileID: 1028850216}
   - component: {fileID: 1028850215}
   - component: {fileID: 1028850214}
-  m_Layer: 0
+  - component: {fileID: 1028850219}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (19)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15931,7 +15559,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1028850218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15980,6 +15612,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1028850219
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028850212}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1035054103
 GameObject:
   m_ObjectHideFlags: 0
@@ -15991,7 +15644,7 @@ GameObject:
   - component: {fileID: 1035054104}
   - component: {fileID: 1035054106}
   - component: {fileID: 1035054105}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16172,7 +15825,7 @@ GameObject:
   - component: {fileID: 1044243152}
   - component: {fileID: 1044243153}
   - component: {fileID: 1044243154}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16252,9 +15905,10 @@ GameObject:
   - component: {fileID: 1044766066}
   - component: {fileID: 1044766065}
   - component: {fileID: 1044766064}
-  m_Layer: 0
+  - component: {fileID: 1044766069}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (22)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16381,7 +16035,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1044766068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16430,6 +16088,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1044766069
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044766062}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1045105308
 GameObject:
   m_ObjectHideFlags: 0
@@ -16441,7 +16120,7 @@ GameObject:
   - component: {fileID: 1045105309}
   - component: {fileID: 1045105311}
   - component: {fileID: 1045105310}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -16547,7 +16226,7 @@ GameObject:
   - component: {fileID: 1062054050}
   - component: {fileID: 1062054052}
   - component: {fileID: 1062054051}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -16714,85 +16393,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063331983}
   m_CullTransparentMesh: 0
---- !u!1 &1082268804
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1082268805}
-  - component: {fileID: 1082268806}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1082268805
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082268804}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2552, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1082268806
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082268804}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1085488069
 GameObject:
   m_ObjectHideFlags: 0
@@ -16876,7 +16476,7 @@ GameObject:
   - component: {fileID: 1086066527}
   - component: {fileID: 1086066529}
   - component: {fileID: 1086066528}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -16985,9 +16585,10 @@ GameObject:
   - component: {fileID: 1093980270}
   - component: {fileID: 1093980269}
   - component: {fileID: 1093980268}
-  m_Layer: 0
+  - component: {fileID: 1093980273}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (9)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17114,7 +16715,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1093980272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17163,6 +16768,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1093980273
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093980266}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1096051994
 GameObject:
   m_ObjectHideFlags: 0
@@ -17174,7 +16800,7 @@ GameObject:
   - component: {fileID: 1096051995}
   - component: {fileID: 1096051997}
   - component: {fileID: 1096051996}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -17283,9 +16909,10 @@ GameObject:
   - component: {fileID: 1097398154}
   - component: {fileID: 1097398153}
   - component: {fileID: 1097398152}
-  m_Layer: 0
+  - component: {fileID: 1097398158}
+  m_Layer: 2
   m_Name: Ciclope (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17385,7 +17012,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1097398155
 Animator:
   serializedVersion: 3
@@ -17460,13 +17091,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097398151}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11279.9, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5620.95, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1097398158
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097398151}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1100478615
 GameObject:
   m_ObjectHideFlags: 0
@@ -17481,9 +17133,10 @@ GameObject:
   - component: {fileID: 1100478619}
   - component: {fileID: 1100478618}
   - component: {fileID: 1100478617}
-  m_Layer: 0
+  - component: {fileID: 1100478622}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17496,7 +17149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100478615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 125.8, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 125.799805, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -17610,7 +17263,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1100478621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17659,6 +17316,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1100478622
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100478615}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1102501916
 GameObject:
   m_ObjectHideFlags: 0
@@ -17669,7 +17347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1102501917}
   - component: {fileID: 1102501918}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17749,7 +17427,7 @@ GameObject:
   - component: {fileID: 1108865575}
   - component: {fileID: 1108865577}
   - component: {fileID: 1108865576}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -17858,9 +17536,10 @@ GameObject:
   - component: {fileID: 1112381806}
   - component: {fileID: 1112381805}
   - component: {fileID: 1112381804}
-  m_Layer: 0
+  - component: {fileID: 1112381809}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (10)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17873,7 +17552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112381802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1482.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 1482.0999, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -17987,7 +17666,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1112381808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18036,6 +17719,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1112381809
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112381802}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1122738828
 GameObject:
   m_ObjectHideFlags: 0
@@ -18047,7 +17751,7 @@ GameObject:
   - component: {fileID: 1122738829}
   - component: {fileID: 1122738831}
   - component: {fileID: 1122738830}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -18156,9 +17860,10 @@ GameObject:
   - component: {fileID: 1132415798}
   - component: {fileID: 1132415797}
   - component: {fileID: 1132415796}
-  m_Layer: 0
+  - component: {fileID: 1132415801}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (6)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18171,7 +17876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132415794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1342.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 1342.1001, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -18285,7 +17990,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1132415800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18334,6 +18043,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1132415801
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132415794}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1148764483
 GameObject:
   m_ObjectHideFlags: 0
@@ -18348,9 +18078,10 @@ GameObject:
   - component: {fileID: 1148764487}
   - component: {fileID: 1148764486}
   - component: {fileID: 1148764485}
-  m_Layer: 0
+  - component: {fileID: 1148764490}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18477,7 +18208,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1148764489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18526,6 +18261,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1148764490
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148764483}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1151636099
 GameObject:
   m_ObjectHideFlags: 0
@@ -18540,9 +18296,10 @@ GameObject:
   - component: {fileID: 1151636103}
   - component: {fileID: 1151636102}
   - component: {fileID: 1151636101}
-  m_Layer: 0
+  - component: {fileID: 1151636106}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (17)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18669,7 +18426,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1151636105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18718,6 +18479,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1151636106
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151636099}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1157873388
 GameObject:
   m_ObjectHideFlags: 0
@@ -18728,7 +18510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1157873389}
   - component: {fileID: 1157873390}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18811,9 +18593,10 @@ GameObject:
   - component: {fileID: 1159077016}
   - component: {fileID: 1159077015}
   - component: {fileID: 1159077014}
-  m_Layer: 0
+  - component: {fileID: 1159077019}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (15)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18940,7 +18723,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1159077018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18989,6 +18776,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1159077019
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159077012}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1161630282
 GameObject:
   m_ObjectHideFlags: 0
@@ -19000,7 +18808,7 @@ GameObject:
   - component: {fileID: 1161630283}
   - component: {fileID: 1161630285}
   - component: {fileID: 1161630284}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19083,9 +18891,10 @@ GameObject:
   - component: {fileID: 1168080177}
   - component: {fileID: 1168080176}
   - component: {fileID: 1168080175}
-  m_Layer: 0
+  - component: {fileID: 1168080180}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (11)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19212,7 +19021,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1168080179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19261,6 +19074,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1168080180
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168080173}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1175226125
 GameObject:
   m_ObjectHideFlags: 0
@@ -19272,7 +19106,7 @@ GameObject:
   - component: {fileID: 1175226126}
   - component: {fileID: 1175226128}
   - component: {fileID: 1175226127}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -19378,7 +19212,7 @@ GameObject:
   - component: {fileID: 1177684335}
   - component: {fileID: 1177684337}
   - component: {fileID: 1177684336}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -19484,7 +19318,7 @@ GameObject:
   - component: {fileID: 1184185203}
   - component: {fileID: 1184185205}
   - component: {fileID: 1184185204}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -19675,7 +19509,7 @@ GameObject:
   - component: {fileID: 1195313790}
   - component: {fileID: 1195313792}
   - component: {fileID: 1195313791}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -19781,7 +19615,7 @@ GameObject:
   - component: {fileID: 1195494406}
   - component: {fileID: 1195494408}
   - component: {fileID: 1195494407}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -19887,7 +19721,7 @@ GameObject:
   - component: {fileID: 1200372840}
   - component: {fileID: 1200372842}
   - component: {fileID: 1200372841}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (19)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -19997,85 +19831,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1200743766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1200743767}
-  - component: {fileID: 1200743768}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1200743767
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200743766}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1919, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 394982098}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1200743768
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200743766}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1216282529
 GameObject:
   m_ObjectHideFlags: 0
@@ -20090,9 +19845,10 @@ GameObject:
   - component: {fileID: 1216282533}
   - component: {fileID: 1216282532}
   - component: {fileID: 1216282531}
-  m_Layer: 0
+  - component: {fileID: 1216282536}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (8)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20219,7 +19975,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1216282535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20268,6 +20028,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1216282536
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216282529}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1224431885
 GameObject:
   m_ObjectHideFlags: 0
@@ -20279,7 +20060,7 @@ GameObject:
   - component: {fileID: 1224431886}
   - component: {fileID: 1224431888}
   - component: {fileID: 1224431887}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -20385,7 +20166,7 @@ GameObject:
   - component: {fileID: 1235688583}
   - component: {fileID: 1235688585}
   - component: {fileID: 1235688584}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20491,7 +20272,7 @@ GameObject:
   - component: {fileID: 1252587326}
   - component: {fileID: 1252587328}
   - component: {fileID: 1252587327}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -20600,9 +20381,10 @@ GameObject:
   - component: {fileID: 1281898166}
   - component: {fileID: 1281898165}
   - component: {fileID: 1281898164}
-  m_Layer: 0
+  - component: {fileID: 1281898169}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (13)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20729,7 +20511,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1281898168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20778,6 +20564,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1281898169
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281898162}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1285199634
 GameObject:
   m_ObjectHideFlags: 0
@@ -20789,7 +20596,7 @@ GameObject:
   - component: {fileID: 1285199635}
   - component: {fileID: 1285199637}
   - component: {fileID: 1285199636}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -20894,7 +20701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1286393626}
   - component: {fileID: 1286393627}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20963,89 +20770,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1287531612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1287531613}
-  - component: {fileID: 1287531614}
-  m_Layer: 0
-  m_Name: level 4 enemigos (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1287531613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287531612}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6382, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2101765032}
-  - {fileID: 340068890}
-  - {fileID: 1722634215}
-  - {fileID: 945981360}
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1287531614
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287531612}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1289442818
 GameObject:
   m_ObjectHideFlags: 0
@@ -21060,9 +20784,10 @@ GameObject:
   - component: {fileID: 1289442822}
   - component: {fileID: 1289442821}
   - component: {fileID: 1289442820}
-  m_Layer: 0
+  - component: {fileID: 1289442825}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21075,7 +20800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289442818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 160.3, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 160.2998, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -21189,7 +20914,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1289442824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21238,6 +20967,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1289442825
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289442818}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1290471619
 GameObject:
   m_ObjectHideFlags: 0
@@ -21249,7 +20999,7 @@ GameObject:
   - component: {fileID: 1290471620}
   - component: {fileID: 1290471622}
   - component: {fileID: 1290471621}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -21355,7 +21105,7 @@ GameObject:
   - component: {fileID: 1297103221}
   - component: {fileID: 1297103223}
   - component: {fileID: 1297103222}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -21461,7 +21211,7 @@ GameObject:
   - component: {fileID: 1303166965}
   - component: {fileID: 1303166967}
   - component: {fileID: 1303166966}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -21567,7 +21317,7 @@ GameObject:
   - component: {fileID: 1306981861}
   - component: {fileID: 1306981863}
   - component: {fileID: 1306981862}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -21662,85 +21412,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1307857246
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1307857247}
-  - component: {fileID: 1307857248}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1307857247
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307857246}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1919, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1507870137}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1307857248
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307857246}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1308198947
 GameObject:
   m_ObjectHideFlags: 0
@@ -21800,9 +21471,10 @@ GameObject:
   - component: {fileID: 1327875872}
   - component: {fileID: 1327875871}
   - component: {fileID: 1327875870}
-  m_Layer: 0
+  - component: {fileID: 1327875876}
+  m_Layer: 2
   m_Name: Ciclope (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21902,7 +21574,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1327875873
 Animator:
   serializedVersion: 3
@@ -21977,13 +21653,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327875869}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11153.6, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5557.8, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1327875876
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327875869}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1336938635
 GameObject:
   m_ObjectHideFlags: 0
@@ -21995,7 +21692,7 @@ GameObject:
   - component: {fileID: 1336938636}
   - component: {fileID: 1336938638}
   - component: {fileID: 1336938637}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -22104,9 +21801,10 @@ GameObject:
   - component: {fileID: 1357989252}
   - component: {fileID: 1357989256}
   - component: {fileID: 1357989255}
-  m_Layer: 0
+  - component: {fileID: 1357989258}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22186,7 +21884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357989251}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 629.4, y: -13, z: 0}
+  m_LocalPosition: {x: 629.3999, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -22281,7 +21979,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
+--- !u!50 &1357989258
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357989251}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1380479302
 GameObject:
   m_ObjectHideFlags: 0
@@ -22293,7 +22016,7 @@ GameObject:
   - component: {fileID: 1380479303}
   - component: {fileID: 1380479305}
   - component: {fileID: 1380479304}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -22399,7 +22122,7 @@ GameObject:
   - component: {fileID: 1384161919}
   - component: {fileID: 1384161921}
   - component: {fileID: 1384161920}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -22505,7 +22228,7 @@ GameObject:
   - component: {fileID: 1385585002}
   - component: {fileID: 1385585004}
   - component: {fileID: 1385585003}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -22614,9 +22337,10 @@ GameObject:
   - component: {fileID: 1391009181}
   - component: {fileID: 1391009180}
   - component: {fileID: 1391009179}
-  m_Layer: 0
+  - component: {fileID: 1391009184}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (8)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22629,7 +22353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391009177}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1410.9, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 1410.8999, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -22743,7 +22467,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1391009183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22792,6 +22520,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1391009184
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391009177}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1407647334
 GameObject:
   m_ObjectHideFlags: 0
@@ -22803,7 +22552,7 @@ GameObject:
   - component: {fileID: 1407647335}
   - component: {fileID: 1407647337}
   - component: {fileID: 1407647336}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -22898,85 +22647,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1413333871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1413333872}
-  - component: {fileID: 1413333873}
-  m_Layer: 0
-  m_Name: level 4 enemigos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1413333872
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413333871}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1279, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1507870137}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1413333873
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413333871}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1414237564
 GameObject:
   m_ObjectHideFlags: 0
@@ -22987,7 +22657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1414237565}
   - component: {fileID: 1414237566}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23070,9 +22740,10 @@ GameObject:
   - component: {fileID: 1416523931}
   - component: {fileID: 1416523930}
   - component: {fileID: 1416523929}
-  m_Layer: 0
+  - component: {fileID: 1416523934}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23085,7 +22756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416523927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 237.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 237.1001, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -23199,7 +22870,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1416523933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23248,6 +22923,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1416523934
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416523927}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1417904256
 GameObject:
   m_ObjectHideFlags: 0
@@ -23371,7 +23067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419780627}
   - component: {fileID: 1419780626}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23447,7 +23143,7 @@ Transform:
   - {fileID: 1286393626}
   - {fileID: 441141523}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428473429
 GameObject:
@@ -23460,7 +23156,7 @@ GameObject:
   - component: {fileID: 1428473430}
   - component: {fileID: 1428473432}
   - component: {fileID: 1428473431}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -23566,7 +23262,7 @@ GameObject:
   - component: {fileID: 1437038731}
   - component: {fileID: 1437038733}
   - component: {fileID: 1437038732}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -23675,9 +23371,10 @@ GameObject:
   - component: {fileID: 1446136170}
   - component: {fileID: 1446136169}
   - component: {fileID: 1446136168}
-  m_Layer: 0
+  - component: {fileID: 1446136174}
+  m_Layer: 2
   m_Name: Ciclope (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23777,7 +23474,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1446136171
 Animator:
   serializedVersion: 3
@@ -23852,13 +23553,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446136167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11026.4, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5494.2, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1446136174
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446136167}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1452516399
 GameObject:
   m_ObjectHideFlags: 0
@@ -23870,7 +23592,7 @@ GameObject:
   - component: {fileID: 1452516400}
   - component: {fileID: 1452516402}
   - component: {fileID: 1452516401}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -23975,7 +23697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457711192}
   - component: {fileID: 1457711193}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24126,7 +23848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464045755}
   - component: {fileID: 1464045756}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24313,7 +24035,7 @@ GameObject:
   - component: {fileID: 1498488202}
   - component: {fileID: 1498488204}
   - component: {fileID: 1498488203}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -24419,7 +24141,7 @@ GameObject:
   - component: {fileID: 1498908317}
   - component: {fileID: 1498908319}
   - component: {fileID: 1498908318}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24514,89 +24236,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1507870136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1507870137}
-  - component: {fileID: 1507870138}
-  m_Layer: 0
-  m_Name: level 4 enemigos (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1507870137
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507870136}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9573, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1654589205}
-  - {fileID: 1413333872}
-  - {fileID: 1307857247}
-  - {fileID: 46596543}
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1507870138
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507870136}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1508141718
 GameObject:
   m_ObjectHideFlags: 0
@@ -24608,7 +24247,7 @@ GameObject:
   - component: {fileID: 1508141719}
   - component: {fileID: 1508141721}
   - component: {fileID: 1508141720}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -24714,7 +24353,7 @@ GameObject:
   - component: {fileID: 1509875127}
   - component: {fileID: 1509875128}
   - component: {fileID: 1509875129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'Bar '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24793,7 +24432,7 @@ GameObject:
   - component: {fileID: 1515917158}
   - component: {fileID: 1515917160}
   - component: {fileID: 1515917159}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -24898,7 +24537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525474430}
   - component: {fileID: 1525474429}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24977,7 +24616,7 @@ Transform:
   - {fileID: 2090173373}
   - {fileID: 1541751816}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529999603
 GameObject:
@@ -24990,7 +24629,7 @@ GameObject:
   - component: {fileID: 1529999604}
   - component: {fileID: 1529999606}
   - component: {fileID: 1529999605}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -25099,9 +24738,10 @@ GameObject:
   - component: {fileID: 1536035315}
   - component: {fileID: 1536035314}
   - component: {fileID: 1536035313}
-  m_Layer: 0
+  - component: {fileID: 1536035318}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (16)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25228,7 +24868,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1536035317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25277,6 +24921,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1536035318
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536035311}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1537300839
 GameObject:
   m_ObjectHideFlags: 0
@@ -25288,7 +24953,7 @@ GameObject:
   - component: {fileID: 1537300840}
   - component: {fileID: 1537300842}
   - component: {fileID: 1537300841}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -25393,7 +25058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1541751816}
   - component: {fileID: 1541751817}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25473,7 +25138,7 @@ GameObject:
   - component: {fileID: 1545965520}
   - component: {fileID: 1545965522}
   - component: {fileID: 1545965521}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (18)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -25582,9 +25247,10 @@ GameObject:
   - component: {fileID: 1575829564}
   - component: {fileID: 1575829563}
   - component: {fileID: 1575829562}
-  m_Layer: 0
+  - component: {fileID: 1575829567}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (18)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25711,7 +25377,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1575829566
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25760,6 +25430,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1575829567
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575829560}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1584202077
 GameObject:
   m_ObjectHideFlags: 0
@@ -25770,7 +25461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1584202078}
   - component: {fileID: 1584202079}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25853,9 +25544,10 @@ GameObject:
   - component: {fileID: 1587717232}
   - component: {fileID: 1587717231}
   - component: {fileID: 1587717230}
-  m_Layer: 0
+  - component: {fileID: 1587717235}
+  m_Layer: 2
   m_Name: Minotauro (5)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25888,7 +25580,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!60 &1587717231
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26032,6 +25728,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1587717235
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587717228}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1632983339
 GameObject:
   m_ObjectHideFlags: 0
@@ -26043,7 +25760,7 @@ GameObject:
   - component: {fileID: 1632983340}
   - component: {fileID: 1632983342}
   - component: {fileID: 1632983341}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -26234,7 +25951,7 @@ GameObject:
   - component: {fileID: 1639383315}
   - component: {fileID: 1639383317}
   - component: {fileID: 1639383316}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -26343,9 +26060,10 @@ GameObject:
   - component: {fileID: 1646331382}
   - component: {fileID: 1646331381}
   - component: {fileID: 1646331380}
-  m_Layer: 0
+  - component: {fileID: 1646331386}
+  m_Layer: 2
   m_Name: Ciclope (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26445,7 +26163,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1646331383
 Animator:
   serializedVersion: 3
@@ -26520,13 +26242,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646331379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8634.8, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4298.4, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1646331386
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646331379}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1651543861
 GameObject:
   m_ObjectHideFlags: 0
@@ -26538,7 +26281,7 @@ GameObject:
   - component: {fileID: 1651543862}
   - component: {fileID: 1651543864}
   - component: {fileID: 1651543863}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -26633,85 +26376,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1654589204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1654589205}
-  - component: {fileID: 1654589206}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1654589205
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654589204}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 639, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1507870137}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1654589206
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654589204}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1661705900
 GameObject:
   m_ObjectHideFlags: 0
@@ -26723,7 +26387,7 @@ GameObject:
   - component: {fileID: 1661705901}
   - component: {fileID: 1661705903}
   - component: {fileID: 1661705902}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -26832,9 +26496,10 @@ GameObject:
   - component: {fileID: 1682687207}
   - component: {fileID: 1682687206}
   - component: {fileID: 1682687205}
-  m_Layer: 0
+  - component: {fileID: 1682687210}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (7)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26961,7 +26626,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1682687209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27010,6 +26679,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1682687210
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682687203}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1687027294
 GameObject:
   m_ObjectHideFlags: 0
@@ -27021,7 +26711,7 @@ GameObject:
   - component: {fileID: 1687027295}
   - component: {fileID: 1687027297}
   - component: {fileID: 1687027296}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -27116,85 +26806,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1697597982
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1697597983}
-  - component: {fileID: 1697597984}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1697597983
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697597982}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 639, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1731642725}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1697597984
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697597982}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1702037032
 GameObject:
   m_ObjectHideFlags: 0
@@ -27206,7 +26817,7 @@ GameObject:
   - component: {fileID: 1702037033}
   - component: {fileID: 1702037035}
   - component: {fileID: 1702037034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -27437,7 +27048,7 @@ GameObject:
   - component: {fileID: 1719156384}
   - component: {fileID: 1719156386}
   - component: {fileID: 1719156385}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27499,85 +27110,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719156383}
   m_CullTransparentMesh: 0
---- !u!1 &1722634214
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1722634215}
-  - component: {fileID: 1722634216}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1722634215
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722634214}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1919, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287531613}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1722634216
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722634214}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1723516080
 GameObject:
   m_ObjectHideFlags: 0
@@ -27588,7 +27120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723516081}
   - component: {fileID: 1723516082}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27668,7 +27200,7 @@ GameObject:
   - component: {fileID: 1727586220}
   - component: {fileID: 1727586222}
   - component: {fileID: 1727586221}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -27763,87 +27295,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1731642724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1731642725}
-  - component: {fileID: 1731642726}
-  m_Layer: 0
-  m_Name: level 4 enemigos (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1731642725
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731642724}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12764, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1697597983}
-  - {fileID: 703390787}
-  m_Father: {fileID: 1778487841}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1731642726
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731642724}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1740094367
 GameObject:
   m_ObjectHideFlags: 0
@@ -27858,9 +27309,10 @@ GameObject:
   - component: {fileID: 1740094371}
   - component: {fileID: 1740094370}
   - component: {fileID: 1740094369}
-  m_Layer: 0
+  - component: {fileID: 1740094374}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (23)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27987,7 +27439,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1740094373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28036,6 +27492,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1740094374
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740094367}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1743504273
 GameObject:
   m_ObjectHideFlags: 0
@@ -28047,7 +27524,7 @@ GameObject:
   - component: {fileID: 1743504274}
   - component: {fileID: 1743504276}
   - component: {fileID: 1743504275}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -28153,7 +27630,7 @@ GameObject:
   - component: {fileID: 1750697217}
   - component: {fileID: 1750697219}
   - component: {fileID: 1750697218}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -28259,7 +27736,7 @@ GameObject:
   - component: {fileID: 1752713712}
   - component: {fileID: 1752713714}
   - component: {fileID: 1752713713}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -28364,7 +27841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1754593023}
   - component: {fileID: 1754593024}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28444,7 +27921,7 @@ GameObject:
   - component: {fileID: 1777296679}
   - component: {fileID: 1777296681}
   - component: {fileID: 1777296680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28505,93 +27982,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777296678}
   m_CullTransparentMesh: 0
---- !u!1 &1778487839
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1778487841}
-  - component: {fileID: 1778487840}
-  m_Layer: 0
-  m_Name: level 4 enemigos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1778487840
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778487839}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1778487841
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778487839}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46, y: -6, z: 0}
-  m_LocalScale: {x: 0.8623282, y: 0.8623282, z: 0.8623282}
-  m_Children:
-  - {fileID: 35956041}
-  - {fileID: 554636738}
-  - {fileID: 558555138}
-  - {fileID: 1082268805}
-  - {fileID: 394982098}
-  - {fileID: 1287531613}
-  - {fileID: 1507870137}
-  - {fileID: 1731642725}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780803585
 GameObject:
   m_ObjectHideFlags: 0
@@ -28606,9 +27996,10 @@ GameObject:
   - component: {fileID: 1780803589}
   - component: {fileID: 1780803588}
   - component: {fileID: 1780803587}
-  m_Layer: 0
+  - component: {fileID: 1780803592}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28621,7 +28012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780803585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 718.7, y: -13, z: 0}
+  m_LocalPosition: {x: 718.69995, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -28735,7 +28126,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1780803591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28784,6 +28179,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1780803592
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780803585}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1801853223
 GameObject:
   m_ObjectHideFlags: 0
@@ -28799,7 +28215,7 @@ GameObject:
   - component: {fileID: 1801853224}
   - component: {fileID: 1801853227}
   - component: {fileID: 1801853230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -28940,7 +28356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801853223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -115, y: -43.8, z: 0}
+  m_LocalPosition: {x: -151, y: -43.8, z: 0}
   m_LocalScale: {x: 1.1333699, y: 1.2796999, z: 1}
   m_Children:
   - {fileID: 833892713}
@@ -29055,7 +28471,7 @@ GameObject:
   - component: {fileID: 1822204686}
   - component: {fileID: 1822204685}
   - component: {fileID: 1822204687}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: LoopDrums
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29100,7 +28516,7 @@ Transform:
   m_LocalScale: {x: 2.88552, y: 4.652901, z: 2.88552}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1822204687
 MonoBehaviour:
@@ -29127,7 +28543,7 @@ GameObject:
   - component: {fileID: 1830933151}
   - component: {fileID: 1830933153}
   - component: {fileID: 1830933152}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -29233,7 +28649,7 @@ GameObject:
   - component: {fileID: 1833556554}
   - component: {fileID: 1833556555}
   - component: {fileID: 1833556556}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29310,7 +28726,7 @@ GameObject:
   - component: {fileID: 1835914439}
   - component: {fileID: 1835914441}
   - component: {fileID: 1835914440}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -29419,9 +28835,10 @@ GameObject:
   - component: {fileID: 1838861954}
   - component: {fileID: 1838861953}
   - component: {fileID: 1838861952}
-  m_Layer: 0
+  - component: {fileID: 1838861957}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29434,7 +28851,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838861950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 673.3, y: -13, z: 0}
+  m_LocalPosition: {x: 673.30005, y: -13, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -29548,7 +28965,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1838861956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29597,6 +29018,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1838861957
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838861950}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1843081605
 GameObject:
   m_ObjectHideFlags: 0
@@ -29608,7 +29050,7 @@ GameObject:
   - component: {fileID: 1843081606}
   - component: {fileID: 1843081608}
   - component: {fileID: 1843081607}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -29714,7 +29156,7 @@ GameObject:
   - component: {fileID: 1849555014}
   - component: {fileID: 1849555016}
   - component: {fileID: 1849555015}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (16)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -29820,7 +29262,7 @@ GameObject:
   - component: {fileID: 1853305213}
   - component: {fileID: 1853305215}
   - component: {fileID: 1853305214}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (47)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -29929,9 +29371,10 @@ GameObject:
   - component: {fileID: 1857118034}
   - component: {fileID: 1857118033}
   - component: {fileID: 1857118032}
-  m_Layer: 0
+  - component: {fileID: 1857118037}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (20)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30058,7 +29501,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1857118036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30107,6 +29554,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1857118037
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857118030}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1893382797
 GameObject:
   m_ObjectHideFlags: 0
@@ -30118,7 +29586,7 @@ GameObject:
   - component: {fileID: 1893382798}
   - component: {fileID: 1893382800}
   - component: {fileID: 1893382799}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30190,7 +29658,7 @@ GameObject:
   - component: {fileID: 1894139033}
   - component: {fileID: 1894139035}
   - component: {fileID: 1894139034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -30296,7 +29764,7 @@ GameObject:
   - component: {fileID: 1894750373}
   - component: {fileID: 1894750375}
   - component: {fileID: 1894750374}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -30405,9 +29873,10 @@ GameObject:
   - component: {fileID: 1910433499}
   - component: {fileID: 1910433498}
   - component: {fileID: 1910433497}
-  m_Layer: 0
+  - component: {fileID: 1910433502}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (9)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30534,7 +30003,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1910433501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30583,6 +30056,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1910433502
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910433495}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1912593284
 GameObject:
   m_ObjectHideFlags: 0
@@ -30597,9 +30091,10 @@ GameObject:
   - component: {fileID: 1912593288}
   - component: {fileID: 1912593287}
   - component: {fileID: 1912593286}
-  m_Layer: 0
+  - component: {fileID: 1912593291}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (14)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30726,7 +30221,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &1912593290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30775,6 +30274,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1912593291
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912593284}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1918517837
 GameObject:
   m_ObjectHideFlags: 0
@@ -30786,7 +30306,7 @@ GameObject:
   - component: {fileID: 1918517838}
   - component: {fileID: 1918517840}
   - component: {fileID: 1918517839}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -30895,9 +30415,10 @@ GameObject:
   - component: {fileID: 1953457867}
   - component: {fileID: 1953457866}
   - component: {fileID: 1953457865}
-  m_Layer: 0
+  - component: {fileID: 1953457871}
+  m_Layer: 2
   m_Name: Ciclope (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30997,7 +30518,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!95 &1953457868
 Animator:
   serializedVersion: 3
@@ -31072,13 +30597,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953457864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9867.9, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4914.95, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1953457871
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953457864}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1954177038
 GameObject:
   m_ObjectHideFlags: 0
@@ -31090,7 +30636,7 @@ GameObject:
   - component: {fileID: 1954177039}
   - component: {fileID: 1954177041}
   - component: {fileID: 1954177040}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31162,7 +30708,7 @@ GameObject:
   - component: {fileID: 1961969601}
   - component: {fileID: 1961969603}
   - component: {fileID: 1961969602}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -31268,7 +30814,7 @@ GameObject:
   - component: {fileID: 1973039173}
   - component: {fileID: 1973039175}
   - component: {fileID: 1973039174}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -31374,7 +30920,7 @@ GameObject:
   - component: {fileID: 1974726166}
   - component: {fileID: 1974726168}
   - component: {fileID: 1974726167}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -31483,9 +31029,10 @@ GameObject:
   - component: {fileID: 1988646216}
   - component: {fileID: 1988646215}
   - component: {fileID: 1988646214}
-  m_Layer: 0
+  - component: {fileID: 1988646217}
+  m_Layer: 2
   m_Name: Ciclope
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31564,12 +31111,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988646210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7342, y: -20.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3652, y: 4.05, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 710041039}
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1988646214
 PolygonCollider2D:
@@ -31666,7 +31213,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 5
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
+--- !u!50 &1988646217
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988646210}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1991715226
 GameObject:
   m_ObjectHideFlags: 0
@@ -31678,7 +31250,7 @@ GameObject:
   - component: {fileID: 1991715227}
   - component: {fileID: 1991715229}
   - component: {fileID: 1991715228}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -31784,7 +31356,7 @@ GameObject:
   - component: {fileID: 2004891218}
   - component: {fileID: 2004891220}
   - component: {fileID: 2004891219}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -31890,7 +31462,7 @@ GameObject:
   - component: {fileID: 2025177076}
   - component: {fileID: 2025177078}
   - component: {fileID: 2025177077}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -31999,9 +31571,10 @@ GameObject:
   - component: {fileID: 2048197498}
   - component: {fileID: 2048197497}
   - component: {fileID: 2048197496}
-  m_Layer: 0
+  - component: {fileID: 2048197501}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (12)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32128,7 +31701,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2048197500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32177,6 +31754,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2048197501
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048197494}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2061145473
 GameObject:
   m_ObjectHideFlags: 0
@@ -32188,7 +31786,7 @@ GameObject:
   - component: {fileID: 2061145474}
   - component: {fileID: 2061145476}
   - component: {fileID: 2061145475}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -32369,9 +31967,10 @@ GameObject:
   - component: {fileID: 2078639370}
   - component: {fileID: 2078639369}
   - component: {fileID: 2078639368}
-  m_Layer: 0
+  - component: {fileID: 2078639373}
+  m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (4)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32384,7 +31983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078639366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 198.1, y: -13.299999, z: 0}
+  m_LocalPosition: {x: 198.1001, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 710041039}
@@ -32498,7 +32097,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 2
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2078639372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32547,6 +32150,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2078639373
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078639366}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2090173372
 GameObject:
   m_ObjectHideFlags: 0
@@ -32557,7 +32181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2090173373}
   - component: {fileID: 2090173374}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: level 4 enemigos (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32637,7 +32261,7 @@ GameObject:
   - component: {fileID: 2100809569}
   - component: {fileID: 2100809571}
   - component: {fileID: 2100809570}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -32732,85 +32356,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &2101765031
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2101765032}
-  - component: {fileID: 2101765033}
-  m_Layer: 0
-  m_Name: 'level 4 enemigos '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2101765032
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101765031}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 639, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287531613}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2101765033
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101765031}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1484729683
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c281d9342f9e5aa46991cef1895c8707, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.4, y: 3.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &2105212439
 GameObject:
   m_ObjectHideFlags: 0
@@ -32825,9 +32370,10 @@ GameObject:
   - component: {fileID: 2105212443}
   - component: {fileID: 2105212442}
   - component: {fileID: 2105212441}
-  m_Layer: 0
+  - component: {fileID: 2105212446}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (11)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32954,7 +32500,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2105212445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33003,6 +32553,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2105212446
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105212439}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2109733678
 GameObject:
   m_ObjectHideFlags: 0
@@ -33112,7 +32683,7 @@ RectTransform:
   m_Children:
   - {fileID: 1035973645}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -33130,7 +32701,7 @@ GameObject:
   - component: {fileID: 2109982986}
   - component: {fileID: 2109982988}
   - component: {fileID: 2109982987}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -33236,7 +32807,7 @@ GameObject:
   - component: {fileID: 2110132703}
   - component: {fileID: 2110132705}
   - component: {fileID: 2110132704}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -33467,7 +33038,7 @@ GameObject:
   - component: {fileID: 2122556790}
   - component: {fileID: 2122556792}
   - component: {fileID: 2122556791}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -33573,7 +33144,7 @@ GameObject:
   - component: {fileID: 2133020228}
   - component: {fileID: 2133020230}
   - component: {fileID: 2133020229}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -33804,7 +33375,7 @@ GameObject:
   - component: {fileID: 2138775291}
   - component: {fileID: 2138775293}
   - component: {fileID: 2138775292}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -33910,7 +33481,7 @@ GameObject:
   - component: {fileID: 2138852158}
   - component: {fileID: 2138852160}
   - component: {fileID: 2138852159}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: piedra gris grande (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -34019,9 +33590,10 @@ GameObject:
   - component: {fileID: 2141742885}
   - component: {fileID: 2141742884}
   - component: {fileID: 2141742883}
-  m_Layer: 0
+  - component: {fileID: 2141742888}
+  m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (10)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34148,7 +33720,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
   health: 3
+  speed: 0
+  visionRadius: 0
+  attackkRadius: 0
 --- !u!212 &2141742887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34197,3 +33773,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2141742888
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141742881}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
