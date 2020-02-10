@@ -8,17 +8,17 @@ public class Store : MonoBehaviour
     public GameObject tiendaUI, vendedor, Warming;
     public TransactionManager manager;
     public Item[] items;
-    public AudioClip[] sellerAudioArray;
+    public AudioClip Tienda;
     public AudioClip powerUpSound;
     public AudioSource sellerSource;
     public Player player;
     public Text CoinNumber;
+    public static bool isOpen = false;
 
     bool playAudio = true;
 
     void Start()
     {
-        
         sellerSource = gameObject.AddComponent<AudioSource>();
         tiendaUI.SetActive(false);
         Time.timeScale = 1f;
@@ -32,19 +32,25 @@ public class Store : MonoBehaviour
             pause();
             if (playAudio)
             {
-                sellerSource.clip = sellerAudioArray[Random.Range(0, sellerAudioArray.Length)];
+                sellerSource.clip = Tienda;
                 sellerSource.PlayOneShot(sellerSource.clip);
                 playAudio = false;
             }
         }
+        if ((Input.GetKeyDown(KeyCode.Escape)) && (isOpen))
+        {
+            resume();
+        }
     }
     public void resume()
     {
+        isOpen = false;
         tiendaUI.SetActive(false);
         Warming.SetActive(false);
         Time.timeScale = 1f;
         vendedor.SetActive(true);
         playAudio = true;
+        PauseMenu.canPause = true;
     }
     void pause()
     {  
