@@ -17,7 +17,7 @@ public class Platform : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate() //Esto deberia ser Update
     {
         switch (sentido) {
             case 1:

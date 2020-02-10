@@ -2435,7 +2435,7 @@ GameObject:
   - component: {fileID: 235480100}
   - component: {fileID: 235480102}
   - component: {fileID: 235480101}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 247104678}
   - component: {fileID: 247104680}
   - component: {fileID: 247104679}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5616,7 +5616,7 @@ GameObject:
   - component: {fileID: 409507652}
   - component: {fileID: 409507654}
   - component: {fileID: 409507653}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5768,7 +5768,7 @@ GameObject:
   - component: {fileID: 417037426}
   - component: {fileID: 417037425}
   - component: {fileID: 417037424}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7567,7 +7567,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
@@ -7610,7 +7610,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 140
+  orthographic size: 96.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7634,7 +7634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.027771, y: -4.6237793, z: -10}
+  m_LocalPosition: {x: -69.89313, y: -47.723366, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7652,7 +7652,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 72cfcba229de7ed4b95363c7b729e7d1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9547,7 +9547,7 @@ GameObject:
   - component: {fileID: 735032737}
   - component: {fileID: 735032739}
   - component: {fileID: 735032738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10795,7 +10795,7 @@ GameObject:
   - component: {fileID: 868456202}
   - component: {fileID: 868456201}
   - component: {fileID: 868456200}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: stronger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11554,7 +11554,7 @@ GameObject:
   - component: {fileID: 930425300}
   - component: {fileID: 930425299}
   - component: {fileID: 930425298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: life
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11737,7 +11737,7 @@ GameObject:
   - component: {fileID: 938076329}
   - component: {fileID: 938076331}
   - component: {fileID: 938076330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attack
   m_TagString: attack
   m_Icon: {fileID: 0}
@@ -20382,7 +20382,7 @@ GameObject:
   - component: {fileID: 1486785969}
   - component: {fileID: 1486785968}
   - component: {fileID: 1486785967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21318,7 +21318,7 @@ GameObject:
   - component: {fileID: 1582383700}
   - component: {fileID: 1582383699}
   - component: {fileID: 1582383698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreenHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22665,7 +22665,7 @@ GameObject:
   - component: {fileID: 1715802507}
   - component: {fileID: 1715802509}
   - component: {fileID: 1715802508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24625,6 +24625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c42b007c99c3843b14608ea1b6c4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
   skin: 0
   difficulty: 0
 --- !u!4 &1930938425
@@ -24944,7 +24945,7 @@ GameObject:
   - component: {fileID: 1948840730}
   - component: {fileID: 1948840732}
   - component: {fileID: 1948840731}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26363,7 +26364,7 @@ GameObject:
   - component: {fileID: 2093698003}
   - component: {fileID: 2093698001}
   - component: {fileID: 2093698004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -27409,7 +27410,7 @@ GameObject:
   - component: {fileID: 2133533353}
   - component: {fileID: 2133533355}
   - component: {fileID: 2133533354}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,5 +15,7 @@ public class LevelGate : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene(escenas, LoadSceneMode.Single);
+        DataManager.saveGame();
+        DataSave.saveCurrentGame();
     }
 }

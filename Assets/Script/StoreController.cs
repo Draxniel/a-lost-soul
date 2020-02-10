@@ -12,6 +12,8 @@ public class StoreController : MonoBehaviour
         {
             tiendaUI.SetActive(true);
             gameObject.SetActive(false);
+            PauseMenu.canPause = false;
+            Store.isOpen = true;
         }
     }
 }

@@ -13,7 +13,7 @@ public class SoulPrologo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         pass += Time.deltaTime;
         if ((gameObject.transform.position.y > 105) && (gameObject.transform.position.x > 188) && (pass < 5))
