@@ -8,7 +8,7 @@ public class Store : MonoBehaviour
     public GameObject tiendaUI, vendedor, Warming;
     public TransactionManager manager;
     public Item[] items;
-    public AudioClip[] sellerAudioArray;
+    public AudioClip Tienda;
     public AudioClip powerUpSound;
     public AudioSource sellerSource;
     public Player player;
@@ -32,7 +32,7 @@ public class Store : MonoBehaviour
             pause();
             if (playAudio)
             {
-                sellerSource.clip = sellerAudioArray[Random.Range(0, sellerAudioArray.Length)];
+                sellerSource.clip = Tienda;
                 sellerSource.PlayOneShot(sellerSource.clip);
                 playAudio = false;
             }
