@@ -18,27 +18,26 @@ public class Cell : MonoBehaviour
         active = false;
     }
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        time += Time.deltaTime;
-        if ((time > 2) && (active) && (isTouched))
-        {
-            gameObject.SetActive(false);
+        if (active) {
+            audioSource.clip = sound;
+            audioSource.PlayOneShot(audioSource.clip);
+            Invoke("vanishObject", 1.2f);
+            Invoke("showOpenObject", 1.2f);
         }
+    }
+
+    public void vanishObject()
+    {
+        gameObject.SetActive(false);
+    }
+    public void showOpenObject()
+    {
         if (openCell != null)
         {
             openCell.SetActive(true);
 
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (active) { 
-            audioSource.clip = sound;
-            audioSource.PlayOneShot(audioSource.clip);
-            time = 0;
-            isTouched = true;
         }
     }
 }

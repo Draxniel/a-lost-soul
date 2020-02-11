@@ -27,12 +27,15 @@ public class AcObject : MonoBehaviour
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
                 active = true;
                 audioSource.clip = sound;
+                audioSource.volume = 1f;
                 audioSource.PlayOneShot(audioSource.clip);
             }
             else
             {
+                audioSource.clip = sound;
+                audioSource.PlayOneShot(audioSource.clip);
+                Invoke("vanishObject", 0.6f);
                 active = true;
-                gameObject.SetActive(false);
             }
         }
         ActivateCell();
@@ -51,6 +54,10 @@ public class AcObject : MonoBehaviour
             }
         }
         return true;
+    }
+    public void vanishObject()
+    {
+        gameObject.SetActive(false);
     }
 
     public void ActivateCell()  //Activa la celda que contiene el coleccionable

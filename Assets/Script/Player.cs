@@ -48,7 +48,6 @@ public class Player : Entity
             AttackAnim();
         }
         deathSoundCheck();
-        //Debug.Log(time);
 
 
         attackObject.GetComponent<Transform>().position = this.GetComponent<Transform>().position; 
