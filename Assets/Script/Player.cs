@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class Player : Entity
 {
     private bool canJump, attacking, canAttack;
-    private float attackTime;
-    private int coins, skin, maxHealth, damageMultiplier;
+    private float attackTime, time;
+    private int coins, skin, maxHealth, damageMultiplier, x,y;
     public DataManager manager;
-    public AudioClip jumpSound, walkSound, attackSound;
+    public AudioClip jumpSound, walkSound, attackSound, attackScream, deathSound;
     public GameObject attackObject;
     public Text life, CoinNumber,Stronger,Defense;
+    private bool falling = false;
 
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
@@ -33,16 +34,21 @@ public class Player : Entity
         attackTime = 5;
         attackObject.SetActive(false);
         attacking = false;
+        x = 1;
+        y = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
         if (stats[Stat.Health] > 0)
         {
             Move();
             AttackAnim();
         }
+        deathSoundCheck();
+
 
         attackObject.GetComponent<Transform>().position = this.GetComponent<Transform>().position; 
 
@@ -75,6 +81,8 @@ public class Player : Entity
         CoinNumber.text = (getCoins()).ToString();
         Defense.text = (GetStatValue(Stat.Defense)).ToString();
         Stronger.text = (GetStatValue(Stat.Strength)).ToString();
+        isFalling();
+        checkFalling();
 
     }
 
@@ -89,6 +97,26 @@ public class Player : Entity
             }
             stats[Stat.Health] = 0;
         }
+    }
+
+    private void deathSoundCheck()
+    {
+        if (stats[Stat.Health] == 0){
+            if (y == 1)
+            {
+                time = 0;
+                y++;
+            }
+            if ((time > 0.1) && (x==1))
+            {
+                GetComponent<AudioSource>().clip = deathSound;
+                GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  // Sonido al saltar, y para que suene diferente cada vez que se ejecute. 
+                GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
+                GetComponent<AudioSource>().Play();
+                x++;
+            }
+        }
+        
     }
 
     public void Jump()
@@ -111,6 +139,7 @@ public class Player : Entity
         {
             canJump = true;
             GetComponent<Animator>().SetBool("jumpping", false);
+            falling = false;
         }
 
     }
@@ -221,6 +250,30 @@ public class Player : Entity
     public int getCoins()
     {
         return this.coins;
+    }
+
+    public void isFalling()
+    {
+        if (falling)
+        {
+            GetComponent<Animator>().SetBool("falling", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("falling", false);
+        }
+    }
+
+    public void checkFalling()
+    {
+       if (GetComponent<Rigidbody2D>().velocity.y < -0.1)
+        {
+            falling = true;
+        }
+        else
+        {
+            falling = false;
+        }
     }
 
     public void takeCoins(int coins)

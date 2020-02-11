@@ -1803,6 +1803,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openCell: {fileID: 0}
   active: 0
+  sound: {fileID: 8300000, guid: 59d62935d5981b445b73bc8628769ba1, type: 3}
+  audioSource: {fileID: 0}
+  time: 0
 --- !u!1 &184657979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7780,7 +7783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -69.84509, y: -47.723366, z: -10}
+  m_LocalPosition: {x: -69.84125, y: -47.723366, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15975,6 +15978,8 @@ MonoBehaviour:
   lever: 1
   active: 0
   objects: []
+  sound: {fileID: 8300000, guid: 3d998bac426088d489bfe31f78d1b5e1, type: 3}
+  audioSource: {fileID: 0}
 --- !u!212 &1203845401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26725,7 +26730,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 24, y: 30}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -26820,6 +26825,8 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 0cc744b6da927684788d344f725db738, type: 3}
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
+  attackScream: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 80a99c923919ba34abe295e2dfcdab79, type: 3}
   attackObject: {fileID: 938076328}
   life: {fileID: 930425298}
   CoinNumber: {fileID: 417037424}
@@ -26845,7 +26852,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.055526733
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
