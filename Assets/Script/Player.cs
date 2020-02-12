@@ -244,5 +244,4 @@ public class Player : Entity
             maxHealth = stats[Stat.Health];
         }
     }
-
 }
