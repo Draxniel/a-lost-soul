@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : Entity
+public class Boss : Enemy
 {
-    public Player player;
-    public DataManager manager;
-    public int health, speed;
-    public float visionRadius;
-    public float attackkRadius;
-    protected bool attacking;
-    protected float attackTime, timer;
-    protected Vector3 initialPosition;
 
-    public Enemy(int health, int strength, int defense) : base(health, strength, defense)
+    private Dictionary<int,Vector3> initialPositions;
+    private bool canChange, canAttack;
+    private int cont;
+    private float specialAttackTime, attackWait;
+
+    public Boss(int health, int strength, int defense) : base(health, strength, defense)
     {
 
     }
@@ -28,13 +25,19 @@ public class Enemy : Entity
         stats.Add(Stat.Defense, 1);
         //healthBar.fillAmount = 1;
         attackTime = 0;
-        attacking = false;
+        attackWait = 0;
+        specialAttackTime = 0;
+        cont = 0;
         timer = 0;
-        initialPosition = transform.position; //Posicion inicial igual a posicion actual
-        //MEDIDAS PARA EL MINOTAURO
-        visionRadius = 100;
-        attackkRadius = 60;
-        speed = 40;
+        initialPositions = new Dictionary<int, Vector3>();
+        initialPositions.Add(1, transform.position);
+        initialPositions.Add(2, transform.position);
+        initialPositions.Add(3, transform.position);
+        initialPositions.Add(4, transform.position);
+        canChange = false;
+        canAttack = true;
+        attacking = false;
+        initialPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -42,9 +45,10 @@ public class Enemy : Entity
     {
         //Validacion por si la vida del enemigo es cero
         health = GetStatValue(Stat.Health);
-        if (GetStatValue(Stat.Health) == 0 || (player.GetStatValue(Stat.Health) == 0))
+        if ((GetStatValue(Stat.Health) == 0) || (player.GetStatValue(Stat.Health) == 0))
         {
             GetComponent<Animator>().SetBool("attack", false);
+            canAttack = false;
             speed = 0;
             timer += Time.deltaTime;
             if (GetStatValue(Stat.Health) == 0)
@@ -64,7 +68,7 @@ public class Enemy : Entity
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if (attackTime >= 0.3f)
+        if ((attackTime >= 0.6f) || (!attacking && attackTime != 0))
         {
             GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
@@ -81,36 +85,34 @@ public class Enemy : Entity
         }
 
         /*
-         Porcion de codigo encargada de la persecucion del enemigo al player
+         Porcion de codigo encargada del ataque del jefe al player
          */
+
+        if (canChange)  //Se cambia la posicion inicial del boss para cambiar el lugar donde esta estatico por mas tiempo
+        {
+            initialPosition = initialPositions[Random.Range(1, 5)];
+            canChange = false;
+        }
 
         Vector3 target = initialPosition;
 
-        RaycastHit2D hit = Physics2D.Raycast(
-            transform.position,
-            player.transform.position - transform.position,
-            visionRadius,
-            1 << LayerMask.NameToLayer("Player"));
+        attackWait += Time.deltaTime;
+
+        if ((attackWait >= 3f) && (canAttack))
+        {
+            target = player.transform.position;
+        }
 
         Vector3 forward = transform.TransformDirection(player.transform.position - transform.position);
 
         Debug.DrawRay(transform.position, forward, Color.red);
 
-        if (hit.collider != null)
-        {
-            if (hit.collider.tag == "Player")
-            {
-                target = player.transform.position;
-            }
-        }
-
         float distance = Vector3.Distance(target, transform.position);
         Vector3 dir = (target - transform.position).normalized;
-        dir.y = 0;  //Colocamos Y en cero ya que no se deben mover en esa coordenada 
 
-        if (target != initialPosition && distance < attackkRadius)
+        if ((target != initialPosition && distance < attackkRadius) || attacking)
         {
-            //Atacar
+            //Atacar detenido
         }
         else
         {
@@ -122,63 +124,41 @@ public class Enemy : Entity
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
-
+            //Movimiento hacia el objetivo
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
-            //Animaciones de movimiento
         }
 
-        if (target == initialPosition && distance < 1f)  //Validacion para que al estar muy cerca de su posicion inicial rectorne a ella y no se quede en un bucle intentando llegar
+        if (target == initialPosition && distance < 1.5f)  //Validacion para que al estar muy cerca de su posicion inicial retorne a ella y no se quede en un bucle intentando llegar
         {
             transform.position = initialPosition;
+            canAttack = true;
         }
 
         Debug.DrawLine(transform.position, target, Color.green);
-
     }
 
     public override void Attack(Entity player)
     {
         attacking = true;
         GetComponent<Animator>().SetBool("attack", true);
-        if (attackTime >= 0.8f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        if (attackTime >= 0.4f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
             {
+                Debug.Log("DAÑADO");
                 player.TakeDamage(GetStatValue(Stat.Strength));
             }
-            GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
+            canAttack = false;
+            canChange = true;
+            attackWait = 0;
         }
+
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void SpecialAttack(Player player)
     {
-        if (collision.transform.tag == "attack")
-        {
-            player.Attack(this);
-        }
-        else if (collision.transform.tag == "Player")
-        {
-            Attack(player);
-        }
-    }
 
-    public override void TakeDamage(int damage)
-    {
-        if (GetStatValue(Stat.Health) > 0)
-        {
-            if (damage <= GetStatValue(Stat.Health))
-            {
-                this.stats[Stat.Health] -= damage;
-                return;
-            }
-            stats[Stat.Health] = 0;
-        }
-    }
-
-    public override void Move()
-    {
-        throw new System.NotImplementedException();
     }
 
     private void OnDrawGizmosSelected()
@@ -186,6 +166,22 @@ public class Enemy : Entity
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, visionRadius);
         Gizmos.DrawWireSphere(transform.position, attackkRadius);
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "attack")
+        {
+            canAttack = false;
+            player.Attack(this);
+        }
+        else if (collision.transform.tag == "Player")
+        {
+            if (canAttack)
+            {
+                Attack(player);
+            }
+        }
     }
 
 }
