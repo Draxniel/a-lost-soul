@@ -7,12 +7,15 @@ public class DataManager : MonoBehaviour
 
     public static DataManager manager;
     private Dictionary<Stat, int> stats;
-    private int coins, maxHealth; 
+    public int maxHealth;
+    public int coins;
     public int skin;
     public int difficulty;
-
+    public static int level;
+    private PlayerData data;
     private void Awake()    //Se ejecuta antes de Start()
     {
+        Debug.Log(level);
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
             DontDestroyOnLoad(gameObject);
@@ -25,6 +28,7 @@ public class DataManager : MonoBehaviour
             manager = this; //Entonces se asigna este objeto a la variable estática para mantenerse en la ejecución de todo el juego
             skin = 1;
             difficulty = 1;
+            level = 1;
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
@@ -33,24 +37,65 @@ public class DataManager : MonoBehaviour
             skin = manager.getSkinNumber();
             difficulty = manager.getDifficulty();
             maxHealth = manager.getMaxHealth();
+            level = manager.getLevel();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
-                maxHealth = 5;
-                stats[Stat.Health] = maxHealth;
-                stats[Stat.Strength] = 1;
-                stats[Stat.Defense] = 1;
-                coins = 0;
+                if (level == 1){
+                    maxHealth = 5;
+                    stats[Stat.Health] = maxHealth;
+                    stats[Stat.Defense] = 1;
+                    stats[Stat.Strength] = 1;
+                    coins = 0;
+                }
+                else
+                {
+                    manager.loadGame();
+                    maxHealth = manager.maxHealth;
+                    stats[Stat.Health] = maxHealth;
+                    stats[Stat.Defense] = manager.stats[Stat.Defense];
+                    stats[Stat.Strength] = manager.stats[Stat.Strength]; ;
+                    coins = manager.coins;
+                }
             }
+        }
+        data = DataSave.loadCurrentGame();
+        if (Checkpoint.isGameLoaded)
+        {
+            maxHealth = data.maxHealth;
+            stats[Stat.Health] = maxHealth;
+            stats[Stat.Defense] = data.stats[Stat.Defense];
+            stats[Stat.Strength] = data.stats[Stat.Strength]; ;
+            coins = data.coins;
+            skin = data.skin;
+            level = data.level;
         }
     }
 
     private void Update()   //Se actualizan los datos del atributo estático
     {
+        updateManager();
+    }
+
+    public void updateManager()
+    {
         manager.setStats(stats);
-        manager.setCoins(coins);
         manager.setSkinNumber(skin);
         manager.setMaxHealth(maxHealth);
         manager.setDifficulty(difficulty);
+        manager.setCoins(coins);
+    }
+
+    public void passLevel()
+    {
+        level += 1;
+    }
+    public void setLevel(int levelNumber)
+    {
+        level = levelNumber;
+    }
+    public int getLevel()
+    {
+        return level;
     }
 
     public Dictionary<Stat, int> getStats()
@@ -99,5 +144,16 @@ public class DataManager : MonoBehaviour
     public void setMaxHealth(int maxHealth)
     {
         this.maxHealth = maxHealth;
+    }
+    public static void saveGame()
+    {
+        manager.updateManager();
+        manager.passLevel();
+        Checkpoint.saveData(manager);
+        Debug.Log(manager.getLevel());
+    }
+    public void loadGame()
+    {
+       manager = Checkpoint.loadData();
     }
 }

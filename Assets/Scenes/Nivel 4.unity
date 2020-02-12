@@ -1025,9 +1025,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &84817397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1149,9 +1149,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!60 &95436401
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3094,7 +3094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222718388}
   - component: {fileID: 222718387}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Attack
   m_TagString: attack
   m_Icon: {fileID: 0}
@@ -3193,9 +3193,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!60 &226376977
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3718,9 +3718,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &258838643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5629,9 +5629,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &387208004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6073,9 +6073,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &405968023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6355,9 +6355,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!60 &443404008
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7383,9 +7383,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &480115330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7907,9 +7907,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &502143026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8114,6 +8114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c42b007c99c3843b14608ea1b6c4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
+  coins: 0
   skin: 0
   difficulty: 0
 --- !u!4 &509470810
@@ -8241,7 +8243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.36888, y: -43.644695, z: -10}
+  m_LocalPosition: {x: -57.183212, y: -43.682537, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8940,9 +8942,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!60 &562115607
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9397,9 +9399,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &567158607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10960,9 +10962,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &679223959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11084,9 +11086,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!60 &698421961
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11397,9 +11399,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &698918723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12270,9 +12272,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &792360144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12500,9 +12502,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!60 &806225616
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12728,7 +12730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819991147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.952103, y: -1.2217484, z: 351.5625}
+  m_LocalPosition: {x: 7092.048, y: -1.2217484, z: 351.5625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1190942201}
@@ -13302,7 +13304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838368059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.952103, y: -1.2217484, z: 351.5625}
+  m_LocalPosition: {x: -17.952103, y: -1.2217484, z: 351.5625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1635036019}
@@ -13472,9 +13474,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &846878783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14186,9 +14188,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &934486789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15103,9 +15105,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!60 &993418215
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15561,9 +15563,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1028850218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16037,9 +16039,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1044766068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16717,9 +16719,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1093980272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17014,9 +17016,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!95 &1097398155
 Animator:
   serializedVersion: 3
@@ -17265,9 +17267,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1100478621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17668,9 +17670,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1112381808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17992,9 +17994,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1132415800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18210,9 +18212,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1148764489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18428,9 +18430,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1151636105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18725,9 +18727,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1159077018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19023,9 +19025,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1168080179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19977,9 +19979,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1216282535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20513,9 +20515,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1281898168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20916,9 +20918,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1289442824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21576,9 +21578,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!95 &1327875873
 Animator:
   serializedVersion: 3
@@ -21981,9 +21983,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!50 &1357989258
 Rigidbody2D:
   serializedVersion: 4
@@ -22469,9 +22471,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1391009183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22872,9 +22874,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1416523933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23476,9 +23478,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!95 &1446136171
 Animator:
   serializedVersion: 3
@@ -24870,9 +24872,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1536035317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25379,9 +25381,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1575829566
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25582,9 +25584,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!60 &1587717231
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26165,9 +26167,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!95 &1646331383
 Animator:
   serializedVersion: 3
@@ -26628,9 +26630,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1682687209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27441,9 +27443,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1740094373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28128,9 +28130,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1780803591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28356,7 +28358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801853223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -151, y: -43.8, z: 0}
+  m_LocalPosition: {x: -146, y: -43.8, z: 0}
   m_LocalScale: {x: 1.1333699, y: 1.2796999, z: 1}
   m_Children:
   - {fileID: 833892713}
@@ -28967,9 +28969,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1838861956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29503,9 +29505,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1857118036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30005,9 +30007,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &1910433501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30223,9 +30225,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &1912593290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30520,9 +30522,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!95 &1953457868
 Animator:
   serializedVersion: 3
@@ -31215,9 +31217,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 5
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 40
+  visionRadius: 150
+  attackkRadius: 60
 --- !u!50 &1988646217
 Rigidbody2D:
   serializedVersion: 4
@@ -31703,9 +31705,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &2048197500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32099,9 +32101,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 2
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 33
 --- !u!212 &2078639372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32502,9 +32504,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &2105212445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33722,9 +33724,9 @@ MonoBehaviour:
   player: {fileID: 1801853224}
   manager: {fileID: 509470809}
   health: 3
-  speed: 0
-  visionRadius: 0
-  attackkRadius: 0
+  speed: 60
+  visionRadius: 130
+  attackkRadius: 35
 --- !u!212 &2141742887
 SpriteRenderer:
   m_ObjectHideFlags: 0

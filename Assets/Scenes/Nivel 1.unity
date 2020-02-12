@@ -24625,6 +24625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c42b007c99c3843b14608ea1b6c4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
   skin: 0
   difficulty: 0
 --- !u!4 &1930938425
