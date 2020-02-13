@@ -47,7 +47,7 @@ public class Boss : Enemy
         health = GetStatValue(Stat.Health);
         if ((GetStatValue(Stat.Health) == 0) || (player.GetStatValue(Stat.Health) == 0))
         {
-            GetComponent<Animator>().SetBool("attack", false);
+            GetComponent<Animator>().SetBool("Attacking", false);
             canAttack = false;
             speed = 0;
             timer += Time.deltaTime;
@@ -62,17 +62,18 @@ public class Boss : Enemy
             }
         }
 
-        if (attacking)
+        if (attacking /*&& canAttack*/)
         {
             attackTime += Time.deltaTime;
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if ((attackTime >= 0.6f) || (!attacking && attackTime != 0))
+        if ((attackTime >= 1f) || (!attacking && attackTime != 0))
         {
-            GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
+            GetComponent<Animator>().SetBool("Attacking", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
             attacking = false;
+            canAttack = false;
         }
 
         if (player.transform.position.x <= transform.position.x)
@@ -101,6 +102,11 @@ public class Boss : Enemy
         if ((attackWait >= 3f) && (canAttack))
         {
             target = player.transform.position;
+        }
+
+        if (attackWait >= 15f)
+        {
+            attackWait = 0;
         }
 
         Vector3 forward = transform.TransformDirection(player.transform.position - transform.position);
@@ -140,8 +146,8 @@ public class Boss : Enemy
     public override void Attack(Entity player)
     {
         attacking = true;
-        GetComponent<Animator>().SetBool("attack", true);
-        if (attackTime >= 0.4f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        GetComponent<Animator>().SetBool("Attacking", true);
+        if (attackTime >= 0.6f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
@@ -172,12 +178,27 @@ public class Boss : Enemy
     {
         if (collision.transform.tag == "attack")
         {
-            canAttack = false;
+            /*
+             * Codigo comentado: para que el boss vuelva a su punto de inicio
+             */
+            //canAttack = false;
+            //GetComponent<Animator>().SetBool("Attacking", canAttack);
             player.Attack(this);
         }
         else if (collision.transform.tag == "Player")
         {
-            if (canAttack)
+            if ((attackWait >= 3) && canAttack)
+            {
+                Attack(player);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Player")
+        {
+            if ((attackWait >= 3) && canAttack)
             {
                 Attack(player);
             }
