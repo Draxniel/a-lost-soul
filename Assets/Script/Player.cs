@@ -8,7 +8,7 @@ public class Player : Entity
 {
     private bool canJump, attacking, canAttack;
     private float attackTime;
-    private int coins, skin, maxHealth, damageMultiplier;
+    public int coins, skin, maxHealth, damageMultiplier;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound;
     public GameObject attackObject;
@@ -38,6 +38,7 @@ public class Player : Entity
     // Update is called once per frame
     void Update()
     {
+        setStatValue(Stat.Health, maxHealth);
         if (stats[Stat.Health] > 0)
         {
             Move();

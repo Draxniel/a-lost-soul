@@ -6,9 +6,11 @@ public class Boss : Enemy
 {
 
     private Dictionary<int,Vector3> initialPositions;
-    private bool canChange, canAttack;
+    private bool canChange, canAttack, specialAttack;
     private int cont;
     private float specialAttackTime, attackWait;
+    private Vector3 specialAttackPosition;
+    public Missile[] missile;
 
     public Boss(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -31,12 +33,14 @@ public class Boss : Enemy
         timer = 0;
         initialPositions = new Dictionary<int, Vector3>();
         initialPositions.Add(1, transform.position);
-        initialPositions.Add(2, transform.position);
-        initialPositions.Add(3, transform.position);
-        initialPositions.Add(4, transform.position);
+        initialPositions.Add(2, new Vector3(193, 183, 0));
+        specialAttackPosition = initialPositions[2];
+        initialPositions.Add(3, new Vector3(315, 191, 0));
+        initialPositions.Add(4, new Vector3(381, 89, 0));
         canChange = false;
         canAttack = true;
         attacking = false;
+        specialAttack = false;
         initialPosition = transform.position;
     }
 
@@ -68,7 +72,7 @@ public class Boss : Enemy
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if ((attackTime >= 1f) || (!attacking && attackTime != 0))
+        if ((attackTime >= 0.8f) || (!attacking && attackTime != 0))
         {
             GetComponent<Animator>().SetBool("Attacking", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
@@ -99,21 +103,45 @@ public class Boss : Enemy
 
         attackWait += Time.deltaTime;
 
-        if ((attackWait >= 3f) && (canAttack))
+        if ((attackWait >= 3f) && (canAttack) && (!specialAttack))
         {
             target = player.transform.position;
+        }
+
+        if (cont >= 2)  //Cada numero de ataques o regreso a su sitio inicial, se hara un ataque especial
+        {
+            specialAttack = true;
+            missile[0].ResetPosition();
+            cont = 0;
+        }
+
+        float distance = Vector3.Distance(target, transform.position);
+
+        if (specialAttack)
+        {
+            canChange = false;
+            initialPosition = specialAttackPosition;
+            target = initialPosition;
+            specialAttackTime += Time.deltaTime;
+            if (distance < 2f)  //Validacion para que al estar muy cerca de la posicion se coloque en ella y no se quede en un bucle intentando llegar
+            {
+                transform.position = initialPosition;
+                canAttack = true;
+            }
+            SpecialAttack();
         }
 
         if (attackWait >= 15f)
         {
             attackWait = 0;
+            canChange = true;
+            cont += 1;
         }
 
         Vector3 forward = transform.TransformDirection(player.transform.position - transform.position);
 
         Debug.DrawRay(transform.position, forward, Color.red);
 
-        float distance = Vector3.Distance(target, transform.position);
         Vector3 dir = (target - transform.position).normalized;
 
         if ((target != initialPosition && distance < attackkRadius) || attacking)
@@ -134,7 +162,7 @@ public class Boss : Enemy
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
         }
 
-        if (target == initialPosition && distance < 1.5f)  //Validacion para que al estar muy cerca de su posicion inicial retorne a ella y no se quede en un bucle intentando llegar
+        if (target == initialPosition && distance < 2f)  //Validacion para que al estar muy cerca de su posicion inicial retorne a ella y no se quede en un bucle intentando llegar
         {
             transform.position = initialPosition;
             canAttack = true;
@@ -152,19 +180,33 @@ public class Boss : Enemy
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
             {
-                Debug.Log("DAÑADO");
                 player.TakeDamage(GetStatValue(Stat.Strength));
             }
             canAttack = false;
             canChange = true;
             attackWait = 0;
+            cont += 1;
         }
 
     }
 
-    void SpecialAttack(Player player)
+    void SpecialAttack()
     {
-
+        if (transform.position == specialAttackPosition)
+        {
+            attacking = true;
+            missile[0].gameObject.SetActive(true);
+            
+            if (specialAttackTime >= 5f)   //Pasado el tiempo de ataque especial, esto pasara
+            {
+                specialAttack = false;
+                attacking = false;
+                canChange = true;
+                attackWait = 2f;
+                missile[0].gameObject.SetActive(false);
+                specialAttackTime = 0;
+            }
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -180,9 +222,10 @@ public class Boss : Enemy
         {
             /*
              * Codigo comentado: para que el boss vuelva a su punto de inicio
+             *
+             *canAttack = false;
+             *GetComponent<Animator>().SetBool("Attacking", canAttack);
              */
-            //canAttack = false;
-            //GetComponent<Animator>().SetBool("Attacking", canAttack);
             player.Attack(this);
         }
         else if (collision.transform.tag == "Player")
