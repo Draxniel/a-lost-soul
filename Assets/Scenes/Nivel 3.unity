@@ -16463,6 +16463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1677029232}
+  soulSound: {fileID: 0}
 --- !u!114 &358887200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16476,6 +16477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 343814330}
+  soulSound: {fileID: 8300000, guid: e9a71cb7e0591104599d6a17a17d9e54, type: 3}
 --- !u!114 &358887201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16489,6 +16491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 779659337}
+  soulSound: {fileID: 0}
 --- !u!1 &360030133
 GameObject:
   m_ObjectHideFlags: 0
@@ -20451,8 +20454,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427603234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: 185.00002, z: 290.6003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 20.989998, y: 180.4, z: 290.6003}
+  m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
   m_Children: []
   m_Father: {fileID: 319155226}
   m_RootOrder: 25
@@ -25598,7 +25601,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 96.9
+  orthographic size: 140
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -34762,8 +34765,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727979257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.72995, y: 139.00002, z: 290.6003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -30.000004, y: 129.11, z: 290.6003}
+  m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
   m_Children: []
   m_Father: {fileID: 319155226}
   m_RootOrder: 18
@@ -52760,8 +52763,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129588244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: 92, z: 290.6003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 20.989998, y: 76.7, z: 290.6003}
+  m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
   m_Children: []
   m_Father: {fileID: 319155226}
   m_RootOrder: 13
@@ -63328,8 +63331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333937471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.72995, y: 92, z: 290.6003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -30, y: 76.7, z: 290.6003}
+  m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
   m_Children: []
   m_Father: {fileID: 319155226}
   m_RootOrder: 12
@@ -85983,8 +85986,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830720760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.72995, y: 185, z: 290.6003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -30.000004, y: 180.4, z: 290.6003}
+  m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
   m_Children: []
   m_Father: {fileID: 319155226}
   m_RootOrder: 24
@@ -97226,6 +97229,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
   attackScream: {fileID: 0}
   deathSound: {fileID: 0}
+  fallingSound: {fileID: 0}
   attackObject: {fileID: 1851596443}
   life: {fileID: 409349821}
   CoinNumber: {fileID: 931435138}

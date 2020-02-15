@@ -10,7 +10,7 @@ public class Player : Entity
     private float attackTime, time;
     private int coins, skin, maxHealth, damageMultiplier, x,y;
     public DataManager manager;
-    public AudioClip jumpSound, walkSound, attackSound, attackScream, deathSound;
+    public AudioClip jumpSound, walkSound, attackSound, attackScream, deathSound,fallingSound;
     public GameObject attackObject;
     public Text life, CoinNumber,Stronger,Defense;
     private bool falling = false;
@@ -47,8 +47,6 @@ public class Player : Entity
             Move();
             AttackAnim();
         }
-        deathSoundCheck();
-
         else
         {
             GetComponent<Animator>().SetBool("dead", true);
@@ -56,6 +54,7 @@ public class Player : Entity
             GetComponent<Animator>().SetBool("running", false);
             GetComponent<Animator>().SetBool("jumpping", false);
         }
+        deathSoundCheck();
 
         attackObject.GetComponent<Transform>().position = this.GetComponent<Transform>().position; 
 
@@ -277,7 +276,7 @@ public class Player : Entity
 
     public void checkFalling()
     {
-       if (GetComponent<Rigidbody2D>().velocity.y < -0.1)
+       if (GetComponent<Rigidbody2D>().velocity.y < -0.5)
         {
             falling = true;
         }

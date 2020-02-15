@@ -23564,6 +23564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 57038504}
+  soulSound: {fileID: 8300000, guid: e9a71cb7e0591104599d6a17a17d9e54, type: 3}
 --- !u!1 &1124552316
 GameObject:
   m_ObjectHideFlags: 0
@@ -42835,6 +42836,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
   attackScream: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 80a99c923919ba34abe295e2dfcdab79, type: 3}
+  fallingSound: {fileID: 0}
   attackObject: {fileID: 868066421}
   life: {fileID: 1933548306}
   CoinNumber: {fileID: 509981292}
