@@ -1083,6 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c42b007c99c3843b14608ea1b6c4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   coins: 0
   skin: 0
   difficulty: 0
@@ -1480,7 +1481,7 @@ GameObject:
   - component: {fileID: 2034737968}
   - component: {fileID: 2034737967}
   m_Layer: 5
-  m_Name: Button  Shop
+  m_Name: Button  Load
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
