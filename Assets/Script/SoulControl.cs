@@ -11,6 +11,7 @@ public class SoulControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SoundController.assignSound(soulSound);
+        SoundController.setVolume(1.3f);
         SoundController.playSound();
         gameObject.SetActive(false);
         door.gameObject.SetActive(true);
