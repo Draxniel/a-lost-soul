@@ -28,6 +28,7 @@ public class GameoverM : MonoBehaviour
             player.GetComponent<Animator>().SetBool("running", false);
             player.GetComponent<Animator>().SetBool("jumpping", false);
             player.GetComponent<Animator>().SetBool("attack", false);
+            SoundController.pauseSound();
             //Time.timeScale = 0f;
         }
     }

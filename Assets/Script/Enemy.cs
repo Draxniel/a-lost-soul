@@ -12,6 +12,7 @@ public class Enemy : Entity
     protected bool attacking;
     protected float attackTime, timer;
     protected Vector3 initialPosition;
+    public AudioClip attackSound, weaponSound, deathSound;
 
     public Enemy(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -50,7 +51,9 @@ public class Enemy : Entity
             if (GetStatValue(Stat.Health) == 0)
             {
                 GetComponent<Animator>().SetBool("dead", true); //BOOL PARA ANIMACION DE MUERTE
-
+                if (!(SoundController.isPlaying())){
+                    SoundController.playOneShot(deathSound);
+                }
                 if (timer >= 1) //Este tiempo se modifica según la duración de la animación de muerte
                 {
                     gameObject.SetActive(false);
@@ -64,7 +67,7 @@ public class Enemy : Entity
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if (attackTime >= 0.3f)
+        if (attackTime >= 0.6f)
         {
             GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
@@ -139,9 +142,11 @@ public class Enemy : Entity
     {
         attacking = true;
         GetComponent<Animator>().SetBool("attack", true);
-        if (attackTime >= 0.8f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        if (attackTime >= 0.5f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
+            SoundController.playOneShot(attackSound);
+            SoundController.playOneShot(weaponSound);
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
             {
                 player.TakeDamage(GetStatValue(Stat.Strength));
