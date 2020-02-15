@@ -64,7 +64,7 @@ public class Enemy : Entity
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if (attackTime >= 0.3f)
+        if (attackTime >= 0.8f)
         {
             GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
@@ -139,7 +139,7 @@ public class Enemy : Entity
     {
         attacking = true;
         GetComponent<Animator>().SetBool("attack", true);
-        if (attackTime >= 0.8f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        if (attackTime >= 0.6f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
