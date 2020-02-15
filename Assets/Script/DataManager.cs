@@ -15,7 +15,6 @@ public class DataManager : MonoBehaviour
     private PlayerData data;
     private void Awake()    //Se ejecuta antes de Start()
     {
-        Debug.Log(level);
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
         {
             DontDestroyOnLoad(gameObject);

@@ -49,6 +49,13 @@ public class Player : Entity
         }
         deathSoundCheck();
 
+        else
+        {
+            GetComponent<Animator>().SetBool("dead", true);
+            GetComponent<Animator>().SetBool("attack", false);
+            GetComponent<Animator>().SetBool("running", false);
+            GetComponent<Animator>().SetBool("jumpping", false);
+        }
 
         attackObject.GetComponent<Transform>().position = this.GetComponent<Transform>().position; 
 

@@ -9,9 +9,9 @@ public class Enemy : Entity
     public int health, speed;
     public float visionRadius;
     public float attackkRadius;
-    private bool attacking, canAttack;
-    private float attackTime, timer;
-    private Vector3 initialPosition;
+    protected bool attacking;
+    protected float attackTime, timer;
+    protected Vector3 initialPosition;
 
     public Enemy(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -42,34 +42,36 @@ public class Enemy : Entity
     {
         //Validacion por si la vida del enemigo es cero
         health = GetStatValue(Stat.Health);
-        if (GetStatValue(Stat.Health) == 0)
+        if (GetStatValue(Stat.Health) == 0 || (player.GetStatValue(Stat.Health) == 0))
         {
-            attacking = false;
-            canAttack = false;
+            GetComponent<Animator>().SetBool("attack", false);
             speed = 0;
             timer += Time.deltaTime;
-            //Se colocan las animaciones correspondientes
-            GetComponent<Animator>().SetBool("attack", false);
-            GetComponent<Animator>().SetBool("dead", true); //BOOL PARA ANIMACION DE MUERTE
-            if (timer >= 1) //Este tiempo se modifica según la duración de la animación de muerte
+            if (GetStatValue(Stat.Health) == 0)
             {
-                gameObject.SetActive(false);
+                GetComponent<Animator>().SetBool("dead", true); //BOOL PARA ANIMACION DE MUERTE
+
+                if (timer >= 1) //Este tiempo se modifica según la duración de la animación de muerte
+                {
+                    gameObject.SetActive(false);
+                }
             }
         }
-        //Porcion de codigo que aumenta el tiempo de ataque
+
         if (attacking)
         {
             attackTime += Time.deltaTime;
         }
+
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if ((attackTime >= 1) && (!canAttack))  
+        if (attackTime >= 0.3f)
         {
             GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
             attacking = false;
         }
 
-        if (player.transform.position.x < transform.position.x)
+        if (player.transform.position.x <= transform.position.x)
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
@@ -136,16 +138,16 @@ public class Enemy : Entity
     public override void Attack(Entity player)
     {
         attacking = true;
+        GetComponent<Animator>().SetBool("attack", true);
         if (attackTime >= 0.8f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
             {
-                GetComponent<Animator>().SetBool("attack", true);
                 player.TakeDamage(GetStatValue(Stat.Strength));
             }
+            GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
         }
-        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -157,13 +159,7 @@ public class Enemy : Entity
         else if (collision.transform.tag == "Player")
         {
             Attack(player);
-            canAttack = true;
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        canAttack = false;
     }
 
     public override void TakeDamage(int damage)
