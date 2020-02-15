@@ -33,10 +33,10 @@ public class Boss : Enemy
         timer = 0;
         initialPositions = new Dictionary<int, Vector3>();
         initialPositions.Add(1, transform.position);
-        initialPositions.Add(2, new Vector3(193, 183, 0));
+        initialPositions.Add(2, new Vector3(250, 230, 0));
         specialAttackPosition = initialPositions[2];
-        initialPositions.Add(3, new Vector3(315, 191, 0));
-        initialPositions.Add(4, new Vector3(381, 89, 0));
+        initialPositions.Add(3, new Vector3(353, 210, 0));
+        initialPositions.Add(4, new Vector3(382, 148, 0));
         canChange = false;
         canAttack = true;
         attacking = false;
@@ -72,7 +72,7 @@ public class Boss : Enemy
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if ((attackTime >= 0.8f) || (!attacking && attackTime != 0))
+        if ((attackTime >= 0.7f) || (!attacking && attackTime != 0))
         {
             GetComponent<Animator>().SetBool("Attacking", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
@@ -112,6 +112,10 @@ public class Boss : Enemy
         {
             specialAttack = true;
             missile[0].ResetPosition();
+            missile[1].ResetPosition();
+            missile[2].ResetPosition();
+            missile[3].ResetPosition();
+            missile[4].ResetPosition();
             cont = 0;
         }
 
@@ -175,7 +179,7 @@ public class Boss : Enemy
     {
         attacking = true;
         GetComponent<Animator>().SetBool("Attacking", true);
-        if (attackTime >= 0.6f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        if (attackTime >= 0.4f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
@@ -196,14 +200,22 @@ public class Boss : Enemy
         {
             attacking = true;
             missile[0].gameObject.SetActive(true);
-            
-            if (specialAttackTime >= 5f)   //Pasado el tiempo de ataque especial, esto pasara
+            missile[1].gameObject.SetActive(true);
+            missile[2].gameObject.SetActive(true);
+            missile[3].gameObject.SetActive(true);
+            missile[4].gameObject.SetActive(true);
+
+            if (specialAttackTime >= 3f)   //Pasado el tiempo de ataque especial, esto pasara
             {
                 specialAttack = false;
                 attacking = false;
                 canChange = true;
                 attackWait = 2f;
                 missile[0].gameObject.SetActive(false);
+                missile[1].gameObject.SetActive(false);
+                missile[2].gameObject.SetActive(false);
+                missile[3].gameObject.SetActive(false);
+                missile[4].gameObject.SetActive(false);
                 specialAttackTime = 0;
             }
         }
