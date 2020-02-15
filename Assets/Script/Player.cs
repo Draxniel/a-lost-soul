@@ -109,6 +109,7 @@ public class Player : Entity
             }
             if ((time > 0.1) && (x==1))
             {
+                falling = false;
                 GetComponent<AudioSource>().clip = deathSound;
                 GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  // Sonido al saltar, y para que suene diferente cada vez que se ejecute. 
                 GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
@@ -123,6 +124,7 @@ public class Player : Entity
     {
         if (canJump)
         {
+            falling = false;
             GetComponent<AudioSource>().clip = jumpSound;
             GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  // Sonido al saltar, y para que suene diferente cada vez que se ejecute. 
             GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
@@ -149,12 +151,13 @@ public class Player : Entity
 
         if (Input.GetKey("left") || Input.GetKey("a"))
         {
-            if (canJump && !GetComponent<AudioSource>().isPlaying && (Time.timeScale > 0f))
+            if (canJump && !GetComponent<AudioSource>().isPlaying && (Time.timeScale > 0f) && (!(falling)) )
             {
-                GetComponent<AudioSource>().clip = walkSound; //Sonido al caminar...
-                GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  //  para que suene diferente cada vez que se ejecute. 
+                GetComponent<AudioSource>().clip = walkSound;
+                GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);  // Sonido al saltar, y para que suene diferente cada vez que se ejecute. 
                 GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
                 GetComponent<AudioSource>().Play();
+                falling = false;
             }
 
             GetComponent<Rigidbody2D>().AddForce(new Vector2(-46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
@@ -220,6 +223,7 @@ public class Player : Entity
     {
         if (Input.GetKeyDown("b") || (attackTime <= 0.8f))   //Validación para hacer animacion de ataque
         {
+            falling = false;
             if (attackTime > 0.8f)
             {
                 attackTime = 0;
