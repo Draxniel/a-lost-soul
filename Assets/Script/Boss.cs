@@ -6,7 +6,7 @@ public class Boss : Enemy
 {
 
     private Dictionary<int,Vector3> initialPositions;
-    private bool canChange, canAttack, specialAttack;
+    private bool canChange, canAttack, specialAttack, walking;
     private int cont;
     private float specialAttackTime, attackWait;
     private Vector3 specialAttackPosition;
@@ -32,15 +32,15 @@ public class Boss : Enemy
         cont = 0;
         timer = 0;
         initialPositions = new Dictionary<int, Vector3>();
-        initialPositions.Add(1, transform.position);
-        initialPositions.Add(2, new Vector3(250, 230, 0));
-        specialAttackPosition = initialPositions[2];
-        initialPositions.Add(3, new Vector3(353, 210, 0));
-        initialPositions.Add(4, new Vector3(382, 148, 0));
+        initialPositions.Add(1, new Vector3(250, 230, 0));
+        specialAttackPosition = initialPositions[1];
+        initialPositions.Add(2, new Vector3(353, 210, 0));
+        initialPositions.Add(3, new Vector3(382, 148, 0));
         canChange = false;
         canAttack = true;
         attacking = false;
         specialAttack = false;
+        walking = false;
         initialPosition = transform.position;
     }
 
@@ -72,7 +72,7 @@ public class Boss : Enemy
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if ((attackTime >= 0.7f) || (!attacking && attackTime != 0))
+        if ((attackTime >= 0.6f) || (!attacking && attackTime != 0))
         {
             GetComponent<Animator>().SetBool("Attacking", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
@@ -83,10 +83,14 @@ public class Boss : Enemy
         if (player.transform.position.x <= transform.position.x)
         {
             GetComponent<SpriteRenderer>().flipX = false;
+            initialPositions[2] = new Vector3(353, 210, 0);
+            initialPositions[3] = new Vector3(382, 148, 0);
         }
         else if (player.transform.position.x > transform.position.x)
         {
             GetComponent<SpriteRenderer>().flipX = true;
+            initialPositions[2] = new Vector3(164, 210, 0);
+            initialPositions[3] = new Vector3(91, 156, 0);
         }
 
         /*
@@ -105,6 +109,7 @@ public class Boss : Enemy
 
         if ((attackWait >= 3f) && (canAttack) && (!specialAttack))
         {
+            walking = true;
             target = player.transform.position;
         }
 
@@ -131,6 +136,7 @@ public class Boss : Enemy
             {
                 transform.position = initialPosition;
                 canAttack = true;
+                walking = false;
             }
             SpecialAttack();
         }
@@ -156,11 +162,17 @@ public class Boss : Enemy
         {
             if (dir.x > 0)  //Validacion para que la animacion vaya con respecto a la direccion
             {
-                GetComponent<SpriteRenderer>().flipX = true;
+                if (walking) 
+                {
+                    GetComponent<SpriteRenderer>().flipX = true; 
+                }
             }
             else
             {
-                GetComponent<SpriteRenderer>().flipX = false;
+                if (walking)
+                {
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
             }
             //Movimiento hacia el objetivo
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
@@ -170,6 +182,7 @@ public class Boss : Enemy
         {
             transform.position = initialPosition;
             canAttack = true;
+            walking = false;
         }
 
         Debug.DrawLine(transform.position, target, Color.green);
@@ -179,7 +192,7 @@ public class Boss : Enemy
     {
         attacking = true;
         GetComponent<Animator>().SetBool("Attacking", true);
-        if (attackTime >= 0.4f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        if (attackTime >= 0.5f)    //Tiempo que tarda en hacer daño
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
@@ -196,7 +209,7 @@ public class Boss : Enemy
 
     void SpecialAttack()
     {
-        if (transform.position == specialAttackPosition)
+        if (canAttack && transform.position == specialAttackPosition)
         {
             attacking = true;
             missile[0].gameObject.SetActive(true);

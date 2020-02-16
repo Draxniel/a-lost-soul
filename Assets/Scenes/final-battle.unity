@@ -622,7 +622,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.361031, y: 0.099939644}
+  m_Offset: {x: -2.361031, y: 0.6585711}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -633,7 +633,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48628807, y: 2.5998793}
+  m_Size: {x: 0.48628807, y: 3.7171423}
   m_EdgeRadius: 0
 --- !u!61 &150982772
 BoxCollider2D:
@@ -648,7 +648,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.3842325, y: 0.20185387}
+  m_Offset: {x: 2.3842325, y: 0.67320466}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -659,7 +659,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.58540154, y: 2.8037078}
+  m_Size: {x: 0.58540154, y: 3.7464094}
   m_EdgeRadius: 0
 --- !u!61 &150982773
 BoxCollider2D:
@@ -674,7 +674,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03950286, y: 1.4171696}
+  m_Offset: {x: 0.03950286, y: 2.3052986}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -685,7 +685,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.281276, y: 0.46408987}
+  m_Size: {x: 5.281276, y: 0.4531932}
   m_EdgeRadius: 0
 --- !u!1 &238642149
 GameObject:
@@ -1484,6 +1484,7 @@ GameObject:
   - component: {fileID: 840080772}
   - component: {fileID: 840080771}
   - component: {fileID: 840080770}
+  - component: {fileID: 840080774}
   m_Layer: 8
   m_Name: fireball_3
   m_TagString: Untagged
@@ -1570,7 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d19cc2e200f1b4283e48db2822319e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {x: 490, y: -17, z: 0}
+  target: {x: 444, y: -3, z: 0}
   boss: {fileID: 1703119525}
   player: {fileID: 23946017}
 --- !u!212 &840080773
@@ -1621,6 +1622,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &840080774
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840080768}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebf4164be7eb5b241bfd9e3e27784da2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &872440832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2226,6 +2246,7 @@ GameObject:
   - component: {fileID: 1458746378}
   - component: {fileID: 1458746377}
   - component: {fileID: 1458746376}
+  - component: {fileID: 1458746380}
   m_Layer: 8
   m_Name: fireball_1
   m_TagString: Untagged
@@ -2312,7 +2333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d19cc2e200f1b4283e48db2822319e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {x: 100, y: -17, z: 0}
+  target: {x: 139, y: -3, z: 0}
   boss: {fileID: 1703119525}
   player: {fileID: 23946017}
 --- !u!212 &1458746379
@@ -2363,6 +2384,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1458746380
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458746374}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebf4164be7eb5b241bfd9e3e27784da2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1538081876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,6 +2567,7 @@ GameObject:
   - component: {fileID: 1635952387}
   - component: {fileID: 1635952388}
   - component: {fileID: 1635952389}
+  - component: {fileID: 1635952390}
   m_Layer: 8
   m_Name: fireball_0
   m_TagString: Untagged
@@ -2608,7 +2649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d19cc2e200f1b4283e48db2822319e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {x: 0, y: -3, z: 0}
+  target: {x: 33, y: -3, z: 0}
   boss: {fileID: 1703119525}
   player: {fileID: 23946017}
 --- !u!50 &1635952388
@@ -2664,6 +2705,25 @@ PolygonCollider2D:
       - {x: 13, y: 12.5}
       - {x: -8, y: 12.5}
       - {x: -13, y: 10.5}
+--- !u!95 &1635952390
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635952384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebf4164be7eb5b241bfd9e3e27784da2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1644596357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,7 +2888,7 @@ GameObject:
   - component: {fileID: 1703119521}
   m_Layer: 0
   m_Name: boss
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3018,7 +3078,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703119520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250, y: 230, z: 0}
+  m_LocalPosition: {x: 353, y: 210, z: 0}
   m_LocalScale: {x: 70, y: 70, z: 0}
   m_Children:
   - {fileID: 1635952386}
@@ -3342,6 +3402,7 @@ GameObject:
   - component: {fileID: 1823262245}
   - component: {fileID: 1823262244}
   - component: {fileID: 1823262243}
+  - component: {fileID: 1823262248}
   m_Layer: 8
   m_Name: fireball_4
   m_TagString: Untagged
@@ -3414,7 +3475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d19cc2e200f1b4283e48db2822319e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {x: 243, y: -17, z: 0}
+  target: {x: 243, y: -3, z: 0}
   boss: {fileID: 1703119525}
   player: {fileID: 23946017}
 --- !u!212 &1823262246
@@ -3472,13 +3533,32 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823262242}
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: -0.10000001, y: 0, z: 0}
-  m_LocalScale: {x: 0.014285715, y: 0.014285715, z: 0}
+  m_LocalScale: {x: 0.014285722, y: 0.014285722, z: 0}
   m_Children: []
   m_Father: {fileID: 1703119524}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+--- !u!95 &1823262248
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823262242}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebf4164be7eb5b241bfd9e3e27784da2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1829181156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,6 +3880,7 @@ GameObject:
   - component: {fileID: 2112273217}
   - component: {fileID: 2112273216}
   - component: {fileID: 2112273215}
+  - component: {fileID: 2112273219}
   m_Layer: 8
   m_Name: fireball_2
   m_TagString: Untagged
@@ -3886,7 +3967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d19cc2e200f1b4283e48db2822319e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {x: 350, y: -17, z: 0}
+  target: {x: 342, y: -3, z: 0}
   boss: {fileID: 1703119525}
   player: {fileID: 23946017}
 --- !u!212 &2112273218
@@ -3937,3 +4018,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2112273219
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112273213}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebf4164be7eb5b241bfd9e3e27784da2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
