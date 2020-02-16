@@ -44,7 +44,6 @@ public class DataManager : MonoBehaviour
                     stats[Stat.Health] = maxHealth;
                     stats[Stat.Defense] = 1;
                     stats[Stat.Strength] = 1;
-                    coins = 0;
                 }
                 else
                 {
@@ -53,8 +52,8 @@ public class DataManager : MonoBehaviour
                     stats[Stat.Health] = maxHealth;
                     stats[Stat.Defense] = manager.stats[Stat.Defense];
                     stats[Stat.Strength] = manager.stats[Stat.Strength]; ;
-                    coins = manager.coins;
                 }
+                coins = 0;
             }
         }
         data = DataSave.loadCurrentGame();
@@ -149,7 +148,7 @@ public class DataManager : MonoBehaviour
         manager.updateManager();
         manager.passLevel();
         Checkpoint.saveData(manager);
-        Debug.Log(manager.getLevel());
+
     }
     public void loadGame()
     {
