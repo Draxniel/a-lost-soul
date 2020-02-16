@@ -42,12 +42,13 @@ public class Missile : MonoBehaviour
 
     public void ResetPosition()
     {
+        Vector3 bossPosition = new Vector3(boss.transform.position.x - 0.1f, boss.transform.position.y, boss.transform.position.z);
         transform.position = boss.transform.position;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "player")
+        if (collision.transform.tag == "Player")
         {
             player.TakeDamage(1);
         }

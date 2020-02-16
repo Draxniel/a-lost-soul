@@ -60,3 +60,6 @@ TagManager:
   - name: cesped
     uniqueID: 2537885917
     locked: 0
+  - name: cursor
+    uniqueID: 3470785917
+    locked: 0

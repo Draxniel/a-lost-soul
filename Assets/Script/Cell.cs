@@ -6,6 +6,7 @@ public class Cell : MonoBehaviour
 {
     public GameObject openCell;
     public bool active;
+    public AudioClip sound;
 
     private void Start()
     {
@@ -15,11 +16,14 @@ public class Cell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (active) {
+        if (active)
+        {
+            SoundController.playOneShot(sound);
             gameObject.SetActive(false);
             if (openCell != null)
             {
                 openCell.SetActive(true);
+
             }
         }
     }

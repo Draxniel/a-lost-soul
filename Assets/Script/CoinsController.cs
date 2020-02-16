@@ -6,7 +6,6 @@ public class CoinsController : MonoBehaviour
 {
 
     public Player player;
-    public AudioSource coinSource;
     public AudioClip coinSound;
 
 
@@ -14,21 +13,12 @@ public class CoinsController : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(true);
-        gameObject.AddComponent<AudioSource>();
-        coinSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        coinSource.PlayOneShot(coinSound);
-        Invoke("vanishCoin", 0.35f);
-        player.takeCoins(1);
-    }
-
-    public void vanishCoin()
-    {
         gameObject.SetActive(false);
-    }
-
-    
+        SoundController.playOneShot(coinSound);
+        player.takeCoins(1);
+    }    
 }

@@ -7,6 +7,7 @@ public class AcObject : MonoBehaviour
     public Cell toAct;
     public bool lever, active;
     public GameObject[] objects;    //Una referencia a los demás objetos en el nivel
+    public AudioClip sound;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +27,11 @@ public class AcObject : MonoBehaviour
             }
             else
             {
-                active = true;
+                
                 gameObject.SetActive(false);
+                active = true;
             }
+            SoundController.playOneShot(sound);
         }
         ActivateCell();
     }
