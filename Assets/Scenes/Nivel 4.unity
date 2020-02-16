@@ -1172,6 +1172,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &84817397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1296,6 +1299,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
 --- !u!60 &95436401
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3456,6 +3462,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
 --- !u!60 &226376977
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3981,6 +3990,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &258838643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5892,6 +5904,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &387208004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6336,6 +6351,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &405968023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6691,6 +6709,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
 --- !u!60 &443404008
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7796,6 +7817,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &480115330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8393,6 +8417,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &502143026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8702,7 +8729,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 96.9
+  orthographic size: 140
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8726,7 +8753,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.322906, y: -42.41461, z: -10}
+  m_LocalPosition: {x: 19.280746, y: -21.585526, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8744,7 +8771,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0d3795363e334634d839a7085cd945a6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.504
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9428,6 +9455,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!60 &562115607
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9885,6 +9915,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &567158607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11602,6 +11635,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &679223959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11867,6 +11903,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: a03700e85cc6fea418131044f4d2b911, type: 3}
+  weaponSound: {fileID: 8300000, guid: 1f5f9adf59cbd3947aad042f60c5fbd3, type: 3}
+  deathSound: {fileID: 8300000, guid: 9d3c4ecef3c59664988b6f4bca25c82b, type: 3}
 --- !u!60 &698421961
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12180,6 +12219,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &698918723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13203,6 +13245,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &792360144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13510,6 +13555,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: a03700e85cc6fea418131044f4d2b911, type: 3}
+  weaponSound: {fileID: 8300000, guid: 1f5f9adf59cbd3947aad042f60c5fbd3, type: 3}
+  deathSound: {fileID: 8300000, guid: 9d3c4ecef3c59664988b6f4bca25c82b, type: 3}
 --- !u!60 &806225616
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13816,6 +13864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 405552797}
+  soulSound: {fileID: 0}
 --- !u!4 &832339865
 Transform:
   m_ObjectHideFlags: 0
@@ -14482,6 +14531,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &846878783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15345,6 +15397,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &934486789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16262,6 +16317,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: a03700e85cc6fea418131044f4d2b911, type: 3}
+  weaponSound: {fileID: 8300000, guid: 1f5f9adf59cbd3947aad042f60c5fbd3, type: 3}
+  deathSound: {fileID: 8300000, guid: 9d3c4ecef3c59664988b6f4bca25c82b, type: 3}
 --- !u!60 &993418215
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16720,6 +16778,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1028850218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17196,6 +17257,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1044766068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18041,6 +18105,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1093980272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18338,6 +18405,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: 44592089244671944964cc8b9e3ba578, type: 3}
+  weaponSound: {fileID: 8300000, guid: d8c91aa826a5716458615f534ec85d1c, type: 3}
+  deathSound: {fileID: 8300000, guid: cbe18872ed8f95e41b41c9ce54412614, type: 3}
 --- !u!95 &1097398155
 Animator:
   serializedVersion: 3
@@ -18589,6 +18659,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1100478621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18992,6 +19065,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1112381808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19316,6 +19392,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1132415800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19534,6 +19613,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1148764489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19752,6 +19834,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1151636105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20049,6 +20134,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1159077018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20347,6 +20435,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1168080179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21301,6 +21392,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1216282535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22126,6 +22220,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1281898168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22529,6 +22626,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1289442824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23333,6 +23433,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: 44592089244671944964cc8b9e3ba578, type: 3}
+  weaponSound: {fileID: 8300000, guid: d8c91aa826a5716458615f534ec85d1c, type: 3}
+  deathSound: {fileID: 8300000, guid: cbe18872ed8f95e41b41c9ce54412614, type: 3}
 --- !u!95 &1327875873
 Animator:
   serializedVersion: 3
@@ -23738,6 +23841,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!50 &1357989258
 Rigidbody2D:
   serializedVersion: 4
@@ -24226,6 +24332,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1391009183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24728,6 +24837,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1416523933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25457,6 +25569,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: 44592089244671944964cc8b9e3ba578, type: 3}
+  weaponSound: {fileID: 8300000, guid: d8c91aa826a5716458615f534ec85d1c, type: 3}
+  deathSound: {fileID: 8300000, guid: cbe18872ed8f95e41b41c9ce54412614, type: 3}
 --- !u!95 &1446136171
 Animator:
   serializedVersion: 3
@@ -25985,6 +26100,10 @@ MonoBehaviour:
   - m_Hash: -1023074735
     m_ParentHash: 756556552
   - m_Hash: 1426014820
+    m_ParentHash: 756556552
+  - m_Hash: 468240720
+    m_ParentHash: 756556552
+  - m_Hash: 2066981055
     m_ParentHash: 756556552
 --- !u!4 &1467203545
 Transform:
@@ -26928,6 +27047,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1536035317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27663,6 +27785,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1575829566
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27866,6 +27991,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
 --- !u!60 &1587717231
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28449,6 +28577,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: 44592089244671944964cc8b9e3ba578, type: 3}
+  weaponSound: {fileID: 8300000, guid: d8c91aa826a5716458615f534ec85d1c, type: 3}
+  deathSound: {fileID: 8300000, guid: cbe18872ed8f95e41b41c9ce54412614, type: 3}
 --- !u!95 &1646331383
 Animator:
   serializedVersion: 3
@@ -28912,6 +29043,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1682687209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29942,6 +30076,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1740094373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30770,6 +30907,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1780803591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30878,6 +31018,9 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 0cc744b6da927684788d344f725db738, type: 3}
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
+  attackScream: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 80a99c923919ba34abe295e2dfcdab79, type: 3}
+  fallingSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
   attackObject: {fileID: 222718386}
   life: {fileID: 66456801}
   CoinNumber: {fileID: 1833556556}
@@ -31000,6 +31143,7 @@ Transform:
   m_Children:
   - {fileID: 833892713}
   - {fileID: 222718388}
+  - {fileID: 1951456890}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31142,7 +31286,6 @@ MonoBehaviour:
   - {fileID: 0}
   Tienda: {fileID: 8300000, guid: a0380ad562e92e44e8b658385a81e0a1, type: 3}
   powerUpSound: {fileID: 8300000, guid: b15b39262fcc6ad44a0c7d904ece2cd7, type: 3}
-  sellerSource: {fileID: 0}
   player: {fileID: 1801853224}
   CoinNumber: {fileID: 572082789}
 --- !u!114 &1819113141
@@ -31735,6 +31878,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1838861956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32271,6 +32417,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1857118036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32773,6 +32922,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &1910433501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32991,6 +33143,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &1912593290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33166,6 +33321,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1951456889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1951456890}
+  - component: {fileID: 1951456891}
+  m_Layer: 8
+  m_Name: SoundController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1951456890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951456889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1801853229}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1951456891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951456889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d914f93ba33a90140be6c64fb5ce56e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1953457864
 GameObject:
   m_ObjectHideFlags: 0
@@ -33288,6 +33486,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: 44592089244671944964cc8b9e3ba578, type: 3}
+  weaponSound: {fileID: 8300000, guid: d8c91aa826a5716458615f534ec85d1c, type: 3}
+  deathSound: {fileID: 8300000, guid: cbe18872ed8f95e41b41c9ce54412614, type: 3}
 --- !u!95 &1953457868
 Animator:
   serializedVersion: 3
@@ -33983,6 +34184,9 @@ MonoBehaviour:
   speed: 40
   visionRadius: 150
   attackkRadius: 60
+  attackSound: {fileID: 8300000, guid: 44592089244671944964cc8b9e3ba578, type: 3}
+  weaponSound: {fileID: 8300000, guid: d8c91aa826a5716458615f534ec85d1c, type: 3}
+  deathSound: {fileID: 8300000, guid: cbe18872ed8f95e41b41c9ce54412614, type: 3}
 --- !u!50 &1988646217
 Rigidbody2D:
   serializedVersion: 4
@@ -34471,6 +34675,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &2048197500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34867,6 +35074,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 33
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
 --- !u!212 &2078639372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35270,6 +35480,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &2105212445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36708,6 +36921,9 @@ MonoBehaviour:
   speed: 60
   visionRadius: 130
   attackkRadius: 35
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
 --- !u!212 &2141742887
 SpriteRenderer:
   m_ObjectHideFlags: 0

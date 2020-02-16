@@ -4225,7 +4225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &202440648
 BoxCollider2D:
@@ -8142,8 +8141,6 @@ MonoBehaviour:
   openCell: {fileID: 29150743}
   active: 0
   sound: {fileID: 8300000, guid: f7226a95368a0794e9c2498e0e2ab646, type: 3}
-  audioSource: {fileID: 0}
-  time: 0
 --- !u!212 &381521844
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10058,7 +10055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &463541345
 BoxCollider2D:
@@ -11197,7 +11193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &527880737
 BoxCollider2D:
@@ -13216,7 +13211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &633434730
 BoxCollider2D:
@@ -17354,7 +17348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &828897126
 BoxCollider2D:
@@ -19601,7 +19594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &932917770
 BoxCollider2D:
@@ -22241,7 +22233,6 @@ MonoBehaviour:
   - {fileID: 0}
   Tienda: {fileID: 0}
   powerUpSound: {fileID: 8300000, guid: b15b39262fcc6ad44a0c7d904ece2cd7, type: 3}
-  sellerSource: {fileID: 0}
   player: {fileID: 2093698003}
   CoinNumber: {fileID: 718814813}
 --- !u!114 &1056580254
@@ -22677,7 +22668,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1075061824
 BoxCollider2D:
@@ -23792,6 +23782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 57038504}
+  soulSound: {fileID: 8300000, guid: e9a71cb7e0591104599d6a17a17d9e54, type: 3}
 --- !u!1 &1124552316
 GameObject:
   m_ObjectHideFlags: 0
@@ -25668,6 +25659,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 21.333334, y: 21.333334}
   m_EdgeRadius: 0
+--- !u!1 &1225844157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225844158}
+  - component: {fileID: 1225844159}
+  m_Layer: 8
+  m_Name: SoundController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225844158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225844157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093697999}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225844159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225844157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d914f93ba33a90140be6c64fb5ce56e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1230371158
 GameObject:
   m_ObjectHideFlags: 0
@@ -33613,7 +33647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1664428929
 BoxCollider2D:
@@ -41876,7 +41909,6 @@ MonoBehaviour:
   active: 0
   objects: []
   sound: {fileID: 8300000, guid: b9e244482e8ff8249a4f3ce3c9d991c5, type: 3}
-  audioSource: {fileID: 0}
 --- !u!61 &2022229485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43017,6 +43049,7 @@ Transform:
   m_Children:
   - {fileID: 1901459093}
   - {fileID: 868066422}
+  - {fileID: 1225844158}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43095,6 +43128,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
   attackScream: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 80a99c923919ba34abe295e2dfcdab79, type: 3}
+  fallingSound: {fileID: 0}
   attackObject: {fileID: 868066421}
   life: {fileID: 1933548306}
   CoinNumber: {fileID: 509981292}

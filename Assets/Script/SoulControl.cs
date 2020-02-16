@@ -6,9 +6,13 @@ public class SoulControl : MonoBehaviour
 {
 
     public GameObject door;
+    public AudioClip soulSound;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        SoundController.assignSound(soulSound);
+        SoundController.setVolume(1.3f);
+        SoundController.playSound();
         gameObject.SetActive(false);
         door.gameObject.SetActive(true);
     }

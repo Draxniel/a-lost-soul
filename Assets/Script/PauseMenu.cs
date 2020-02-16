@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
             else {
                 pausaUI.SetActive(true);
                 pause();
+                SoundController.pauseSound();
             }
         }
     }

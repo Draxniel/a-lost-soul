@@ -1804,8 +1804,6 @@ MonoBehaviour:
   openCell: {fileID: 0}
   active: 0
   sound: {fileID: 8300000, guid: 59d62935d5981b445b73bc8628769ba1, type: 3}
-  audioSource: {fileID: 0}
-  time: 0
 --- !u!1 &184657979
 GameObject:
   m_ObjectHideFlags: 0
@@ -11335,6 +11333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 237079605}
+  soulSound: {fileID: 8300000, guid: e9a71cb7e0591104599d6a17a17d9e54, type: 3}
 --- !u!1 &901411734
 GameObject:
   m_ObjectHideFlags: 0
@@ -13373,7 +13372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1023690716
 BoxCollider2D:
@@ -15275,7 +15273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1174355132
 BoxCollider2D:
@@ -15979,7 +15976,6 @@ MonoBehaviour:
   active: 0
   objects: []
   sound: {fileID: 8300000, guid: 3d998bac426088d489bfe31f78d1b5e1, type: 3}
-  audioSource: {fileID: 0}
 --- !u!212 &1203845401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17190,7 +17186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1273176724
 BoxCollider2D:
@@ -17727,7 +17722,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1307240460
 BoxCollider2D:
@@ -19373,7 +19367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1388519045
 BoxCollider2D:
@@ -21676,7 +21669,6 @@ MonoBehaviour:
   - {fileID: 0}
   Tienda: {fileID: 8300000, guid: a0380ad562e92e44e8b658385a81e0a1, type: 3}
   powerUpSound: {fileID: 8300000, guid: b15b39262fcc6ad44a0c7d904ece2cd7, type: 3}
-  sellerSource: {fileID: 0}
   player: {fileID: 2093698003}
   CoinNumber: {fileID: 33317270}
 --- !u!114 &1602308411
@@ -22543,7 +22535,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &1697677059
 BoxCollider2D:
@@ -25695,6 +25686,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1976242140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976242141}
+  - component: {fileID: 1976242142}
+  m_Layer: 8
+  m_Name: SoundController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1976242141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976242140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093697999}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1976242142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976242140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d914f93ba33a90140be6c64fb5ce56e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1977195588
 GameObject:
   m_ObjectHideFlags: 0
@@ -26328,7 +26362,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2093698003}
-  coinSource: {fileID: 0}
   coinSound: {fileID: 8300000, guid: ae21359bc0d707f4d9dcb1f877a372cc, type: 3}
 --- !u!61 &2056454171
 BoxCollider2D:
@@ -26749,6 +26782,7 @@ Transform:
   m_Children:
   - {fileID: 1486785966}
   - {fileID: 938076329}
+  - {fileID: 1976242141}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26827,6 +26861,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
   attackScream: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 80a99c923919ba34abe295e2dfcdab79, type: 3}
+  fallingSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
   attackObject: {fileID: 938076328}
   life: {fileID: 930425298}
   CoinNumber: {fileID: 417037424}

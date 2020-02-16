@@ -1574,7 +1574,7 @@ GameObject:
   - component: {fileID: 2034737968}
   - component: {fileID: 2034737967}
   m_Layer: 5
-  m_Name: Button  Safe
+  m_Name: Button  Load
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
