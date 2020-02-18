@@ -23,6 +23,7 @@ public class GameoverM : MonoBehaviour
     {
         if (player.GetStatValue(Stat.Health) == 0)
         {
+            Cursor.visible = true;
             finDelJuego.SetActive(true);
             player.GetComponent<Animator>().SetBool("dead", true);
             player.GetComponent<Animator>().SetBool("running", false);
@@ -34,6 +35,7 @@ public class GameoverM : MonoBehaviour
     }
     public void Loadscena()
     {
+
         SceneManager.LoadScene(nivel);
     }
     public void QuitGame()

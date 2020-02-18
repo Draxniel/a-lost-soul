@@ -32,12 +32,14 @@ public class PauseMenu : MonoBehaviour
         }
     }
      public void resume() {
+        Cursor.visible = false;
         Camera.main.GetComponent<AudioSource>().UnPause();
         pausaUI.SetActive(false);
         Time.timeScale = 1f;
         gamePaused = false;
     }
     void pause() {
+        Cursor.visible = true;
         Camera.main.GetComponent<AudioSource>().Pause();
         Time.timeScale = 0f;
         pausaUI.SetActive(true);   
