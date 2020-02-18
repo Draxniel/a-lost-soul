@@ -8,6 +8,7 @@ public class SoundController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
         gameObject.AddComponent<AudioSource>();
         audioSource = GetComponent<AudioSource>();
     }

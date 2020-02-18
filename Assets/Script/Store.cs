@@ -41,6 +41,7 @@ public class Store : MonoBehaviour
     }
     public void resume()
     {
+        Cursor.visible = false;
         isOpen = false;
         tiendaUI.SetActive(false);
         Warming.SetActive(false);
