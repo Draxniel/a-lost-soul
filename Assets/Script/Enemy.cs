@@ -6,13 +6,14 @@ public class Enemy : Entity
 {
     public Player player;
     public DataManager manager;
-    public int health, speed;
+    public int health, speed, maxhealth;
     public float visionRadius;
     public float attackkRadius;
     protected bool attacking;
     protected float attackTime, timer;
     protected Vector3 initialPosition;
     public AudioClip attackSound, weaponSound, deathSound;
+    public HealthBar enemyHealth;
 
     public Enemy(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -22,27 +23,31 @@ public class Enemy : Entity
     // Start is called before the first frame update
     void Start()
     {
-        health *= manager.getDifficulty();  //Se multiplica la vida del enemigo por la dificultad
+        health *= manager.getDifficulty();
+        maxhealth = health;
+        //Se multiplica la vida del enemigo por la dificultad
         stats = new Dictionary<Stat, int>();
         stats.Add(Stat.Health, health);
         stats.Add(Stat.Strength, 1);
         stats.Add(Stat.Defense, 1);
-        //healthBar.fillAmount = 1;
         attackTime = 0;
         attacking = false;
         timer = 0;
-        initialPosition = transform.position; //Posicion inicial igual a posicion actual
-        //MEDIDAS PARA EL MINOTAURO
-        /*visionRadius = 150;
-        attackkRadius = 60;
+        initialPosition = transform.position; 
+        //Posicion inicial igual a posicion actual                                  
+        //MEDIDAS PARA EL MINOTAURO                               
+        /*visionRadius = 150;                              
+        attackkRadius = 60;                               
         speed = 40;*/
+        enemyHealth.setMaxHealth(health);
+        enemyHealth.setActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         //Validacion por si la vida del enemigo es cero
-        health = GetStatValue(Stat.Health);
+        //health = GetStatValue(Stat.Health);
         if (GetStatValue(Stat.Health) == 0 || (player.GetStatValue(Stat.Health) == 0))
         {
             GetComponent<Animator>().SetBool("attack", false);
@@ -161,7 +166,7 @@ public class Enemy : Entity
         {
             player.Attack(this);
         }
-        else if (collision.transform.tag == "Player")
+        else if ((collision.transform.tag == "Player") && (player.isPlayerAlive()))
         {
             Attack(player);
         }
@@ -174,6 +179,8 @@ public class Enemy : Entity
             if (damage <= GetStatValue(Stat.Health))
             {
                 this.stats[Stat.Health] -= damage;
+                enemyHealth.setActive(true);
+                enemyHealth.setHealth(this.stats[Stat.Health]);
                 return;
             }
             stats[Stat.Health] = 0;

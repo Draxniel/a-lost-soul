@@ -3108,6 +3108,9 @@ MonoBehaviour:
   speed: 250
   visionRadius: 400
   attackkRadius: 40
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
   missile:
   - {fileID: 1635952387}
   - {fileID: 1458746378}

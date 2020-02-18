@@ -13,7 +13,7 @@ public class Player : Entity
     public AudioClip jumpSound, walkSound, attackSound, attackScream, deathSound,fallingSound;
     public GameObject attackObject;
     public Text life, CoinNumber,Stronger,Defense;
-    private bool falling = false;
+    private bool falling = false, isAlive = true;
 
 
     public Player(int health, int strength, int defense) : base(health, strength, defense)
@@ -38,6 +38,17 @@ public class Player : Entity
         y = 1;
     }
 
+    public bool isPlayerAlive()
+    {
+        if (stats[Stat.Health] == 0)
+        {
+            return isAlive;
+        }
+        else 
+        { 
+            return true; 
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -102,6 +113,7 @@ public class Player : Entity
                 return;
             }
             stats[Stat.Health] = 0;
+            isAlive = false;
         }
     }
 
