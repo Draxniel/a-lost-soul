@@ -180,7 +180,7 @@ public class Player : Entity
             GetComponent<Rigidbody2D>().AddForce(new Vector2(-46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
 
-            if ((Time.timeScale == 1f) && (!attacking) && (!canAttack))
+            if ((Time.timeScale == 1f) && (!attacking))
             {
                 GetComponent<SpriteRenderer>().flipX = true;
             }
@@ -199,7 +199,7 @@ public class Player : Entity
             GetComponent<Rigidbody2D>().AddForce(new Vector2(46000f * Time.deltaTime, 0));  //Se le agrega tanta fuerza por ser una unidad/metro por pixel
             GetComponent<Animator>().SetBool("running", true);
 
-            if ((Time.timeScale == 1f) && (!attacking) && (!canAttack))
+            if ((Time.timeScale == 1f) && (!attacking))
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
