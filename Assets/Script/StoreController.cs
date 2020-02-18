@@ -10,6 +10,7 @@ public class StoreController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            Cursor.visible = true;
             tiendaUI.SetActive(true);
             gameObject.SetActive(false);
             PauseMenu.canPause = false;
