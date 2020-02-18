@@ -45120,6 +45120,16 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 509470809}
+    - target: {fileID: 6028251734782592602, guid: 203e6d76c2df6d24b8872fcda92fca75,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028251734782592602, guid: 203e6d76c2df6d24b8872fcda92fca75,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203e6d76c2df6d24b8872fcda92fca75, type: 3}
 --- !u!1001 &7634359722529702391

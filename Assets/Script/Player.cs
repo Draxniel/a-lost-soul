@@ -232,7 +232,9 @@ public class Player : Entity
     {
         if (canAttack)
         {
+            Debug.Log("ENTRE");
             enemy.TakeDamage(GetStatValue(Stat.Strength));
+            attacking = true;
             canAttack = false;
         }
     }
@@ -264,7 +266,7 @@ public class Player : Entity
         {
             GetComponent<Animator>().SetBool("attack", false);
             attackObject.SetActive(false);
-            canAttack = false;
+            //canAttack = false;
             attacking = false;
         }
     }

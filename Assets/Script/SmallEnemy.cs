@@ -2,21 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : Entity
+public class SmallEnemy : Enemy
 {
-    public Player player;
-    public DataManager manager;
-    public int maxhealth;
-    public AudioClip attackSound, weaponSound, deathSound;
-    public HealthBar enemyHealth;
-    protected int speed, health;
-    protected float visionRadius, attackkRadius, attackWait;
-    protected bool attacking;
-    protected float attackTime, timer;
-    protected Vector3 initialPosition;
-    
-
-    public Enemy(int health, int strength, int defense) : base(health, strength, defense)
+    SmallEnemy(int health, int strength, int defense) : base(health, strength, defense)
     {
 
     }
@@ -24,6 +12,7 @@ public class Enemy : Entity
     // Start is called before the first frame update
     void Start()
     {
+        health = 2;
         health *= manager.getDifficulty();
         maxhealth = health;
         //Se multiplica la vida del enemigo por la dificultad
@@ -34,12 +23,11 @@ public class Enemy : Entity
         attackTime = 0;
         attacking = false;
         timer = 0;
-        initialPosition = transform.position; 
-        //Posicion inicial igual a posicion actual                                  
-        //MEDIDAS PARA EL MINOTAURO                               
-        /*visionRadius = 150;                              
-        attackkRadius = 60;                               
-        speed = 40;*/
+        initialPosition = transform.position;
+        //Posicion inicial igual a posicion actual                             
+        visionRadius = 100;
+        attackkRadius = 50;
+        speed = 80;
         enemyHealth.setMaxHealth(health);
         enemyHealth.setActive(false);
     }
@@ -57,7 +45,8 @@ public class Enemy : Entity
             if (GetStatValue(Stat.Health) == 0)
             {
                 GetComponent<Animator>().SetBool("dead", true); //BOOL PARA ANIMACION DE MUERTE
-                if (!(SoundController.isPlaying())){
+                if (!(SoundController.isPlaying()))
+                {
                     SoundController.playOneShot(deathSound);
                 }
                 if (timer >= 1) //Este tiempo se modifica según la duración de la animación de muerte
@@ -141,24 +130,6 @@ public class Enemy : Entity
         }
 
         Debug.DrawLine(transform.position, target, Color.green);
-
-    }
-
-    public override void Attack(Entity player)
-    {
-        attacking = true;
-        GetComponent<Animator>().SetBool("attack", true);
-        if (attackTime >= 0.6f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
-        {
-            attackTime = 0;
-            SoundController.playOneShot(attackSound);
-            SoundController.playOneShot(weaponSound);
-            if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
-            {
-                player.TakeDamage(GetStatValue(Stat.Strength));
-            }
-            GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
-        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -171,26 +142,6 @@ public class Enemy : Entity
         {
             Attack(player);
         }
-    }
-
-    public override void TakeDamage(int damage)
-    {
-        if (GetStatValue(Stat.Health) > 0)
-        {
-            if (damage <= GetStatValue(Stat.Health))
-            {
-                this.stats[Stat.Health] -= damage;
-                enemyHealth.setActive(true);
-                enemyHealth.setHealth(this.stats[Stat.Health]);
-                return;
-            }
-            stats[Stat.Health] = 0;
-        }
-    }
-
-    public override void Move()
-    {
-        throw new System.NotImplementedException();
     }
 
     private void OnDrawGizmosSelected()

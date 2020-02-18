@@ -3106,11 +3106,13 @@ MonoBehaviour:
   manager: {fileID: 1670558480}
   health: 40
   speed: 250
+  maxhealth: 0
   visionRadius: 400
   attackkRadius: 40
   attackSound: {fileID: 0}
   weaponSound: {fileID: 0}
   deathSound: {fileID: 0}
+  enemyHealth: {fileID: 0}
   missile:
   - {fileID: 1635952387}
   - {fileID: 1458746378}

@@ -8,7 +8,7 @@ public class Boss : Enemy
     private Dictionary<int,Vector3> initialPositions;
     private bool canChange, canAttack, specialAttack, walking;
     private int cont;
-    private float specialAttackTime, attackWait;
+    private float specialAttackTime;
     private Vector3 specialAttackPosition;
     public Missile[] missile;
 
@@ -253,7 +253,7 @@ public class Boss : Enemy
              */
             player.Attack(this);
         }
-        else if (collision.transform.tag == "Player")
+        else if ((collision.transform.tag == "Player") && player.isPlayerAlive())
         {
             if ((attackWait >= 3) && canAttack)
             {
@@ -264,7 +264,7 @@ public class Boss : Enemy
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Player")
+        if ((collision.transform.tag == "Player") && player.isPlayerAlive())
         {
             if ((attackWait >= 3) && canAttack)
             {
