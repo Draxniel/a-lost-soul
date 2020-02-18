@@ -12,21 +12,24 @@ public class SmallEnemy : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        health = 2;
+        health = 2; //VIDA INICIAL DEL ENEMIGO
         health *= manager.getDifficulty();
+        damageMultiplier = manager.getDifficulty();
         maxhealth = health;
         //Se multiplica la vida del enemigo por la dificultad
         stats = new Dictionary<Stat, int>();
         stats.Add(Stat.Health, health);
-        stats.Add(Stat.Strength, 1);
+        stats.Add(Stat.Strength, 1 * damageMultiplier);
         stats.Add(Stat.Defense, 1);
         attackTime = 0;
         attacking = false;
+        canAttack = false;
         timer = 0;
         initialPosition = transform.position;
+        attackWait = 3;
         //Posicion inicial igual a posicion actual                             
-        visionRadius = 100;
-        attackkRadius = 50;
+        visionRadius = 120;
+        attackkRadius = 35;
         speed = 80;
         enemyHealth.setMaxHealth(health);
         enemyHealth.setActive(false);
@@ -62,13 +65,30 @@ public class SmallEnemy : Enemy
         }
 
         //Se valida esto para quitar la animcacion de ataque cuando termine y no cortarla en plena ejecucion
-        if (attackTime >= 0.8f)
+        if (attackTime >= 0.6f)
         {
             GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
             attackTime = 0;
             attacking = false;
+            attackWait = 0;
+            canAttack = false;
         }
 
+        /*
+         Procion de código encargada del cooldown de ataque del enemigo
+         */
+        if (!canAttack)
+        {
+            attackWait += Time.deltaTime;
+        }
+
+        if (attackWait >= 0.6f)
+        {
+            canAttack = true;
+            attackWait = 0;
+        }
+
+        //VOLTEAR LA SKIN DEPENDIENDO DE LA SKIN DEL PLAYER
         if (player.transform.position.x <= transform.position.x)
         {
             GetComponent<SpriteRenderer>().flipX = false;
@@ -132,6 +152,24 @@ public class SmallEnemy : Enemy
         Debug.DrawLine(transform.position, target, Color.green);
     }
 
+    public override void Attack(Entity player)
+    {
+        attacking = true;
+        GetComponent<Animator>().SetBool("attack", true);
+        if (attackTime >= 0.4f)    //Este tiempo de ataque se modifica según la duracion de la animacion del ataque
+        {
+            attackTime = 0;
+            SoundController.playOneShot(attackSound);
+            SoundController.playOneShot(weaponSound);
+            if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
+            {
+                player.TakeDamage(GetStatValue(Stat.Strength));
+                canAttack = false;
+            }
+            GetComponent<Animator>().SetBool("attack", false);  //BOOL PARA ANIMACION DE ATAQUE
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.transform.tag == "attack")
@@ -140,7 +178,10 @@ public class SmallEnemy : Enemy
         }
         else if ((collision.transform.tag == "Player") && (player.isPlayerAlive()))
         {
-            Attack(player);
+            if (canAttack)
+            {
+                Attack(player);
+            }
         }
     }
 

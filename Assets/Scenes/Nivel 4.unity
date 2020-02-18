@@ -112,6 +112,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &8029832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6028251736620872193, guid: 203e6d76c2df6d24b8872fcda92fca75,
+    type: 3}
+  m_PrefabInstance: {fileID: 5786306744890345082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7bc1989340a334f92390b2393bd85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &13531893
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13531894}
   - component: {fileID: 13531896}
+  - component: {fileID: 13531895}
   m_Layer: 2
   m_Name: piedra gris grande (15)
   m_TagString: Untagged
@@ -143,6 +156,32 @@ Transform:
   m_Father: {fileID: 68373687}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &13531895
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13531893}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.59, y: 3.6}
+    newSize: {x: 3.59, y: 3.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.59, y: 3.6}
+  m_EdgeRadius: 0
 --- !u!212 &13531896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -213,6 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 14685526}
   - component: {fileID: 14685528}
+  - component: {fileID: 14685527}
   m_Layer: 2
   m_Name: piedra gris grande (17)
   m_TagString: Untagged
@@ -234,6 +274,32 @@ Transform:
   m_Father: {fileID: 68373687}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &14685527
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14685525}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.59, y: 3.6}
+    newSize: {x: 3.59, y: 3.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.59, y: 3.6}
+  m_EdgeRadius: 0
 --- !u!212 &14685528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1129,11 +1195,11 @@ GameObject:
   m_Component:
   - component: {fileID: 84817392}
   - component: {fileID: 84817397}
-  - component: {fileID: 84817396}
   - component: {fileID: 84817395}
   - component: {fileID: 84817394}
   - component: {fileID: 84817393}
   - component: {fileID: 84817398}
+  - component: {fileID: 84817399}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (13)
   m_TagString: ground
@@ -1250,26 +1316,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &84817396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84817391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 935978555}
 --- !u!212 &84817397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1339,6 +1385,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &84817399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84817391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 935978555}
 --- !u!114 &92618801 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8268689553596293999, guid: ecd6067f769593d4282ddcbda7814dfd,
@@ -1386,7 +1452,7 @@ Transform:
   m_Children:
   - {fileID: 641386184}
   m_Father: {fileID: 710041039}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &95436400
 MonoBehaviour:
@@ -3941,7 +4007,7 @@ Transform:
   m_Children:
   - {fileID: 1023504690}
   m_Father: {fileID: 710041039}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &226376976
 MonoBehaviour:
@@ -4127,6 +4193,105 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1 &235673669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235673670}
+  - component: {fileID: 235673673}
+  - component: {fileID: 235673672}
+  - component: {fileID: 235673671}
+  m_Layer: 5
+  m_Name: Health Bar (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &235673670
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235673669}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11424, y: 0.099999994, z: 0.099999994}
+  m_Children:
+  - {fileID: 1364704102}
+  m_Father: {fileID: 2048197495}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50.79004, y: 10.200001}
+  m_SizeDelta: {x: 153.45, y: 38.33}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &235673671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235673669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &235673672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235673669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &235673673
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235673669}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!114 &245773859 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8268689553596293999, guid: ecd6067f769593d4282ddcbda7814dfd,
@@ -6309,11 +6474,11 @@ GameObject:
   m_Component:
   - component: {fileID: 387207999}
   - component: {fileID: 387208004}
-  - component: {fileID: 387208003}
   - component: {fileID: 387208002}
   - component: {fileID: 387208001}
   - component: {fileID: 387208000}
   - component: {fileID: 387208005}
+  - component: {fileID: 387208006}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (3)
   m_TagString: ground
@@ -6430,26 +6595,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &387208003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387207998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1959671049}
 --- !u!212 &387208004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6519,6 +6664,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &387208006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387207998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1959671049}
 --- !u!1 &390497150
 GameObject:
   m_ObjectHideFlags: 0
@@ -6839,11 +7004,11 @@ GameObject:
   m_Component:
   - component: {fileID: 405968018}
   - component: {fileID: 405968023}
-  - component: {fileID: 405968022}
   - component: {fileID: 405968021}
   - component: {fileID: 405968020}
   - component: {fileID: 405968019}
   - component: {fileID: 405968024}
+  - component: {fileID: 405968025}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (4)
   m_TagString: ground
@@ -6960,26 +7125,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &405968022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405968017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 560036879}
 --- !u!212 &405968023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7049,6 +7194,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &405968025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405968017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 560036879}
 --- !u!1 &413801851
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,7 +7726,7 @@ Transform:
   m_Children:
   - {fileID: 477459129}
   m_Father: {fileID: 710041039}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &443404007
 MonoBehaviour:
@@ -8486,11 +8651,11 @@ GameObject:
   m_Component:
   - component: {fileID: 480115325}
   - component: {fileID: 480115330}
-  - component: {fileID: 480115329}
   - component: {fileID: 480115328}
   - component: {fileID: 480115327}
   - component: {fileID: 480115326}
   - component: {fileID: 480115331}
+  - component: {fileID: 480115332}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (21)
   m_TagString: ground
@@ -8607,26 +8772,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &480115329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480115324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1643467446}
 --- !u!212 &480115330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8696,6 +8841,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &480115332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480115324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1643467446}
 --- !u!1 &480354969
 GameObject:
   m_ObjectHideFlags: 0
@@ -9184,11 +9349,11 @@ GameObject:
   m_Component:
   - component: {fileID: 502143021}
   - component: {fileID: 502143026}
-  - component: {fileID: 502143025}
   - component: {fileID: 502143024}
   - component: {fileID: 502143023}
   - component: {fileID: 502143022}
   - component: {fileID: 502143027}
+  - component: {fileID: 502143028}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (16)
   m_TagString: ground
@@ -9305,26 +9470,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &502143025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502143020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 490241594}
 --- !u!212 &502143026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9394,6 +9539,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &502143028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502143020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 490241594}
 --- !u!1001 &504860398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9469,7 +9634,7 @@ PrefabInstance:
     - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000014305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
         type: 3}
@@ -9766,7 +9931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.185303, y: -42.414383, z: -10}
+  m_LocalPosition: {x: -57.36624, y: -42.414673, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10655,11 +10820,11 @@ GameObject:
   m_Component:
   - component: {fileID: 567158602}
   - component: {fileID: 567158607}
-  - component: {fileID: 567158606}
   - component: {fileID: 567158605}
   - component: {fileID: 567158604}
   - component: {fileID: 567158603}
   - component: {fileID: 567158608}
+  - component: {fileID: 567158609}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (17)
   m_TagString: ground
@@ -10776,26 +10941,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &567158606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567158601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1609228965}
 --- !u!212 &567158607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10865,6 +11010,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &567158609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567158601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1609228965}
 --- !u!1 &572082788
 GameObject:
   m_ObjectHideFlags: 0
@@ -12650,11 +12815,11 @@ GameObject:
   m_Component:
   - component: {fileID: 679223954}
   - component: {fileID: 679223959}
-  - component: {fileID: 679223958}
   - component: {fileID: 679223957}
   - component: {fileID: 679223956}
   - component: {fileID: 679223955}
   - component: {fileID: 679223960}
+  - component: {fileID: 679223961}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (15)
   m_TagString: ground
@@ -12771,26 +12936,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &679223958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679223953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1806751163}
 --- !u!212 &679223959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12860,6 +13005,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &679223961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679223953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1806751163}
 --- !u!114 &688785971 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8268689553596293999, guid: ecd6067f769593d4282ddcbda7814dfd,
@@ -13195,7 +13360,7 @@ Transform:
   m_Children:
   - {fileID: 186044333}
   m_Father: {fileID: 710041039}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &698421960
 MonoBehaviour:
@@ -13391,11 +13556,11 @@ GameObject:
   m_Component:
   - component: {fileID: 698918718}
   - component: {fileID: 698918723}
-  - component: {fileID: 698918722}
   - component: {fileID: 698918721}
   - component: {fileID: 698918720}
   - component: {fileID: 698918719}
   - component: {fileID: 698918724}
+  - component: {fileID: 698918725}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (14)
   m_TagString: ground
@@ -13512,26 +13677,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &698918722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698918717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 496808031}
 --- !u!212 &698918723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13601,6 +13746,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &698918725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698918717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 496808031}
 --- !u!1 &710041038
 GameObject:
   m_ObjectHideFlags: 0
@@ -13629,13 +13794,13 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 993418213}
-  - {fileID: 2145830475}
   - {fileID: 698421959}
   - {fileID: 806225614}
   - {fileID: 443404006}
   - {fileID: 95436399}
   - {fileID: 1587717229}
   - {fileID: 226376975}
+  - {fileID: 2145830475}
   - {fileID: 258838638}
   - {fileID: 1100478616}
   - {fileID: 1289442819}
@@ -13835,6 +14000,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711987624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8719471734080943020, guid: 2bd0be8bae2d6024d957f02dca655ad7,
+    type: 3}
+  m_PrefabInstance: {fileID: 847099005995219353}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7bc1989340a334f92390b2393bd85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713543363
 GameObject:
   m_ObjectHideFlags: 0
@@ -14752,11 +14929,11 @@ GameObject:
   m_Component:
   - component: {fileID: 792360139}
   - component: {fileID: 792360144}
-  - component: {fileID: 792360143}
   - component: {fileID: 792360142}
   - component: {fileID: 792360141}
   - component: {fileID: 792360140}
   - component: {fileID: 792360145}
+  - component: {fileID: 792360146}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (7)
   m_TagString: ground
@@ -14873,26 +15050,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &792360143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792360138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1279805548}
 --- !u!212 &792360144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14962,6 +15119,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &792360146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792360138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1279805548}
 --- !u!1 &796559838
 GameObject:
   m_ObjectHideFlags: 0
@@ -15300,7 +15477,7 @@ Transform:
   m_Children:
   - {fileID: 1494247265}
   m_Father: {fileID: 710041039}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &806225615
 MonoBehaviour:
@@ -16234,11 +16411,11 @@ GameObject:
   m_Component:
   - component: {fileID: 846878778}
   - component: {fileID: 846878783}
-  - component: {fileID: 846878782}
   - component: {fileID: 846878781}
   - component: {fileID: 846878780}
   - component: {fileID: 846878779}
   - component: {fileID: 846878784}
+  - component: {fileID: 846878785}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (12)
   m_TagString: ground
@@ -16355,26 +16532,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &846878782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846878777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 13898023}
 --- !u!212 &846878783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16444,6 +16601,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &846878785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846878777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 13898023}
 --- !u!1 &851993882
 GameObject:
   m_ObjectHideFlags: 0
@@ -17529,11 +17706,11 @@ GameObject:
   m_Component:
   - component: {fileID: 934486784}
   - component: {fileID: 934486789}
-  - component: {fileID: 934486788}
   - component: {fileID: 934486787}
   - component: {fileID: 934486786}
   - component: {fileID: 934486785}
   - component: {fileID: 934486790}
+  - component: {fileID: 934486791}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (6)
   m_TagString: ground
@@ -17650,26 +17827,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &934486788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934486783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1765920761}
 --- !u!212 &934486789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17739,6 +17896,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &934486791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934486783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1765920761}
 --- !u!114 &935978555 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8268689553596293999, guid: ecd6067f769593d4282ddcbda7814dfd,
@@ -18952,18 +19129,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!114 &1017967960 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8268689553596293999, guid: ecd6067f769593d4282ddcbda7814dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 492958192}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7bc1989340a334f92390b2393bd85d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1023504689
 GameObject:
   m_ObjectHideFlags: 0
@@ -19422,11 +19587,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1028850213}
   - component: {fileID: 1028850218}
-  - component: {fileID: 1028850217}
   - component: {fileID: 1028850216}
   - component: {fileID: 1028850215}
   - component: {fileID: 1028850214}
   - component: {fileID: 1028850219}
+  - component: {fileID: 1028850220}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (19)
   m_TagString: ground
@@ -19543,26 +19708,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1028850217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028850212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 439431665}
 --- !u!212 &1028850218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19632,6 +19777,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1028850220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028850212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 439431665}
 --- !u!1 &1035054103
 GameObject:
   m_ObjectHideFlags: 0
@@ -19642,6 +19807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035054104}
   - component: {fileID: 1035054106}
+  - component: {fileID: 1035054105}
   m_Layer: 2
   m_Name: piedra gris grande (14)
   m_TagString: Untagged
@@ -19663,6 +19829,32 @@ Transform:
   m_Father: {fileID: 68373687}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1035054105
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035054103}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.59, y: 3.6}
+    newSize: {x: 3.59, y: 3.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.59, y: 3.6}
+  m_EdgeRadius: 0
 --- !u!212 &1035054106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20032,11 +20224,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1044766063}
   - component: {fileID: 1044766068}
-  - component: {fileID: 1044766067}
   - component: {fileID: 1044766066}
   - component: {fileID: 1044766065}
   - component: {fileID: 1044766064}
   - component: {fileID: 1044766069}
+  - component: {fileID: 1044766070}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (22)
   m_TagString: ground
@@ -20153,26 +20345,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1044766067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044766062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 805597478}
 --- !u!212 &1044766068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20242,6 +20414,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1044766070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044766062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 805597478}
 --- !u!1 &1044860445
 GameObject:
   m_ObjectHideFlags: 0
@@ -20996,11 +21188,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1093980267}
   - component: {fileID: 1093980272}
-  - component: {fileID: 1093980271}
   - component: {fileID: 1093980270}
   - component: {fileID: 1093980269}
   - component: {fileID: 1093980268}
   - component: {fileID: 1093980273}
+  - component: {fileID: 1093980274}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (9)
   m_TagString: ground
@@ -21117,26 +21309,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1093980271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093980266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1363242519}
 --- !u!212 &1093980272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21206,6 +21378,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1093980274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093980266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1363242519}
 --- !u!1 &1096051994
 GameObject:
   m_ObjectHideFlags: 0
@@ -21521,11 +21713,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1100478616}
   - component: {fileID: 1100478621}
-  - component: {fileID: 1100478620}
   - component: {fileID: 1100478619}
   - component: {fileID: 1100478618}
   - component: {fileID: 1100478617}
   - component: {fileID: 1100478622}
+  - component: {fileID: 1100478623}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (2)
   m_TagString: ground
@@ -21642,26 +21834,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1100478620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100478615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 688785971}
 --- !u!212 &1100478621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21731,6 +21903,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1100478623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100478615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 688785971}
 --- !u!1 &1102501916
 GameObject:
   m_ObjectHideFlags: 0
@@ -21998,11 +22190,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1112381803}
   - component: {fileID: 1112381808}
-  - component: {fileID: 1112381807}
   - component: {fileID: 1112381806}
   - component: {fileID: 1112381805}
   - component: {fileID: 1112381804}
   - component: {fileID: 1112381809}
+  - component: {fileID: 1112381810}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (10)
   m_TagString: ground
@@ -22119,26 +22311,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1112381807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112381802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 42765498}
 --- !u!212 &1112381808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22208,6 +22380,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1112381810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112381802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 42765498}
 --- !u!1 &1112802375
 GameObject:
   m_ObjectHideFlags: 0
@@ -22408,11 +22600,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1132415795}
   - component: {fileID: 1132415800}
-  - component: {fileID: 1132415799}
   - component: {fileID: 1132415798}
   - component: {fileID: 1132415797}
   - component: {fileID: 1132415796}
   - component: {fileID: 1132415801}
+  - component: {fileID: 1132415802}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (6)
   m_TagString: ground
@@ -22529,26 +22721,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1132415799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132415794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1987375761}
 --- !u!212 &1132415800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22618,6 +22790,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1132415802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132415794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1987375761}
 --- !u!1 &1134836485
 GameObject:
   m_ObjectHideFlags: 0
@@ -22727,11 +22919,11 @@ GameObject:
   m_Component:
   - component: {fileID: 258838638}
   - component: {fileID: 1148002672}
-  - component: {fileID: 1148002671}
   - component: {fileID: 1148002670}
   - component: {fileID: 1148002669}
   - component: {fileID: 1148002668}
   - component: {fileID: 1148002667}
+  - component: {fileID: 1148002673}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (1)
   m_TagString: ground
@@ -22854,26 +23046,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1148002671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148002666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1185602651}
 --- !u!212 &1148002672
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22922,6 +23094,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1148002673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148002666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1185602651}
 --- !u!1 &1148764483
 GameObject:
   m_ObjectHideFlags: 0
@@ -22932,11 +23124,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1148764484}
   - component: {fileID: 1148764489}
-  - component: {fileID: 1148764488}
   - component: {fileID: 1148764487}
   - component: {fileID: 1148764486}
   - component: {fileID: 1148764485}
   - component: {fileID: 1148764490}
+  - component: {fileID: 1148764491}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (5)
   m_TagString: ground
@@ -23053,26 +23245,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1148764488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148764483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 2071984353}
 --- !u!212 &1148764489
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23142,6 +23314,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1148764491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148764483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 2071984353}
 --- !u!1 &1151636099
 GameObject:
   m_ObjectHideFlags: 0
@@ -23152,11 +23344,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1151636100}
   - component: {fileID: 1151636105}
-  - component: {fileID: 1151636104}
   - component: {fileID: 1151636103}
   - component: {fileID: 1151636102}
   - component: {fileID: 1151636101}
   - component: {fileID: 1151636106}
+  - component: {fileID: 1151636107}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (17)
   m_TagString: ground
@@ -23273,26 +23465,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1151636104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151636099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1598749006}
 --- !u!212 &1151636105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23362,6 +23534,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1151636107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151636099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1598749006}
 --- !u!1 &1154847040
 GameObject:
   m_ObjectHideFlags: 0
@@ -23550,11 +23742,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1159077013}
   - component: {fileID: 1159077018}
-  - component: {fileID: 1159077017}
   - component: {fileID: 1159077016}
   - component: {fileID: 1159077015}
   - component: {fileID: 1159077014}
   - component: {fileID: 1159077019}
+  - component: {fileID: 1159077020}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (15)
   m_TagString: ground
@@ -23671,26 +23863,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1159077017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159077012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 245773859}
 --- !u!212 &1159077018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23760,6 +23932,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1159077020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159077012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 245773859}
 --- !u!1 &1161630282
 GameObject:
   m_ObjectHideFlags: 0
@@ -23850,11 +24042,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1168080174}
   - component: {fileID: 1168080179}
-  - component: {fileID: 1168080178}
   - component: {fileID: 1168080177}
   - component: {fileID: 1168080176}
   - component: {fileID: 1168080175}
   - component: {fileID: 1168080180}
+  - component: {fileID: 1168080181}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (11)
   m_TagString: ground
@@ -23971,26 +24163,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1168080178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168080173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1680700077}
 --- !u!212 &1168080179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24060,6 +24232,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1168080181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168080173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1680700077}
 --- !u!1001 &1169090510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24926,11 +25118,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1357989254}
   - component: {fileID: 1202584627}
-  - component: {fileID: 1202584626}
   - component: {fileID: 1202584625}
   - component: {fileID: 1202584624}
   - component: {fileID: 1202584623}
   - component: {fileID: 1202584622}
+  - component: {fileID: 1202584628}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0
   m_TagString: ground
@@ -25053,26 +25245,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1202584626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202584621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1610552201}
 --- !u!212 &1202584627
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25121,6 +25293,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1202584628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202584621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1610552201}
 --- !u!114 &1213138730 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8268689553596293999, guid: ecd6067f769593d4282ddcbda7814dfd,
@@ -25143,11 +25335,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1216282530}
   - component: {fileID: 1216282535}
-  - component: {fileID: 1216282534}
   - component: {fileID: 1216282533}
   - component: {fileID: 1216282532}
   - component: {fileID: 1216282531}
   - component: {fileID: 1216282536}
+  - component: {fileID: 1216282537}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (8)
   m_TagString: ground
@@ -25264,26 +25456,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1216282534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216282529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 565548251}
 --- !u!212 &1216282535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25353,6 +25525,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1216282537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216282529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 565548251}
 --- !u!1001 &1220596215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25718,6 +25910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1235688583}
   - component: {fileID: 1235688585}
+  - component: {fileID: 1235688584}
   m_Layer: 2
   m_Name: piedra gris grande (13)
   m_TagString: Untagged
@@ -25739,6 +25932,32 @@ Transform:
   m_Father: {fileID: 68373687}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1235688584
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235688582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.59, y: 3.6}
+    newSize: {x: 3.59, y: 3.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.59, y: 3.6}
+  m_EdgeRadius: 0
 --- !u!212 &1235688585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26135,11 +26354,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1281898163}
   - component: {fileID: 1281898168}
-  - component: {fileID: 1281898167}
   - component: {fileID: 1281898166}
   - component: {fileID: 1281898165}
   - component: {fileID: 1281898164}
   - component: {fileID: 1281898169}
+  - component: {fileID: 1281898170}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (13)
   m_TagString: ground
@@ -26256,26 +26475,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1281898167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281898162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1809965067}
 --- !u!212 &1281898168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26345,6 +26544,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1281898170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281898162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1809965067}
 --- !u!1 &1285199634
 GameObject:
   m_ObjectHideFlags: 0
@@ -26513,11 +26732,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1289442819}
   - component: {fileID: 1289442824}
-  - component: {fileID: 1289442823}
   - component: {fileID: 1289442822}
   - component: {fileID: 1289442821}
   - component: {fileID: 1289442820}
   - component: {fileID: 1289442825}
+  - component: {fileID: 1289442826}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (3)
   m_TagString: ground
@@ -26634,26 +26853,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1289442823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289442818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 397241809}
 --- !u!212 &1289442824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26723,6 +26922,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1289442826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289442818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 397241809}
 --- !u!1 &1290471619
 GameObject:
   m_ObjectHideFlags: 0
@@ -28064,6 +28283,153 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7bc1989340a334f92390b2393bd85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1364704101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 235673670}
+    m_Modifications:
+    - target: {fileID: 8268689553596293994, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_Name
+      value: health bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000095367
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000014305
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 153.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 22.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689551810451252, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268689551810451252, guid: ecd6067f769593d4282ddcbda7814dfd,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecd6067f769593d4282ddcbda7814dfd, type: 3}
+--- !u!224 &1364704102 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1364704101}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1364704103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8268689553596293999, guid: ecd6067f769593d4282ddcbda7814dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1364704101}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7bc1989340a334f92390b2393bd85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1380479302
 GameObject:
   m_ObjectHideFlags: 0
@@ -28436,6 +28802,32 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1386496641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390521407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2407436051361191049, guid: 203e6d76c2df6d24b8872fcda92fca75,
+    type: 3}
+  m_PrefabInstance: {fileID: 5786306744890345082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390521408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390521407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 8029832}
 --- !u!1 &1391009177
 GameObject:
   m_ObjectHideFlags: 0
@@ -28446,11 +28838,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1391009178}
   - component: {fileID: 1391009183}
-  - component: {fileID: 1391009182}
   - component: {fileID: 1391009181}
   - component: {fileID: 1391009180}
   - component: {fileID: 1391009179}
   - component: {fileID: 1391009184}
+  - component: {fileID: 1391009185}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (8)
   m_TagString: ground
@@ -28567,26 +28959,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1391009182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391009177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 609732693}
 --- !u!212 &1391009183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28656,6 +29028,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1391009185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391009177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 609732693}
 --- !u!1001 &1394271346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29058,11 +29450,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1416523928}
   - component: {fileID: 1416523933}
-  - component: {fileID: 1416523932}
   - component: {fileID: 1416523931}
   - component: {fileID: 1416523930}
   - component: {fileID: 1416523929}
   - component: {fileID: 1416523934}
+  - component: {fileID: 1416523935}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (5)
   m_TagString: ground
@@ -29179,26 +29571,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1416523932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416523927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 2005012813}
 --- !u!212 &1416523933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29268,6 +29640,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1416523935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416523927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 2005012813}
 --- !u!1 &1416868517
 GameObject:
   m_ObjectHideFlags: 0
@@ -31607,7 +31999,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525474428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44, y: -5, z: 0}
+  m_LocalPosition: {x: 44.66, y: -5, z: 0}
   m_LocalScale: {x: 0.8679636, y: 0.8679636, z: 0.8679636}
   m_Children:
   - {fileID: 1584202078}
@@ -31926,11 +32318,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1536035312}
   - component: {fileID: 1536035317}
-  - component: {fileID: 1536035316}
   - component: {fileID: 1536035315}
   - component: {fileID: 1536035314}
   - component: {fileID: 1536035313}
   - component: {fileID: 1536035318}
+  - component: {fileID: 1536035319}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (16)
   m_TagString: ground
@@ -32047,26 +32439,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1536035316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536035311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1481824964}
 --- !u!212 &1536035317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32136,6 +32508,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1536035319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536035311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1481824964}
 --- !u!1 &1537300839
 GameObject:
   m_ObjectHideFlags: 0
@@ -33212,11 +33604,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1575829561}
   - component: {fileID: 1575829566}
-  - component: {fileID: 1575829565}
   - component: {fileID: 1575829564}
   - component: {fileID: 1575829563}
   - component: {fileID: 1575829562}
   - component: {fileID: 1575829567}
+  - component: {fileID: 1575829568}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (18)
   m_TagString: ground
@@ -33333,26 +33725,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1575829565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575829560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1706509382}
 --- !u!212 &1575829566
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33422,6 +33794,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1575829568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575829560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1706509382}
 --- !u!1 &1584202077
 GameObject:
   m_ObjectHideFlags: 0
@@ -33536,7 +33928,7 @@ Transform:
   m_Children:
   - {fileID: 738923888}
   m_Father: {fileID: 710041039}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1587717230
 MonoBehaviour:
@@ -35650,11 +36042,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1740094368}
   - component: {fileID: 1740094373}
-  - component: {fileID: 1740094372}
   - component: {fileID: 1740094371}
   - component: {fileID: 1740094370}
   - component: {fileID: 1740094369}
   - component: {fileID: 1740094374}
+  - component: {fileID: 1740094375}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (23)
   m_TagString: ground
@@ -35771,26 +36163,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1740094372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740094367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1037023539}
 --- !u!212 &1740094373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35860,6 +36232,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1740094375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740094367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1037023539}
 --- !u!1 &1743504273
 GameObject:
   m_ObjectHideFlags: 0
@@ -36558,11 +36950,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1780803586}
   - component: {fileID: 1780803591}
-  - component: {fileID: 1780803590}
   - component: {fileID: 1780803589}
   - component: {fileID: 1780803588}
   - component: {fileID: 1780803587}
   - component: {fileID: 1780803592}
+  - component: {fileID: 1780803593}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (2)
   m_TagString: ground
@@ -36679,26 +37071,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1780803590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1780803585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 691626270}
 --- !u!212 &1780803591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36768,6 +37140,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1780803593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780803585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 691626270}
 --- !u!1001 &1787546911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37314,6 +37706,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7bc1989340a334f92390b2393bd85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1815077523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 847099005386472826, guid: 2bd0be8bae2d6024d957f02dca655ad7,
+    type: 3}
+  m_PrefabInstance: {fileID: 847099005995219353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1815077524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815077523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 711987624}
 --- !u!1 &1819113139
 GameObject:
   m_ObjectHideFlags: 0
@@ -37891,11 +38309,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1838861951}
   - component: {fileID: 1838861956}
-  - component: {fileID: 1838861955}
   - component: {fileID: 1838861954}
   - component: {fileID: 1838861953}
   - component: {fileID: 1838861952}
   - component: {fileID: 1838861957}
+  - component: {fileID: 1838861958}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (1)
   m_TagString: ground
@@ -38012,26 +38430,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1838861955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838861950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 633904994}
 --- !u!212 &1838861956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38101,6 +38499,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1838861958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838861950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 633904994}
 --- !u!1 &1843081605
 GameObject:
   m_ObjectHideFlags: 0
@@ -38447,11 +38865,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1857118031}
   - component: {fileID: 1857118036}
-  - component: {fileID: 1857118035}
   - component: {fileID: 1857118034}
   - component: {fileID: 1857118033}
   - component: {fileID: 1857118032}
   - component: {fileID: 1857118037}
+  - component: {fileID: 1857118038}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (20)
   m_TagString: ground
@@ -38568,26 +38986,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1857118035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857118030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 223828702}
 --- !u!212 &1857118036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38657,6 +39055,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1857118038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857118030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 223828702}
 --- !u!1 &1883786815
 GameObject:
   m_ObjectHideFlags: 0
@@ -39194,11 +39612,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1910433496}
   - component: {fileID: 1910433501}
-  - component: {fileID: 1910433500}
   - component: {fileID: 1910433499}
   - component: {fileID: 1910433498}
   - component: {fileID: 1910433497}
   - component: {fileID: 1910433502}
+  - component: {fileID: 1910433503}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (9)
   m_TagString: ground
@@ -39315,26 +39733,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1910433500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910433495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 855189637}
 --- !u!212 &1910433501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39404,6 +39802,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1910433503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910433495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 855189637}
 --- !u!1 &1912593284
 GameObject:
   m_ObjectHideFlags: 0
@@ -39414,11 +39832,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1912593285}
   - component: {fileID: 1912593290}
-  - component: {fileID: 1912593289}
   - component: {fileID: 1912593288}
   - component: {fileID: 1912593287}
   - component: {fileID: 1912593286}
   - component: {fileID: 1912593291}
+  - component: {fileID: 1912593292}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (14)
   m_TagString: ground
@@ -39535,26 +39953,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1912593289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912593284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 846657494}
 --- !u!212 &1912593290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39624,6 +40022,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1912593292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912593284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 846657494}
 --- !u!1 &1918517837
 GameObject:
   m_ObjectHideFlags: 0
@@ -41162,12 +41580,12 @@ PrefabInstance:
     - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0000095367
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000014305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8268689553596293993, guid: ecd6067f769593d4282ddcbda7814dfd,
         type: 3}
@@ -41824,11 +42242,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2048197495}
   - component: {fileID: 2048197500}
-  - component: {fileID: 2048197499}
   - component: {fileID: 2048197498}
   - component: {fileID: 2048197497}
   - component: {fileID: 2048197496}
   - component: {fileID: 2048197501}
+  - component: {fileID: 2048197502}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (12)
   m_TagString: ground
@@ -41846,7 +42264,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4343.6, y: -13.299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 235673670}
   m_Father: {fileID: 710041039}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41944,26 +42363,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2048197499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048197494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 1017967960}
 --- !u!212 &2048197500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42033,6 +42432,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2048197502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048197494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1364704103}
 --- !u!1001 &2050548916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42341,11 +42760,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2078639367}
   - component: {fileID: 2078639372}
-  - component: {fileID: 2078639371}
   - component: {fileID: 2078639370}
   - component: {fileID: 2078639369}
   - component: {fileID: 2078639368}
   - component: {fileID: 2078639373}
+  - component: {fileID: 2078639374}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0 (4)
   m_TagString: ground
@@ -42462,26 +42881,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2078639371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078639366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 905976887}
 --- !u!212 &2078639372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42551,6 +42950,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2078639374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078639366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 905976887}
 --- !u!1 &2090173372
 GameObject:
   m_ObjectHideFlags: 0
@@ -42854,11 +43273,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2105212440}
   - component: {fileID: 2105212445}
-  - component: {fileID: 2105212444}
   - component: {fileID: 2105212443}
   - component: {fileID: 2105212442}
   - component: {fileID: 2105212441}
   - component: {fileID: 2105212446}
+  - component: {fileID: 2105212447}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (11)
   m_TagString: ground
@@ -42975,26 +43394,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2105212444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105212439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 1132338331}
 --- !u!212 &2105212445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43064,6 +43463,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2105212447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105212439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 1132338331}
 --- !u!1 &2106621848
 GameObject:
   m_ObjectHideFlags: 0
@@ -44501,11 +44920,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2141742882}
   - component: {fileID: 2141742887}
-  - component: {fileID: 2141742886}
   - component: {fileID: 2141742885}
   - component: {fileID: 2141742884}
   - component: {fileID: 2141742883}
   - component: {fileID: 2141742888}
+  - component: {fileID: 2141742889}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (10)
   m_TagString: ground
@@ -44622,26 +45041,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2141742886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141742881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 1801853224}
-  manager: {fileID: 509470809}
-  maxhealth: 0
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 209699478}
 --- !u!212 &2141742887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44711,6 +45110,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2141742889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141742881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 1801853224}
+  manager: {fileID: 509470809}
+  maxhealth: 0
+  attackSound: {fileID: 0}
+  weaponSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  enemyHealth: {fileID: 209699478}
 --- !u!4 &2145830475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2407436051361191054, guid: 203e6d76c2df6d24b8872fcda92fca75,
@@ -44804,7 +45223,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 847099005386472817, guid: 2bd0be8bae2d6024d957f02dca655ad7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2bd0be8bae2d6024d957f02dca655ad7, type: 3}
 --- !u!1001 &3092172197380295280
 PrefabInstance:
@@ -44903,6 +45323,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 710041039}
     m_Modifications:
+    - target: {fileID: 2407436051361191049, guid: 203e6d76c2df6d24b8872fcda92fca75,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407436051361191054, guid: 203e6d76c2df6d24b8872fcda92fca75,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5786306745435681391, guid: 203e6d76c2df6d24b8872fcda92fca75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44983,11 +45413,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2407436051361191054, guid: 203e6d76c2df6d24b8872fcda92fca75,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 2407436051361191053, guid: 203e6d76c2df6d24b8872fcda92fca75,
         type: 3}
       propertyPath: player
@@ -45001,14 +45426,20 @@ PrefabInstance:
     - target: {fileID: 6028251734782592602, guid: 203e6d76c2df6d24b8872fcda92fca75,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6028251734782592602, guid: 203e6d76c2df6d24b8872fcda92fca75,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2407436051361191052, guid: 203e6d76c2df6d24b8872fcda92fca75,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2407436051361191053, guid: 203e6d76c2df6d24b8872fcda92fca75, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 203e6d76c2df6d24b8872fcda92fca75, type: 3}
 --- !u!1001 &7634359722529702391
 PrefabInstance:

@@ -6,7 +6,7 @@ public class Boss : Enemy
 {
 
     private Dictionary<int,Vector3> initialPositions;
-    private bool canChange, canAttack, specialAttack, walking;
+    private bool canChange, specialAttack, walking;
     private int cont;
     private float specialAttackTime;
     private Vector3 specialAttackPosition;
