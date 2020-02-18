@@ -4329,7 +4329,7 @@ MonoBehaviour:
   player: {fileID: 2093698003}
   manager: {fileID: 1930938424}
   health: 2
-  speed: 80
+  speed: 120
   maxhealth: 0
   visionRadius: 130
   attackkRadius: 33
@@ -4385,15 +4385,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 4
   m_AngularDrag: 0.05
-  m_GravityScale: 70
+  m_GravityScale: 700
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &312565572
 Animator:
   serializedVersion: 3
@@ -7922,7 +7922,7 @@ MonoBehaviour:
   player: {fileID: 2093698003}
   manager: {fileID: 1930938424}
   health: 2
-  speed: 80
+  speed: 120
   maxhealth: 0
   visionRadius: 130
   attackkRadius: 33
@@ -7978,15 +7978,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 4
   m_AngularDrag: 0.05
-  m_GravityScale: 70
+  m_GravityScale: 700
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &502124817
 Animator:
   serializedVersion: 3
@@ -11036,7 +11036,7 @@ MonoBehaviour:
   player: {fileID: 2093698003}
   manager: {fileID: 1930938424}
   health: 2
-  speed: 80
+  speed: 120
   maxhealth: 0
   visionRadius: 130
   attackkRadius: 33
@@ -11092,15 +11092,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 4
   m_AngularDrag: 0.05
-  m_GravityScale: 70
+  m_GravityScale: 700
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &785274845
 Animator:
   serializedVersion: 3
@@ -21704,15 +21704,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 4
   m_AngularDrag: 0.05
-  m_GravityScale: 70
+  m_GravityScale: 700
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &1454571034
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21765,7 +21765,7 @@ MonoBehaviour:
   player: {fileID: 2093698003}
   manager: {fileID: 1930938424}
   health: 2
-  speed: 80
+  speed: 120
   maxhealth: 0
   visionRadius: 130
   attackkRadius: 33

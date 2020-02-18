@@ -141,7 +141,7 @@ public class Boss : Enemy
             SpecialAttack();
         }
 
-        if (attackWait >= 15f)
+        if (attackWait >= 10f)
         {
             attackWait = 0;
             canChange = true;
