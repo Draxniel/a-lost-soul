@@ -20,12 +20,16 @@ public class Boss : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        health *= manager.getDifficulty();  //Se multiplica la vida del enemigo por la dificultad
+        health = 40;
+        speed = 250;
+        attackkRadius = 55;
+        visionRadius = 300;
+        damageMultiplier = manager.getDifficulty();
+        health *= damageMultiplier;  //Se multiplica la vida del enemigo por la dificultad
         stats = new Dictionary<Stat, int>();
         stats.Add(Stat.Health, health);
         stats.Add(Stat.Strength, 1);
         stats.Add(Stat.Defense, 1);
-        //healthBar.fillAmount = 1;
         attackTime = 0;
         attackWait = 0;
         specialAttackTime = 0;
