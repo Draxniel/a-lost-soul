@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 847099005386472829}
   - component: {fileID: 847099005386472816}
-  - component: {fileID: 847099005386472817}
   - component: {fileID: 847099005386472830}
   - component: {fileID: 847099005386472831}
   - component: {fileID: 847099005386472828}
   - component: {fileID: 847099005386472819}
+  - component: {fileID: 6319340962837564158}
   m_Layer: 2
   m_Name: Dwarf Sprite Sheet_0 (7)
   m_TagString: ground
@@ -85,30 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &847099005386472817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847099005386472826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 0}
-  manager: {fileID: 0}
-  health: 3
-  speed: 60
-  maxhealth: 0
-  visionRadius: 130
-  attackkRadius: 35
-  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
-  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
-  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
-  enemyHealth: {fileID: 8719471734080943020}
 --- !u!95 &847099005386472830
 Animator:
   serializedVersion: 3
@@ -224,6 +200,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6319340962837564158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847099005386472826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 0}
+  manager: {fileID: 0}
+  maxhealth: 0
+  attackSound: {fileID: 8300000, guid: 322dbdf21b3260148874b081992ee2e9, type: 3}
+  weaponSound: {fileID: 8300000, guid: 7a9c54e32a6f1614ca752754248eb07b, type: 3}
+  deathSound: {fileID: 8300000, guid: 5c2bcb41d646d914f87f405ebaf43d0b, type: 3}
+  enemyHealth: {fileID: 8719471734080943020}
 --- !u!1 &847099005706966708
 GameObject:
   m_ObjectHideFlags: 0

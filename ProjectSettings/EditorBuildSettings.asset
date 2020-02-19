@@ -5,49 +5,49 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/inicio.unity
     guid: 31b2956afbf1b724e8774b6ebc61710d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu secundario.unity
     guid: a4623b78bfece8b4aa7b76d715db83f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/difficultyScene.unity
     guid: be8aa754c565d324196b7b7037111939
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/select skin.unity
     guid: cf6fff79f29e357498976e64148e05a4
   - enabled: 0
     path: "Assets/Scenes/pr\xF3logo.unity"
     guid: c483d89f90334394d85b357a4109b4ff
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/pr\xF3logoPt2.unity"
     guid: 011d05f6a23bffe48a28fb91d6d3359b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nivel 1.unity
     guid: d5c1afcfa1390e14dbd7c92028f6f79f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/scene 1-2.unity
     guid: 01b23f7121168844e9ff71b41ada82b9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nivel 2.unity
     guid: e60b882803420ae45986f0f2155e470d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/scene 2-3.unity
     guid: 7990d87b99586f74993c24a6876ced3e
   - enabled: 1
     path: Assets/Scenes/Nivel 3.unity
     guid: 576b0a8b7bb804a468a0bc7101401c53
-  - enabled: 1
+  - enabled: 0
     path: Assets/Escena 3-4/scene 3-4.unity
     guid: 7506f0d1f487cba4597b4e21b71773c9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nivel 4.unity
     guid: 35cfdf8c201a0d941be4ff5f491696d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/final boss/final-scene.unity
     guid: de4ddae22c0296046923f27c4b14a9d3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Scene/Ending scene.unity
     guid: 97b998fe658d7744d8be6a9ddc9a2d30
   m_configObjects: {}

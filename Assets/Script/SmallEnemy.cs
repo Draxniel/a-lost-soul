@@ -30,7 +30,7 @@ public class SmallEnemy : Enemy
         //Posicion inicial igual a posicion actual                             
         visionRadius = 120;
         attackkRadius = 35;
-        speed = 80;
+        speed = 150;
         enemyHealth.setMaxHealth(health);
         enemyHealth.setActive(false);
     }
@@ -129,6 +129,7 @@ public class SmallEnemy : Enemy
         if (target != initialPosition && distance < attackkRadius)
         {
             //Attack
+            GetComponent<Animator>().SetBool("move", false);
         }
         else
         {
@@ -142,6 +143,7 @@ public class SmallEnemy : Enemy
             }
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
             //Animaciones de movimiento
+            GetComponent<Animator>().SetBool("move", true);
         }
 
         if (target == initialPosition && distance < 1f)  //Validacion para que al estar muy cerca de su posicion inicial retorne a ella y no se quede en un bucle intentando llegar
