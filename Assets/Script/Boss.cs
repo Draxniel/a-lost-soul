@@ -6,11 +6,12 @@ public class Boss : Enemy
 {
 
     private Dictionary<int,Vector3> initialPositions;
-    private bool canChange, canAttack, specialAttack, walking;
+    private bool canChange, specialAttack, walking;
     private int cont;
-    private float specialAttackTime, attackWait;
+    private float specialAttackTime;
     private Vector3 specialAttackPosition;
     public Missile[] missile;
+    public AudioClip laugh, fireball, firebreath;
 
     public Boss(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -61,7 +62,7 @@ public class Boss : Enemy
 
                 if (timer >= 1) //Este tiempo se modifica según la duración de la animación de muerte
                 {
-                    gameObject.SetActive(false);
+                    //gameObject.SetActive(false);
                 }
             }
         }
@@ -192,6 +193,8 @@ public class Boss : Enemy
     {
         attacking = true;
         GetComponent<Animator>().SetBool("Attacking", true);
+        SoundController.assignSound(firebreath);
+        SoundController.playSound();
         if (attackTime >= 0.5f)    //Tiempo que tarda en hacer daño
         {
             attackTime = 0;
@@ -211,13 +214,16 @@ public class Boss : Enemy
     {
         if (canAttack && transform.position == specialAttackPosition)
         {
+            SoundController.assignSound(fireball);
+            SoundController.playSound();
             attacking = true;
             missile[0].gameObject.SetActive(true);
             missile[1].gameObject.SetActive(true);
             missile[2].gameObject.SetActive(true);
             missile[3].gameObject.SetActive(true);
             missile[4].gameObject.SetActive(true);
-
+            SoundController.playSound();
+            SoundController.playSound();
             if (specialAttackTime >= 3f)   //Pasado el tiempo de ataque especial, esto pasara
             {
                 specialAttack = false;
@@ -253,22 +259,26 @@ public class Boss : Enemy
              */
             player.Attack(this);
         }
-        else if (collision.transform.tag == "Player")
+        else if ((collision.transform.tag == "Player") && player.isPlayerAlive())
         {
             if ((attackWait >= 3) && canAttack)
             {
                 Attack(player);
+                SoundController.assignSound(laugh);
+                SoundController.playSound();
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Player")
+        if ((collision.transform.tag == "Player") && player.isPlayerAlive())
         {
             if ((attackWait >= 3) && canAttack)
             {
                 Attack(player);
+                SoundController.assignSound(laugh);
+                SoundController.playSound();
             }
         }
     }

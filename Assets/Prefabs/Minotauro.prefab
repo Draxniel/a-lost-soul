@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 3092172198871375097}
   - component: {fileID: 3092172198871375096}
   - component: {fileID: 3092172198871375095}
+  - component: {fileID: 6839882769690269853}
   m_Layer: 2
   m_Name: Minotauro
   m_TagString: ground
@@ -294,11 +295,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   player: {fileID: 0}
   manager: {fileID: 0}
-  health: 5
-  speed: 40
   maxhealth: 0
-  visionRadius: 150
-  attackkRadius: 60
   attackSound: {fileID: 8300000, guid: a03700e85cc6fea418131044f4d2b911, type: 3}
   weaponSound: {fileID: 8300000, guid: 1f5f9adf59cbd3947aad042f60c5fbd3, type: 3}
   deathSound: {fileID: 8300000, guid: 9d3c4ecef3c59664988b6f4bca25c82b, type: 3}
@@ -324,6 +321,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6839882769690269853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3092172198871375094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debfbb23a21bc5449be37770dbf9b5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 0}
+  manager: {fileID: 0}
+  maxhealth: 0
+  attackSound: {fileID: 8300000, guid: a03700e85cc6fea418131044f4d2b911, type: 3}
+  weaponSound: {fileID: 8300000, guid: 1f5f9adf59cbd3947aad042f60c5fbd3, type: 3}
+  deathSound: {fileID: 8300000, guid: 9d3c4ecef3c59664988b6f4bca25c82b, type: 3}
+  enemyHealth: {fileID: 3092172198718573188}
 --- !u!1001 &6352841217186900459
 PrefabInstance:
   m_ObjectHideFlags: 0

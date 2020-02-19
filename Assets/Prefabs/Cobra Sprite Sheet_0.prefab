@@ -109,11 +109,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2407436051361191054}
   - component: {fileID: 2407436051361191055}
-  - component: {fileID: 2407436051361191053}
   - component: {fileID: 2407436051361191048}
   - component: {fileID: 2407436051361191043}
   - component: {fileID: 2407436051361191052}
   - component: {fileID: 2407436051361191042}
+  - component: {fileID: 2001381110977729231}
   m_Layer: 2
   m_Name: Cobra Sprite Sheet_0
   m_TagString: ground
@@ -184,30 +184,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2407436051361191053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2407436051361191049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555637105ae83c4788be9f0679b4d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 6155128654542232054, guid: 61a0883a2ca78b34e9ea157dd6102320, type: 3}
-  manager: {fileID: 5772549826394326385, guid: eec7323a1d73f784ba00be5338268878, type: 3}
-  health: 2
-  speed: 60
-  maxhealth: 0
-  visionRadius: 130
-  attackkRadius: 33
-  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
-  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
-  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
-  enemyHealth: {fileID: 6028251736620872193}
 --- !u!95 &2407436051361191048
 Animator:
   serializedVersion: 3
@@ -323,6 +299,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2001381110977729231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2407436051361191049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e89b8c9756db5a449dca97855f0e0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  player: {fileID: 0}
+  manager: {fileID: 0}
+  maxhealth: 0
+  attackSound: {fileID: 8300000, guid: 66606055bf25691418d42b673859b3e4, type: 3}
+  weaponSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
+  deathSound: {fileID: 8300000, guid: 87af035cf1220c24982ba3f1a7609c03, type: 3}
+  enemyHealth: {fileID: 6028251736620872193}
 --- !u!1 &6028251734782592603
 GameObject:
   m_ObjectHideFlags: 0

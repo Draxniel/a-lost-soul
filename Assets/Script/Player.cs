@@ -8,7 +8,7 @@ public class Player : Entity
 {
     private bool canJump, attacking, canAttack;
     private float attackTime, time;
-    private int coins, skin, maxHealth, damageMultiplier, x,y;
+    private int coins, skin, maxHealth, x,y;
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, attackScream, deathSound,fallingSound;
     public GameObject attackObject;
@@ -30,7 +30,6 @@ public class Player : Entity
         coins = manager.getCoins();
         skin = manager.getSkinNumber();
         maxHealth = manager.getMaxHealth();
-        damageMultiplier = manager.getDifficulty();
         attackTime = 5;
         attackObject.SetActive(false);
         attacking = false;
@@ -107,9 +106,9 @@ public class Player : Entity
     {
         if (GetStatValue(Stat.Health) > 0)
         {
-            if ((damage * damageMultiplier) <= GetStatValue(Stat.Health))
+            if (damage <= GetStatValue(Stat.Health))
             {
-                this.stats[Stat.Health] -= (damage * damageMultiplier);
+                this.stats[Stat.Health] -= (damage);
                 return;
             }
             stats[Stat.Health] = 0;
@@ -233,6 +232,7 @@ public class Player : Entity
         if (canAttack)
         {
             enemy.TakeDamage(GetStatValue(Stat.Strength));
+            attacking = true;
             canAttack = false;
         }
     }
@@ -264,7 +264,6 @@ public class Player : Entity
         {
             GetComponent<Animator>().SetBool("attack", false);
             attackObject.SetActive(false);
-            canAttack = false;
             attacking = false;
         }
     }
