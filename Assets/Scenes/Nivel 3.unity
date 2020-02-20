@@ -26019,7 +26019,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 140
+  orthographic size: 96.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -99126,9 +99126,9 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 0cc744b6da927684788d344f725db738, type: 3}
   walkSound: {fileID: 8300000, guid: 3535b80a0906c434ab8465de6be10be0, type: 3}
   attackSound: {fileID: 8300000, guid: 57e124d28f2c3f343a8004a4faa06875, type: 3}
-  attackScream: {fileID: 0}
-  deathSound: {fileID: 0}
-  fallingSound: {fileID: 0}
+  attackScream: {fileID: 8300000, guid: de41cc793b01668438d7a9a753227201, type: 3}
+  deathSound: {fileID: 8300000, guid: 80a99c923919ba34abe295e2dfcdab79, type: 3}
+  fallingSound: {fileID: 8300000, guid: 09c40417b3e9f2d4a83d72cef952936f, type: 3}
   attackObject: {fileID: 1851596443}
   life: {fileID: 409349821}
   CoinNumber: {fileID: 931435138}

@@ -10,7 +10,7 @@ public class Player : Entity
     private float attackTime, time;
     private int coins, skin, maxHealth, x,y;
     public DataManager manager;
-    public AudioClip jumpSound, walkSound, attackSound, attackScream, deathSound,fallingSound;
+    public AudioClip jumpSound, walkSound, attackSound, deathSound,fallingSound;
     public GameObject attackObject;
     public Text life, CoinNumber,Stronger,Defense;
     private bool falling = false, isAlive = true;
