@@ -10,7 +10,7 @@ public class Player : Entity
     private float attackTime, time;
     private int coins, skin, maxHealth, x,y;
     public DataManager manager;
-    public AudioClip jumpSound, walkSound, attackSound, attackScream, deathSound,fallingSound;
+    public AudioClip jumpSound, walkSound, attackSound, deathSound,fallingSound;
     public GameObject attackObject;
     public Text life, CoinNumber,Stronger,Defense;
     private bool falling = false, isAlive = true;
@@ -106,10 +106,20 @@ public class Player : Entity
     {
         if (GetStatValue(Stat.Health) > 0)
         {
-            if (damage <= GetStatValue(Stat.Health))
-            {
-                this.stats[Stat.Health] -= (damage);
-                return;
+            int calculatedDamage = damage - GetStatValue(Stat.Defense);
+            if (calculatedDamage > 1){
+                if (calculatedDamage <= GetStatValue(Stat.Health))
+                {
+                    this.stats[Stat.Health] -= (calculatedDamage);
+                    return;
+                }
+            }
+            else{
+                if (1 <= GetStatValue(Stat.Health))
+                {
+                    this.stats[Stat.Health] -= (1);
+                    return;
+                }
             }
             stats[Stat.Health] = 0;
             isAlive = false;

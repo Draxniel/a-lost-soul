@@ -12,6 +12,7 @@ public class Boss : Enemy
     private Vector3 specialAttackPosition;
     public Missile[] missile;
     public AudioClip laugh, fireball, firebreath;
+    private bool fireballSound = true;
 
     public Boss(int health, int strength, int defense) : base(health, strength, defense)
     {
@@ -21,12 +22,16 @@ public class Boss : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        health *= manager.getDifficulty();  //Se multiplica la vida del enemigo por la dificultad
+        health = 400;
+        speed = 250;
+        attackkRadius = 55;
+        visionRadius = 300;
+        damageMultiplier = manager.getDifficulty();
+        health *= damageMultiplier;  //Se multiplica la vida del enemigo por la dificultad
         stats = new Dictionary<Stat, int>();
         stats.Add(Stat.Health, health);
-        stats.Add(Stat.Strength, 1);
+        stats.Add(Stat.Strength, 1*damageMultiplier);
         stats.Add(Stat.Defense, 1);
-        //healthBar.fillAmount = 1;
         attackTime = 0;
         attackWait = 0;
         specialAttackTime = 0;
@@ -43,6 +48,8 @@ public class Boss : Enemy
         specialAttack = false;
         walking = false;
         initialPosition = transform.position;
+        fireballSound = true;
+        enemyHealth.setMaxHealth(health);
     }
 
     // Update is called once per frame
@@ -100,7 +107,7 @@ public class Boss : Enemy
 
         if (canChange)  //Se cambia la posicion inicial del boss para cambiar el lugar donde esta estatico por mas tiempo
         {
-            initialPosition = initialPositions[Random.Range(1, 5)];
+            initialPosition = initialPositions[Random.Range(1, 4)];
             canChange = false;
         }
 
@@ -123,12 +130,14 @@ public class Boss : Enemy
             missile[3].ResetPosition();
             missile[4].ResetPosition();
             cont = 0;
+            fireballSound = true;
         }
 
         float distance = Vector3.Distance(target, transform.position);
 
         if (specialAttack)
         {
+            Invoke("playFireballSound", 0.6f);
             canChange = false;
             initialPosition = specialAttackPosition;
             target = initialPosition;
@@ -193,14 +202,14 @@ public class Boss : Enemy
     {
         attacking = true;
         GetComponent<Animator>().SetBool("Attacking", true);
-        SoundController.assignSound(firebreath);
-        SoundController.playSound();
         if (attackTime >= 0.5f)    //Tiempo que tarda en hacer daño
         {
             attackTime = 0;
             if ((player.GetStatValue(Stat.Health) > 0) && (GetStatValue(Stat.Health) > 0))
             {
                 player.TakeDamage(GetStatValue(Stat.Strength));
+                SoundController.assignSound(laugh);
+                SoundController.playSound();
             }
             canAttack = false;
             canChange = true;
@@ -214,16 +223,12 @@ public class Boss : Enemy
     {
         if (canAttack && transform.position == specialAttackPosition)
         {
-            SoundController.assignSound(fireball);
-            SoundController.playSound();
             attacking = true;
             missile[0].gameObject.SetActive(true);
             missile[1].gameObject.SetActive(true);
             missile[2].gameObject.SetActive(true);
             missile[3].gameObject.SetActive(true);
             missile[4].gameObject.SetActive(true);
-            SoundController.playSound();
-            SoundController.playSound();
             if (specialAttackTime >= 3f)   //Pasado el tiempo de ataque especial, esto pasara
             {
                 specialAttack = false;
@@ -238,6 +243,13 @@ public class Boss : Enemy
                 specialAttackTime = 0;
             }
         }
+    }
+
+    private void playFireballSound(){
+        if (fireballSound){
+                SoundController.playOneShot(fireball);
+                fireballSound = false;
+            }
     }
 
     private void OnDrawGizmosSelected()
@@ -258,14 +270,14 @@ public class Boss : Enemy
              *GetComponent<Animator>().SetBool("Attacking", canAttack);
              */
             player.Attack(this);
+            enemyHealth.setHealth(health);
         }
         else if ((collision.transform.tag == "Player") && player.isPlayerAlive())
         {
             if ((attackWait >= 3) && canAttack)
             {
                 Attack(player);
-                SoundController.assignSound(laugh);
-                SoundController.playSound();
+                
             }
         }
     }
@@ -277,8 +289,7 @@ public class Boss : Enemy
             if ((attackWait >= 3) && canAttack)
             {
                 Attack(player);
-                SoundController.assignSound(laugh);
-                SoundController.playSound();
+                SoundController.playOneShot(firebreath);
             }
         }
     }
