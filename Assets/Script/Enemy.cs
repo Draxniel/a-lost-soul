@@ -6,8 +6,7 @@ public class Enemy : Entity
 {
     public Player player;
     public DataManager manager;
-    public int maxhealth;   //POR QUE ES PUBLICO ESTE ATRIBUTO??? PREGUNTÓ DANIEL
-    public AudioClip attackSound, weaponSound, deathSound;
+    public int maxhealth;   //POR QUE ES PUBLICO ESTE ATRIBUTO??? PREGUNTÓ DANIEL 
     public HealthBar enemyHealth;
     protected int speed, health, damageMultiplier;
     protected float visionRadius, attackkRadius, attackWait, attackTime, timer;
