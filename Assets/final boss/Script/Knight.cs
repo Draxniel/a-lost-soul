@@ -37,7 +37,7 @@ public class Knight : MonoBehaviour
         }
         else
             gameObject.GetComponent<Animator>().SetBool("Running", true);
-        if (pass > 58) SceneManager.LoadScene("final-battle", LoadSceneMode.Single);
+        if (pass > 58) SceneManager.LoadScene("Nivel 5", LoadSceneMode.Single);
 
 
 

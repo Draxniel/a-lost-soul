@@ -55,6 +55,12 @@ public class Boss : Enemy
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenu.gamePaused){
+            GetComponent<AudioSource>().Pause();
+        }
+        else{
+           GetComponent<AudioSource>().UnPause(); 
+        }
         //Validacion por si la vida del enemigo es cero
         health = GetStatValue(Stat.Health);
         if ((GetStatValue(Stat.Health) == 0) || (player.GetStatValue(Stat.Health) == 0))
