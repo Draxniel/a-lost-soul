@@ -16,7 +16,7 @@ public class running : MonoBehaviour
     void Start()
     {
         //skin = manager.getSkinNumber();
-        GetComponent<AudioSource>().PlayDelayed(4f); // Activa la música después de 4 seg...
+        GetComponent<AudioSource>().PlayDelayed(2f); // Activa la música después de 4 seg...
     }
 
     // Update is called once per frame
