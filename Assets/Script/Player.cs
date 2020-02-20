@@ -106,10 +106,20 @@ public class Player : Entity
     {
         if (GetStatValue(Stat.Health) > 0)
         {
-            if (damage <= GetStatValue(Stat.Health))
-            {
-                this.stats[Stat.Health] -= (damage);
-                return;
+            int calculatedDamage = damage - GetStatValue(Stat.Defense);
+            if (calculatedDamage > 1){
+                if (calculatedDamage <= GetStatValue(Stat.Health))
+                {
+                    this.stats[Stat.Health] -= (calculatedDamage);
+                    return;
+                }
+            }
+            else{
+                if (1 <= GetStatValue(Stat.Health))
+                {
+                    this.stats[Stat.Health] -= (1);
+                    return;
+                }
             }
             stats[Stat.Health] = 0;
             isAlive = false;
