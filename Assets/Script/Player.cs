@@ -164,13 +164,30 @@ public class Player : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "ground")
+        if (collision.transform.tag == "ground") 
         {
             canJump = true;
             GetComponent<Animator>().SetBool("jumpping", false);
             falling = false;
+
+        }
+        if (collision.transform.tag == "platform")
+        {
+            canJump = true;
+            GetComponent<Animator>().SetBool("jumpping", false);
+            transform.parent = collision.gameObject.transform;
+            falling = false;
         }
 
+    }
+
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "platform")
+        {
+            transform.parent = null;
+        }
     }
 
     public override void Move()
