@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class running : MonoBehaviour
 {
     public int skin;
@@ -12,17 +11,25 @@ public class running : MonoBehaviour
     public float parallaxSpeed = 0.2f;
     public RawImage backGround;
     public RawImage floorPic;
+    public GameObject playButton, loadButton, exitButton;
+    private float time;
 
     void Start()
     {
-        //skin = manager.getSkinNumber();
-        GetComponent<AudioSource>().PlayDelayed(2f); // Activa la música después de 4 seg...
+        GetComponent<AudioSource>().PlayDelayed(1f); // Activa la música después de 1 seg...
+        if ((playButton) && (loadButton) && (exitButton))
+        {
+            playButton.SetActive(false);
+            loadButton.SetActive(false);
+            exitButton.SetActive(false);
+        }
+        
     }
 
     // Update is called once per frame
     void FixedUpdate() //Update
     {
-        //skin = manager.getSkinNumber();
+        time += Time.deltaTime;
         switch (skin)
         {
             case 1:
@@ -41,6 +48,12 @@ public class running : MonoBehaviour
         }
         floorPic.uvRect = new Rect(floorPic.uvRect.x + (finalSpeed/2), 0f, 1f, 1f);
         backGround.uvRect = new Rect(backGround.uvRect.x + finalSpeed, 0f, 1f, 1f);
+        if ((time > 21) && (playButton) && (loadButton) && (exitButton))
+        {
+            playButton.SetActive(true);
+            loadButton.SetActive(true);
+            exitButton.SetActive(true);
+        }
     }
 
     public void play()

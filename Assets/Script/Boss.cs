@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : Enemy
 {
 
     private Dictionary<int,Vector3> initialPositions;
     private bool canChange, specialAttack, walking;
-    private int cont;
+    private int cont, deathSoundActivate = 0 ;
     private float specialAttackTime;
     private Vector3 specialAttackPosition;
     public Missile[] missile;
@@ -55,7 +56,7 @@ public class Boss : Enemy
     // Update is called once per frame
     void Update()
     {
-        if (PauseMenu.gamePaused){
+        if (PauseMenu.gamePaused) {
             GetComponent<AudioSource>().Pause();
         }
         else{
@@ -65,17 +66,24 @@ public class Boss : Enemy
         health = GetStatValue(Stat.Health);
         if ((GetStatValue(Stat.Health) == 0) || (player.GetStatValue(Stat.Health) == 0))
         {
+            if (deathSoundActivate == 1)
+            {
+                GetComponent<AudioSource>().Pause();
+                SoundController.playOneShot(deathSound);
+            }
             GetComponent<Animator>().SetBool("Attacking", false);
             canAttack = false;
             speed = 0;
             timer += Time.deltaTime;
             if (GetStatValue(Stat.Health) == 0)
             {
+                deathSoundActivate++;
+                GetComponent<AudioSource>().Pause();
                 GetComponent<Animator>().SetBool("dead", true); //BOOL PARA ANIMACION DE MUERTE
-
-                if (timer >= 1) //Este tiempo se modifica según la duración de la animación de muerte
+                if (timer >= 3) //Este tiempo se modifica según la duración de la animación de muerte
                 {
-                    //gameObject.SetActive(false);
+                    gameObject.SetActive(false);
+                    SceneManager.LoadScene("Ending scene", LoadSceneMode.Single);
                 }
             }
         }
