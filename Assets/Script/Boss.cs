@@ -84,6 +84,8 @@ public class Boss : Enemy
                 {
                     gameObject.SetActive(false);
                     SceneManager.LoadScene("Ending scene", LoadSceneMode.Single);
+                    DataManager.saveGame();
+                    DataSave.saveCurrentGame();
                 }
             }
         }

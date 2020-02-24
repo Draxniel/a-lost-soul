@@ -12,7 +12,7 @@ public class SmallEnemy : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        health = 4; //VIDA INICIAL DEL ENEMIGO
+        health = 8; //VIDA INICIAL DEL ENEMIGO
         health *= manager.getDifficulty();
         damageMultiplier = manager.getDifficulty();
         maxhealth = health;
