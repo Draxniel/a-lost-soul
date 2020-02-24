@@ -62,7 +62,14 @@ public class running : MonoBehaviour
         {
             Checkpoint.isGameLoaded = true;
             string level = "Nivel " + data.level;
-            SceneManager.LoadScene(level, LoadSceneMode.Single);
+            if (data.level == 6)
+            {
+                SceneManager.LoadScene("Ending scene", LoadSceneMode.Single);
+            }
+            else
+            {
+                SceneManager.LoadScene(level, LoadSceneMode.Single);
+            }
         }
         
     }
