@@ -129,7 +129,7 @@ public class SmallEnemy : Enemy
         if (target != initialPosition && distance < attackkRadius)
         {
             //Attack
-            GetComponent<Animator>().SetBool("move", false);
+            //GetComponent<Animator>().SetBool("move", false);
         }
         else
         {
@@ -143,7 +143,7 @@ public class SmallEnemy : Enemy
             }
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
             //Animaciones de movimiento
-            GetComponent<Animator>().SetBool("move", true);
+            //GetComponent<Animator>().SetBool("move", true);
         }
 
         if (target == initialPosition && distance < 1f)  //Validacion para que al estar muy cerca de su posicion inicial retorne a ella y no se quede en un bucle intentando llegar

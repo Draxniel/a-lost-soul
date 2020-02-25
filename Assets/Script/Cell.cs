@@ -16,14 +16,17 @@ public class Cell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (active)
+        if (collision.transform.tag == "Player")
         {
-            SoundController.playOneShot(sound);
-            gameObject.SetActive(false);
-            if (openCell != null)
+            if (active)
             {
-                openCell.SetActive(true);
+                SoundController.playOneShot(sound);
+                gameObject.SetActive(false);
+                if (openCell != null)
+                {
+                    openCell.SetActive(true);
 
+                }
             }
         }
     }

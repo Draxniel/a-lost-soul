@@ -39,7 +39,7 @@ public class playerSoulController : MonoBehaviour
         else if ((pass > 70) && (end))
         {
             SceneManager.LoadScene("Menu secundario", LoadSceneMode.Single);
-            DataManager.saveGame();
+            DataManager.saveGame(true);
             DataSave.saveCurrentGame();
         }
     }

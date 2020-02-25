@@ -345,4 +345,23 @@ public class Player : Entity
             maxHealth = stats[Stat.Health];
         }
     }
+
+    public void substractMaxHealth(int n)
+    {
+        this.maxHealth -= n;
+    }
+
+    public void takeRawDamage(int n)
+    {
+        if (GetStatValue(Stat.Health) > 0)
+        {
+                if (n <= GetStatValue(Stat.Health))
+                {
+                    this.stats[Stat.Health] -= n;
+                    return;
+                }           
+            stats[Stat.Health] = 0;
+            isAlive = false;
+        }
+    }
 }

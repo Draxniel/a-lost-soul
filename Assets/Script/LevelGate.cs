@@ -14,8 +14,22 @@ public class LevelGate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if ((DataManager.level == 4) && (DataManager.getGoldenSkulls() == 6))
+        {
+            SceneManager.LoadScene("easter egg", LoadSceneMode.Single);
+        }
+        else
+        {
+            SceneManager.LoadScene(escenas, LoadSceneMode.Single);
+        }
+        DataManager.saveGame(true);
+        DataSave.saveCurrentGame();
+    }
+
+    public void loadScene()
+    {
         SceneManager.LoadScene(escenas, LoadSceneMode.Single);
-        DataManager.saveGame();
+        DataManager.saveGame(true);
         DataSave.saveCurrentGame();
     }
 }

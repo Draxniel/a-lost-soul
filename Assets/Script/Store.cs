@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Store : MonoBehaviour
 {
-    public GameObject tiendaUI, vendedor, Warming;
+    public GameObject tiendaUI, vendedor, Warming, skullText;
+    public GameObject[] objects;
     public TransactionManager manager;
     public Item[] items;
     public AudioClip Tienda;
@@ -13,11 +14,17 @@ public class Store : MonoBehaviour
     public Player player;
     public Text CoinNumber;
     public static bool isOpen = false;
+    private bool gotSkull;
 
     bool playAudio = true;
 
     void Start()
     {
+        gotSkull = false;
+        if (skullText)
+        {
+            skullText.SetActive(false);
+        }
         tiendaUI.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -37,6 +44,14 @@ public class Store : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Escape)) && (isOpen))
         {
             resume();
+        }
+
+        if ((objects != null) && (gotSkull)){
+            foreach (GameObject o in objects)
+            {
+                o.SetActive(false);
+            }
+            objects = null;
         }
     }
     public void resume()
@@ -70,5 +85,34 @@ public class Store : MonoBehaviour
             Warming.SetActive(true);
         }
         
+    }
+
+    public void purchaseSkull()
+    {
+        showText();
+        player.substractMaxHealth(3);
+        player.takeRawDamage(3);
+        DataManager.foundGoldenSkull();
+        DataManager.saveGame(false);
+        foreach (GameObject o in objects){
+            o.SetActive(false);
+        }
+    }
+    private void showText()
+    {
+        if (skullText)
+        {
+            skullText.SetActive(true);
+        }
+        Invoke("hideText", 5f);
+    }
+
+    private void hideText()
+    {
+        if (skullText)
+        {
+            skullText.SetActive(true);
+        }
+        gameObject.SetActive(false);
     }
 }
