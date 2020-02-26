@@ -8,6 +8,7 @@ TagManager:
   - pared
   - trampilla
   - attack
+  - platform
   layers:
   - Default
   - TransparentFX

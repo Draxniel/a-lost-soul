@@ -16,33 +16,38 @@ public class PauseMenu : MonoBehaviour
         pausaUI.SetActive(false);
         Time.timeScale = 1f;
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) && (canPause)) {
-            if (gamePaused) {
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) && (canPause))
+        {
+            if (gamePaused)
+            {
                 resume();
             }
-            else {
+            else
+            {
                 pausaUI.SetActive(true);
                 pause();
                 SoundController.pauseSound();
             }
         }
     }
-     public void resume() {
+    public void resume()
+    {
         Cursor.visible = false;
         Camera.main.GetComponent<AudioSource>().UnPause();
         pausaUI.SetActive(false);
         Time.timeScale = 1f;
         gamePaused = false;
     }
-    void pause() {
+    void pause()
+    {
         Cursor.visible = true;
         Camera.main.GetComponent<AudioSource>().Pause();
         Time.timeScale = 0f;
-        pausaUI.SetActive(true);   
+        pausaUI.SetActive(true);
         gamePaused = true;
     }
     public void QuitGame()

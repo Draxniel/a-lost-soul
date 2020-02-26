@@ -17,8 +17,10 @@ public class CoinsController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        gameObject.SetActive(false);
-        SoundController.playOneShot(coinSound);
-        player.takeCoins(1);
+        if (collision.transform.tag == "Player") {
+            gameObject.SetActive(false);
+            SoundController.playOneShot(coinSound);
+            player.takeCoins(1);
+        }
     }    
 }

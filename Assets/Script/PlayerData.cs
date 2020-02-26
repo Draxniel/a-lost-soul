@@ -10,6 +10,7 @@ public class PlayerData
     public Dictionary<Stat, int> stats;
     public int maxHealth;
     public int difficulty;
+    public int goldenSkulls;
 
     public PlayerData()
     {
@@ -21,6 +22,7 @@ public class PlayerData
             maxHealth = Checkpoint.gameSave.getMaxHealth();
             difficulty = Checkpoint.gameSave.getDifficulty();
             stats = Checkpoint.gameSave.getStats();
+            goldenSkulls = Checkpoint.gameSave.getGoldenSkulls();
         }
     }
 }

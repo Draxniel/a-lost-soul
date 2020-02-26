@@ -18,22 +18,24 @@ public class AcObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!active)
-        {
-            if (lever)  //Validación para que se invierta el sprite de la palanca y no desaparezca
+        if (collision.transform.tag == "Player") {
+            if (!active)
             {
-                gameObject.GetComponent<SpriteRenderer>().flipX = false;
-                active = true;
+                if (lever)  //Validación para que se invierta el sprite de la palanca y no desaparezca
+                {
+                    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                    active = true;
+                }
+                else
+                {
+
+                    gameObject.SetActive(false);
+                    active = true;
+                }
+                SoundController.playOneShot(sound);
             }
-            else
-            {
-                
-                gameObject.SetActive(false);
-                active = true;
-            }
-            SoundController.playOneShot(sound);
+            ActivateCell();
         }
-        ActivateCell();
     }
 
     public bool AllObjectsActivated()   //Valida que todos lo demás objetos en el nivel (en caso de haberlos) están desactivados

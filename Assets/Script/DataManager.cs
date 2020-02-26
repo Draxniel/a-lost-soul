@@ -13,6 +13,7 @@ public class DataManager : MonoBehaviour
     public int difficulty;
     public static int level;
     private PlayerData data;
+    public static int goldenSkulls;
     private void Awake()    //Se ejecuta antes de Start()
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase
@@ -28,6 +29,7 @@ public class DataManager : MonoBehaviour
             skin = 1;
             difficulty = 1;
             level = 1;
+            goldenSkulls = 0;
         }
         else if (manager != this)   //Para las siguientes instancias de la clase, el atributo estático sigue siendo el anterior asignado, entonces iguala los datos que este tenga para replicarlos en el nivel
         {
@@ -37,6 +39,7 @@ public class DataManager : MonoBehaviour
             difficulty = manager.getDifficulty();
             maxHealth = manager.getMaxHealth();
             level = manager.getLevel();
+            goldenSkulls = manager.getGoldenSkulls();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
                 if (level == 1){
@@ -51,7 +54,8 @@ public class DataManager : MonoBehaviour
                     maxHealth = manager.maxHealth;
                     stats[Stat.Health] = maxHealth;
                     stats[Stat.Defense] = manager.stats[Stat.Defense];
-                    stats[Stat.Strength] = manager.stats[Stat.Strength]; ;
+                    stats[Stat.Strength] = manager.stats[Stat.Strength];
+                    goldenSkulls = manager.getGoldenSkulls();
                 }
                 coins = 0;
             }
@@ -66,6 +70,7 @@ public class DataManager : MonoBehaviour
             coins = data.coins;
             skin = data.skin;
             level = data.level;
+            goldenSkulls = data.goldenSkulls;
         }
     }
 
@@ -143,10 +148,13 @@ public class DataManager : MonoBehaviour
     {
         this.maxHealth = maxHealth;
     }
-    public static void saveGame()
+    public static void saveGame(bool level)
     {
         manager.updateManager();
-        manager.passLevel();
+        if (level)
+        {
+            manager.passLevel();
+        }
         Checkpoint.saveData(manager);
 
     }
@@ -154,4 +162,14 @@ public class DataManager : MonoBehaviour
     {
        manager = Checkpoint.loadData();
     }
+
+    public int getGoldenSkulls()
+    {
+        return goldenSkulls;
+    }
+    public static void foundGoldenSkull()
+    {
+        goldenSkulls++;
+    }
+
 }

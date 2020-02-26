@@ -12,7 +12,7 @@ public class SmallEnemy : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        health = 2; //VIDA INICIAL DEL ENEMIGO
+        health = 8; //VIDA INICIAL DEL ENEMIGO
         health *= manager.getDifficulty();
         damageMultiplier = manager.getDifficulty();
         maxhealth = health;
@@ -129,7 +129,7 @@ public class SmallEnemy : Enemy
         if (target != initialPosition && distance < attackkRadius)
         {
             //Attack
-            GetComponent<Animator>().SetBool("move", false);
+            //GetComponent<Animator>().SetBool("move", false);
         }
         else
         {
@@ -143,7 +143,7 @@ public class SmallEnemy : Enemy
             }
             GetComponent<Rigidbody2D>().MovePosition(transform.position + dir * speed * Time.deltaTime);
             //Animaciones de movimiento
-            GetComponent<Animator>().SetBool("move", true);
+            //GetComponent<Animator>().SetBool("move", true);
         }
 
         if (target == initialPosition && distance < 1f)  //Validacion para que al estar muy cerca de su posicion inicial retorne a ella y no se quede en un bucle intentando llegar

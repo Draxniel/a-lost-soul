@@ -12,7 +12,7 @@ public class Player : Entity
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, deathSound,fallingSound;
     public GameObject attackObject;
-    public Text life, CoinNumber,Stronger,Defense;
+    public Text life, CoinNumber,Stronger,Defense, skulls;
     private bool falling = false, isAlive = true;
 
 
@@ -97,6 +97,10 @@ public class Player : Entity
         CoinNumber.text = (getCoins()).ToString();
         Defense.text = (GetStatValue(Stat.Defense)).ToString();
         Stronger.text = (GetStatValue(Stat.Strength)).ToString();
+        if (skulls)
+        {
+            skulls.text = (manager.getGoldenSkulls() + "/" + "6").ToString();
+        }
         isFalling();
         checkFalling();
 
@@ -164,13 +168,30 @@ public class Player : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "ground")
+        if (collision.transform.tag == "ground") 
         {
             canJump = true;
             GetComponent<Animator>().SetBool("jumpping", false);
             falling = false;
+
+        }
+        if (collision.transform.tag == "platform")
+        {
+            canJump = true;
+            GetComponent<Animator>().SetBool("jumpping", false);
+            transform.parent = collision.gameObject.transform;
+            falling = false;
         }
 
+    }
+
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "platform")
+        {
+            transform.parent = null;
+        }
     }
 
     public override void Move()
@@ -326,6 +347,25 @@ public class Player : Entity
         if (stats[Stat.Health] > maxHealth)
         {
             maxHealth = stats[Stat.Health];
+        }
+    }
+
+    public void substractMaxHealth(int n)
+    {
+        this.maxHealth -= n;
+    }
+
+    public void takeRawDamage(int n)
+    {
+        if (GetStatValue(Stat.Health) > 0)
+        {
+                if (n <= GetStatValue(Stat.Health))
+                {
+                    this.stats[Stat.Health] -= n;
+                    return;
+                }           
+            stats[Stat.Health] = 0;
+            isAlive = false;
         }
     }
 }

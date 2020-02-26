@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/select skin.unity
     guid: cf6fff79f29e357498976e64148e05a4
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/pr\xF3logo.unity"
     guid: c483d89f90334394d85b357a4109b4ff
   - enabled: 0
@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Nivel 5.unity
     guid: c093614d6f0f41849abb615c9aa8934b
+  - enabled: 1
+    path: Assets/Scenes/easter egg.unity
+    guid: f96e4f063fdc245429e246c6483c9e24
   m_configObjects: {}
