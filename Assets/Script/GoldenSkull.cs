@@ -16,20 +16,15 @@ public class GoldenSkull : MonoBehaviour
         gameObject.GetComponent<Renderer>().enabled = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Player")
+        if ((collision.transform.tag == "Player") && (!found))
         {
             showText();
             gameObject.GetComponent<Renderer>().enabled = false;
             DataManager.foundGoldenSkull();
             SoundController.playOneShot(sound);
+            found = true;
         }
     }
 

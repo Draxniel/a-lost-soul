@@ -14,7 +14,7 @@ public class LevelGate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((DataManager.level == 4) && (DataManager.getGoldenSkulls() == 6))
+        if ((DataManager.level == 4) && (Checkpoint.gameSave.getGoldenSkulls() == 6))
         {
             SceneManager.LoadScene("easter egg", LoadSceneMode.Single);
         }

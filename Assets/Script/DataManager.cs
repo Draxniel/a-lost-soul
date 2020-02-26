@@ -39,7 +39,7 @@ public class DataManager : MonoBehaviour
             difficulty = manager.getDifficulty();
             maxHealth = manager.getMaxHealth();
             level = manager.getLevel();
-            goldenSkulls = getGoldenSkulls();
+            goldenSkulls = manager.getGoldenSkulls();
             if (stats[Stat.Health] == 0)    //Si el player muere, se reestablecen los datos de la instancia actual
             {
                 if (level == 1){
@@ -54,7 +54,8 @@ public class DataManager : MonoBehaviour
                     maxHealth = manager.maxHealth;
                     stats[Stat.Health] = maxHealth;
                     stats[Stat.Defense] = manager.stats[Stat.Defense];
-                    stats[Stat.Strength] = manager.stats[Stat.Strength]; ;
+                    stats[Stat.Strength] = manager.stats[Stat.Strength];
+                    goldenSkulls = manager.getGoldenSkulls();
                 }
                 coins = 0;
             }
@@ -69,6 +70,7 @@ public class DataManager : MonoBehaviour
             coins = data.coins;
             skin = data.skin;
             level = data.level;
+            goldenSkulls = data.goldenSkulls;
         }
     }
 
@@ -149,7 +151,6 @@ public class DataManager : MonoBehaviour
     public static void saveGame(bool level)
     {
         manager.updateManager();
-        Debug.Log(manager.maxHealth);
         if (level)
         {
             manager.passLevel();
@@ -162,7 +163,7 @@ public class DataManager : MonoBehaviour
        manager = Checkpoint.loadData();
     }
 
-    public static int getGoldenSkulls()
+    public int getGoldenSkulls()
     {
         return goldenSkulls;
     }

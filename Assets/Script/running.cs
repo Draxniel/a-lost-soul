@@ -73,6 +73,7 @@ public class running : MonoBehaviour
        PlayerData data = DataSave.loadCurrentGame();
         if (data != null)
         {
+            Debug.Log("archivo skulls"+data.goldenSkulls);
             Checkpoint.isGameLoaded = true;
             string level = "Nivel " + data.level;
             if (data.level == 6)

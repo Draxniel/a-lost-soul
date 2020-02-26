@@ -9,7 +9,7 @@ public class Store : MonoBehaviour
     public GameObject[] objects;
     public TransactionManager manager;
     public Item[] items;
-    public AudioClip Tienda;
+    public AudioClip Tienda, skull;
     public AudioClip powerUpSound;
     public Player player;
     public Text CoinNumber;
@@ -46,7 +46,7 @@ public class Store : MonoBehaviour
             resume();
         }
 
-        if ((objects != null) && (gotSkull)){
+        if (((objects != null) && (gotSkull)) || ((player.manager.getGoldenSkulls() == 6) && (objects != null))){
             foreach (GameObject o in objects)
             {
                 o.SetActive(false);
@@ -93,6 +93,10 @@ public class Store : MonoBehaviour
         player.substractMaxHealth(3);
         player.takeRawDamage(3);
         DataManager.foundGoldenSkull();
+        if (skull)
+        {
+            SoundController.playOneShot(skull);
+        }
         DataManager.saveGame(false);
         foreach (GameObject o in objects){
             o.SetActive(false);

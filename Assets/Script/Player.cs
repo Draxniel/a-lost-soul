@@ -12,7 +12,7 @@ public class Player : Entity
     public DataManager manager;
     public AudioClip jumpSound, walkSound, attackSound, deathSound,fallingSound;
     public GameObject attackObject;
-    public Text life, CoinNumber,Stronger,Defense;
+    public Text life, CoinNumber,Stronger,Defense, skulls;
     private bool falling = false, isAlive = true;
 
 
@@ -97,6 +97,7 @@ public class Player : Entity
         CoinNumber.text = (getCoins()).ToString();
         Defense.text = (GetStatValue(Stat.Defense)).ToString();
         Stronger.text = (GetStatValue(Stat.Strength)).ToString();
+        skulls.text = (manager.getGoldenSkulls()+"/"+"6").ToString();
         isFalling();
         checkFalling();
 
