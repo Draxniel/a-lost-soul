@@ -97,7 +97,10 @@ public class Player : Entity
         CoinNumber.text = (getCoins()).ToString();
         Defense.text = (GetStatValue(Stat.Defense)).ToString();
         Stronger.text = (GetStatValue(Stat.Strength)).ToString();
-        skulls.text = (manager.getGoldenSkulls()+"/"+"6").ToString();
+        if (skulls)
+        {
+            skulls.text = (manager.getGoldenSkulls() + "/" + "6").ToString();
+        }
         isFalling();
         checkFalling();
 

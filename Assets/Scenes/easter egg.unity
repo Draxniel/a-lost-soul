@@ -1840,7 +1840,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6a43019436979e64ea59660eb6ae5d3b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e0fa481b5f9e7ba42b690130511844d6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4488,6 +4488,7 @@ MonoBehaviour:
   - {fileID: 1238583587}
   - {fileID: 0}
   Tienda: {fileID: 8300000, guid: a0380ad562e92e44e8b658385a81e0a1, type: 3}
+  skull: {fileID: 0}
   powerUpSound: {fileID: 8300000, guid: b15b39262fcc6ad44a0c7d904ece2cd7, type: 3}
   player: {fileID: 1181361468}
   CoinNumber: {fileID: 604532669}
@@ -5123,6 +5124,7 @@ MonoBehaviour:
   CoinNumber: {fileID: 1334849170}
   Stronger: {fileID: 2000420752}
   Defense: {fileID: 68226072}
+  skulls: {fileID: 0}
 --- !u!95 &1181361469
 Animator:
   serializedVersion: 3
