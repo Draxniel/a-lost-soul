@@ -529,10 +529,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skin: 0
-  manager: {fileID: 0}
+  manager: {fileID: 1216935204}
   parallaxSpeed: 0.2
   backGround: {fileID: 677599728}
   floorPic: {fileID: 470552351}
+  playButton: {fileID: 0}
+  loadButton: {fileID: 0}
+  exitButton: {fileID: 0}
 --- !u!82 &551967893
 AudioSource:
   m_ObjectHideFlags: 0

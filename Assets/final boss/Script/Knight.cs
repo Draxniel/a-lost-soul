@@ -13,6 +13,7 @@ public class Knight : MonoBehaviour
     void Start()
     {
         skin = manager.getSkinNumber();
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame

@@ -51,6 +51,9 @@ public class Player : Entity
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenu.gamePaused){
+            GetComponent<AudioSource>().Stop();
+        }
         time += Time.deltaTime;
         if (stats[Stat.Health] > 0)
         {

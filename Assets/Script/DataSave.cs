@@ -39,6 +39,9 @@ public static class DataSave
     {
         Debug.Log("DATA DELETED");
         string path = Application.persistentDataPath + "/player.data";
-        File.Delete(path);
+        if (path != null)
+        {
+            File.Delete(path);
+        }
     }
 }
