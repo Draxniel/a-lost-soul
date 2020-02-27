@@ -6,12 +6,10 @@ using UnityEngine.SceneManagement;
 public class LevelGate : MonoBehaviour
 {
     public string escenas;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         gameObject.SetActive(false);
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if ((DataManager.level == 4) && (Checkpoint.gameSave.getGoldenSkulls() == 6))

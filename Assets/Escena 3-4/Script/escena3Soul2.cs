@@ -22,6 +22,5 @@ public class escena3Soul2 : MonoBehaviour
         }
         else if ((pass >=36) && (gameObject.transform.position.x > 220f))
             gameObject.transform.position = new Vector3(gameObject.transform.position.x  - 5f, gameObject.transform.position.y, gameObject.transform.position.z);
-        Debug.Log(pass);
     }
 }

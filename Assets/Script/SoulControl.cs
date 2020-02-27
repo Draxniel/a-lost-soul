@@ -13,8 +13,8 @@ public class SoulControl : MonoBehaviour
         SoundController.assignSound(soulSound);
         SoundController.setVolume(1.3f);
         SoundController.playSound();
-        gameObject.SetActive(false);
         door.gameObject.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     //Aqui dentro debe ir la llamada para que aparezca el final del nivel

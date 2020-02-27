@@ -23,9 +23,9 @@ public class Boss : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        health = 400;
+        health = 240;
         speed = 250;
-        attackkRadius = 55;
+        attackkRadius = 50;
         visionRadius = 300;
         damageMultiplier = manager.getDifficulty();
         health *= damageMultiplier;  //Se multiplica la vida del enemigo por la dificultad
