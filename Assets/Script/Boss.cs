@@ -31,7 +31,7 @@ public class Boss : Enemy
         health *= damageMultiplier;  //Se multiplica la vida del enemigo por la dificultad
         stats = new Dictionary<Stat, int>();
         stats.Add(Stat.Health, health);
-        stats.Add(Stat.Strength, 1*damageMultiplier);
+        stats.Add(Stat.Strength, 2*damageMultiplier);
         stats.Add(Stat.Defense, 1);
         attackTime = 0;
         attackWait = 0;
@@ -259,6 +259,11 @@ public class Boss : Enemy
                 specialAttackTime = 0;
             }
         }
+    }
+
+    public int GetDamageMultiplier()
+    {
+        return damageMultiplier;
     }
 
     private void playFireballSound(){

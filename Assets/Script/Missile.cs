@@ -8,11 +8,12 @@ public class Missile : MonoBehaviour
     public Vector3 target;
     public Boss boss;
     public Player player;
-    private int speed;
+    private int speed, damage;
 
     public Missile (Vector3 target)
     {
         this.target = target;
+        damage = 1 * boss.GetDamageMultiplier();
     }
 
     // Start is called before the first frame update
@@ -50,7 +51,7 @@ public class Missile : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            player.TakeDamage(1);
+            player.TakeDamage(damage);
         }
     }
 }

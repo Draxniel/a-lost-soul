@@ -17,7 +17,6 @@ public class playerSoulController : MonoBehaviour
     void FixedUpdate()
     {
         pass += Time.deltaTime;
-        Debug.Log(pass);
         if ((gameObject.transform.position.y < 165) && (pass > 5) && (pass < 8))
         {
             gameObject.GetComponent<Renderer>().enabled = true;

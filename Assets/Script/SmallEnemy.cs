@@ -29,7 +29,7 @@ public class SmallEnemy : Enemy
         attackWait = 3;
         //Posicion inicial igual a posicion actual                             
         visionRadius = 120;
-        attackkRadius = 35;
+        attackkRadius = 30;
         speed = 150;
         enemyHealth.setMaxHealth(health);
         enemyHealth.setActive(false);
