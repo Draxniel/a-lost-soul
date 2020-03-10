@@ -14,13 +14,11 @@ public class Store : MonoBehaviour
     public Player player;
     public Text CoinNumber;
     public static bool isOpen = false;
-    private bool gotSkull;
 
     bool playAudio = true;
 
     void Start()
     {
-        gotSkull = false;
         if (skullText)
         {
             skullText.SetActive(false);
@@ -46,7 +44,7 @@ public class Store : MonoBehaviour
             resume();
         }
 
-        if (((objects != null) && (gotSkull)) || ((player.manager.getGoldenSkulls() == 6) && (objects != null))){
+        if ((objects != null) && (DataManager.storeSkull)){
             foreach (GameObject o in objects)
             {
                 o.SetActive(false);
@@ -101,6 +99,7 @@ public class Store : MonoBehaviour
         foreach (GameObject o in objects){
             o.SetActive(false);
         }
+        DataManager.storeSkull = true;
     }
     private void showText()
     {

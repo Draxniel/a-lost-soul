@@ -14,6 +14,7 @@ public class DataManager : MonoBehaviour
     public static int level;
     private PlayerData data;
     public static int goldenSkulls;
+    public static bool storeSkull = false;
     private void Awake()    //Se ejecuta antes de Start()
     {
         if (manager == null)    //Esto ocurre en la primera instancia de la clase

@@ -58,6 +58,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: torre
+    uniqueID: 3533593977
+    locked: 0
   - name: cesped
     uniqueID: 2537885917
     locked: 0

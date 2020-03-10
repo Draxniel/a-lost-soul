@@ -16,6 +16,7 @@ public class running : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("running starts");
         GetComponent<AudioSource>().PlayDelayed(1f); // Activa la música después de 1 seg...
         if ((playButton) && (loadButton) && (exitButton))
         {
@@ -23,7 +24,8 @@ public class running : MonoBehaviour
             loadButton.SetActive(false);
             exitButton.SetActive(false);
         }
-        
+        Checkpoint.isGameLoaded = false;
+        DataManager.manager = null;
     }
 
     // Update is called once per frame

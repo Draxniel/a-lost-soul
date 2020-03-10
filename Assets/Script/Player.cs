@@ -35,6 +35,7 @@ public class Player : Entity
         attacking = false;
         x = 1;
         y = 1;
+        DataManager.saveGame(manager);
     }
 
     public bool isPlayerAlive()
